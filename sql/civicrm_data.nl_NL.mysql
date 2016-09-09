@@ -42,258 +42,258 @@ INSERT INTO civicrm_worldregion (id, name) VALUES("5", "Africa West, East, Centr
 INSERT INTO civicrm_worldregion (id, name) VALUES("99", "unassigned");
 
 
-INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1001", "AFGHANISTAN", "AF", "4", "0");
-INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1002", "ALBANIA", "AL", "1", "0");
-INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1003", "ALGERIA", "DZ", "3", "0");
-INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1004", "AMERICAN SAMOA", "AS", "2", "0");
-INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1005", "ANDORRA", "AD", "1", "0");
-INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1006", "ANGOLA", "AO", "5", "0");
-INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1007", "ANGUILLA", "AI", "2", "0");
-INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1008", "ANTARCTICA", "AQ", "1", "0");
-INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1009", "ANTIGUA AND BARBUDA", "AG", "2", "0");
-INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1010", "ARGENTINA", "AR", "2", "0");
-INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1011", "ARMENIA", "AM", "1", "0");
-INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1012", "ARUBA", "AW", "2", "0");
-INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1013", "AUSTRALIA", "AU", "4", "0");
-INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1014", "AUSTRIA", "AT", "1", "0");
-INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1015", "AZERBAIJAN", "AZ", "1", "0");
-INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1016", "BAHRAIN", "BH", "3", "0");
-INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1017", "BANGLADESH", "BD", "4", "0");
-INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1018", "BARBADOS", "BB", "4", "0");
-INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1019", "BELARUS", "BY", "1", "0");
-INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1020", "BELGIUM", "BE", "1", "0");
-INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1021", "BELIZE", "BZ", "2", "0");
-INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1022", "BENIN", "BJ", "5", "0");
-INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1023", "BERMUDA", "BM", "2", "0");
-INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1024", "BHUTAN", "BT", "4", "0");
-INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1025", "BOLIVIA", "BO", "2", "0");
-INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1026", "BOSNIA AND HERZEGOVINA", "BA", "1", "0");
-INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1027", "BOTSWANA", "BW", "5", "0");
-INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1028", "BOUVET ISLAND", "BV", "1", "0");
-INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1029", "BRAZIL", "BR", "2", "0");
-INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1030", "BRITISH INDIAN OCEAN TERRITORY", "IO", "4", "0");
-INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1031", "VIRGIN ISLANDS, BRITISH", "VG", "2", "0");
-INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1032", "BRUNEI DARUSSALAM", "BN", "4", "0");
-INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1033", "BULGARIA", "BG", "1", "0");
-INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1034", "BURKINA FASO", "BF", "5", "0");
-INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1035", "MYANMAR", "MM", "4", "0");
-INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1036", "BURUNDI", "BI", "5", "0");
-INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1037", "CAMBODIA", "KH", "4", "0");
-INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1038", "CAMEROON", "CM", "5", "0");
-INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1039", "CANADA", "CA", "2", "1");
-INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1040", "CAPE VERDE", "CV", "5", "0");
-INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1041", "CAYMAN ISLANDS", "KY", "5", "0");
-INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1042", "CENTRAL AFRICAN REPUBLIC", "CF", "5", "0");
-INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1043", "CHAD", "TD", "5", "0");
-INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1044", "CHILE", "CL", "2", "0");
-INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1045", "CHINA", "CN", "4", "0");
-INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1046", "CHRISTMAS ISLAND", "CX", "4", "0");
-INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1047", "COCOS (KEELING) ISLANDS", "CC", "4", "0");
-INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1048", "COLOMBIA", "CO", "2", "0");
-INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1049", "COMOROS", "KM", "5", "0");
-INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1050", "CONGO, THE DEMOCRATIC REPUBLIC OF THE", "CD", "5", "0");
-INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1051", "CONGO, REPUBLIC OF THE", "CG", "5", "0");
-INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1052", "COOK ISLANDS", "CK", "4", "0");
-INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1053", "COSTA RICA", "CR", "2", "0");
-INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1054", "CÔTE D\'IVOIRE", "CI", "5", "0");
-INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1055", "CROATIA", "HR", "1", "0");
-INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1056", "CUBA", "CU", "2", "0");
-INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1057", "CYPRUS", "CY", "1", "0");
-INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1058", "CZECH REPUBLIC", "CZ", "1", "0");
-INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1059", "DENMARK", "DK", "1", "0");
-INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1060", "DJIBOUTI", "DJ", "5", "0");
-INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1061", "DOMINICA", "DM", "2", "0");
-INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1062", "DOMINICAN REPUBLIC", "DO", "2", "0");
-INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1063", "TIMOR-LESTE", "TL", "4", "0");
-INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1064", "ECUADOR", "EC", "2", "0");
-INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1065", "EGYPT", "EG", "3", "0");
-INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1066", "EL SALVADOR", "SV", "2", "0");
-INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1067", "EQUATORIAL GUINEA", "GQ", "5", "0");
-INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1068", "ERITREA", "ER", "5", "0");
-INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1069", "ESTONIA", "EE", "1", "0");
-INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1070", "ETHIOPIA", "ET", "5", "0");
--- INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1071", "EUROPEAN UNION", "EU", "1", "0");
-INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1072", "FALKLAND ISLANDS (MALVINAS)", "FK", "2", "0");
-INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1073", "FAROE ISLANDS", "FO", "1", "0");
-INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1074", "FIJI", "FJ", "4", "0");
-INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1075", "FINLAND", "FI", "1", "0");
-INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1076", "FRANCE", "FR", "1", "0");
-INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1077", "FRENCH GUIANA", "GF", "2", "0");
-INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1078", "FRENCH POLYNESIA", "PF", "4", "0");
-INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1079", "FRENCH SOUTHERN TERRITORIES", "TF", "1", "0");
-INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1080", "GABON", "GA", "5", "0");
-INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1081", "GEORGIA", "GE", "3", "0");
-INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1082", "GERMANY", "DE", "1", "0");
-INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1083", "GHANA", "GH", "5", "0");
-INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1084", "GIBRALTAR", "GI", "1", "0");
-INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1085", "GREECE", "GR", "1", "0");
-INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1086", "GREENLAND", "GL", "2", "0");
-INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1087", "GRENADA", "GD", "2", "0");
-INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1088", "GUADELOUPE", "GP", "2", "0");
-INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1089", "GUAM", "GU", "4", "0");
-INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1090", "GUATEMALA", "GT", "2", "0");
-INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1091", "GUINEA", "GN", "5", "0");
-INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1092", "GUINEA-BISSAU", "GW", "5", "0");
-INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1093", "GUYANA", "GY", "2", "0");
-INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1094", "HAITI", "HT", "2", "0");
-INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1095", "HEARD ISLAND AND MCDONALD ISLANDS", "HM", "4", "0");
-INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1096", "HOLY SEE (VATICAN CITY STATE)", "VA", "1", "0");
-INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1097", "HONDURAS", "HN", "2", "0");
-INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1098", "HONG KONG", "HK", "4", "0");
-INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1099", "HUNGARY", "HU", "1", "0");
-INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1100", "ICELAND", "IS", "1", "0");
-INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1101", "INDIA", "IN", "4", "0");
-INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1102", "INDONESIA", "ID", "4", "0");
-INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1103", "IRAN, ISLAMIC REPUBLIC OF", "IR", "3", "0");
-INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1104", "IRAQ", "IQ", "3", "0");
-INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1105", "IRELAND", "IE", "1", "0");
-INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1106", "ISRAEL", "IL", "3", "0");
-INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1107", "ITALY", "IT", "1", "0");
-INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1108", "JAMAICA", "JM", "2", "0");
-INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1109", "JAPAN", "JP", "4", "0");
-INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1110", "JORDAN", "JO", "3", "0");
-INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1111", "KAZAKHSTAN", "KZ", "1", "0");
-INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1112", "KENYA", "KE", "5", "0");
-INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1113", "KIRIBATI", "KI", "4", "0");
-INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1114", "KOREA, DEMOCRATIC PEOPLE\'S REPUBLIC OF", "KP", "4", "0");
-INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1115", "KOREA, REPUBLIC OF", "KR", "4", "0");
-INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1116", "KUWAIT", "KW", "3", "0");
-INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1117", "KYRGYZSTAN", "KG", "1", "0");
-INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1118", "LAO PEOPLE\'S DEMOCRATIC REPUBLIC", "LA", "4", "0");
-INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1119", "LATVIA", "LV", "1", "0");
-INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1120", "LEBANON", "LB", "3", "0");
-INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1121", "LESOTHO", "LS", "5", "0");
-INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1122", "LIBERIA", "LR", "5", "0");
-INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1123", "LIBYA", "LY", "3", "0");
-INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1124", "LIECHTENSTEIN", "LI", "1", "0");
-INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1125", "LITHUANIA", "LT", "1", "0");
-INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1126", "LUXEMBOURG", "LU", "1", "0");
-INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1127", "MACAO", "MO", "4", "0");
-INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1128", "MACEDONIA, REPUBLIC OF", "MK", "1", "0");
-INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1129", "MADAGASCAR", "MG", "5", "0");
-INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1130", "MALAWI", "MW", "5", "0");
-INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1131", "MALAYSIA", "MY", "4", "0");
-INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1132", "MALDIVES", "MV", "4", "0");
-INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1133", "MALI", "ML", "5", "0");
-INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1134", "MALTA", "MT", "1", "0");
-INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1135", "MARSHALL ISLANDS", "MH", "4", "0");
-INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1136", "MARTINIQUE", "MQ", "2", "0");
-INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1137", "MAURITANIA", "MR", "5", "0");
-INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1138", "MAURITIUS", "MU", "5", "0");
-INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1139", "MAYOTTE", "YT", "5", "0");
-INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1140", "MEXICO", "MX", "2", "0");
-INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1141", "MICRONESIA, FEDERATED STATES OF", "FM", "4", "0");
-INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1142", "MOLDOVA", "MD", "1", "0");
-INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1143", "MONACO", "MC", "1", "0");
-INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1144", "MONGOLIA", "MN", "4", "0");
-INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1145", "MONTSERRAT", "MS", "2", "0");
-INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1146", "MOROCCO", "MA", "3", "0");
-INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1147", "MOZAMBIQUE", "MZ", "5", "0");
-INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1148", "NAMIBIA", "NA", "5", "0");
-INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1149", "NAURU", "NR", "4", "0");
-INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1150", "NEPAL", "NP", "4", "0");
-INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1152", "NETHERLANDS", "NL", "1", "0");
-INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1153", "NEW CALEDONIA", "NC", "4", "0");
-INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1154", "NEW ZEALAND", "NZ", "4", "0");
-INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1155", "NICARAGUA", "NI", "2", "0");
-INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1156", "NIGER", "NE", "5", "0");
-INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1157", "NIGERIA", "NG", "5", "0");
-INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1158", "NIUE", "NU", "4", "0");
-INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1159", "NORFOLK ISLAND", "NF", "4", "0");
-INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1160", "NORTHERN MARIANA ISLANDS", "MP", "2", "0");
-INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1161", "NORWAY", "NO", "1", "0");
-INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1162", "OMAN", "OM", "3", "0");
-INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1163", "PAKISTAN", "PK", "4", "0");
-INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1164", "PALAU", "PW", "4", "0");
-INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1165", "PALESTINIAN TERRITORY", "PS", "3", "0");
-INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1166", "PANAMA", "PA", "2", "0");
-INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1167", "PAPUA NEW GUINEA", "PG", "4", "0");
-INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1168", "PARAGUAY", "PY", "2", "0");
-INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1169", "PERU", "PE", "2", "0");
-INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1170", "PHILIPPINES", "PH", "4", "0");
-INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1171", "PITCAIRN", "PN", "4", "0");
-INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1172", "POLAND", "PL", "1", "0");
-INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1173", "PORTUGAL", "PT", "1", "0");
-INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1174", "PUERTO RICO", "PR", "2", "0");
-INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1175", "QATAR", "QA", "3", "0");
-INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1176", "ROMANIA", "RO", "1", "0");
-INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1177", "RUSSIAN FEDERATION", "RU", "1", "0");
-INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1178", "RWANDA", "RW", "5", "0");
-INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1179", "REUNION", "RE", "5", "0");
-INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1180", "SAINT HELENA", "SH", "5", "0");
-INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1181", "SAINT KITTS AND NEVIS", "KN", "2", "0");
-INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1182", "SAINT LUCIA", "LC", "2", "0");
-INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1183", "SAINT PIERRE AND MIQUELON", "PM", "2", "0");
-INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1184", "SAINT VINCENT AND THE GRENADINES", "VC", "2", "0");
-INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1185", "SAMOA", "WS", "4", "0");
-INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1186", "SAN MARINO", "SM", "1", "0");
-INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1187", "SAUDI ARABIA", "SA", "3", "0");
-INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1188", "SENEGAL", "SN", "5", "0");
-INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1189", "SEYCHELLES", "SC", "5", "0");
-INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1190", "SIERRA LEONE", "SL", "5", "0");
-INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1191", "SINGAPORE", "SG", "4", "0");
-INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1192", "SLOVAKIA", "SK", "1", "0");
-INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1193", "SLOVENIA", "SI", "1", "0");
-INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1194", "SOLOMON ISLANDS", "SB", "4", "0");
-INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1195", "SOMALIA", "SO", "5", "0");
-INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1196", "SOUTH AFRICA", "ZA", "5", "0");
-INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1197", "SOUTH GEORGIA AND THE SOUTH SANDWICH ISLANDS", "GS", "2", "0");
-INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1198", "SPAIN", "ES", "1", "0");
-INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1199", "SRI LANKA", "LK", "4", "0");
-INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1200", "SUDAN", "SD", "3", "0");
-INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1201", "SURINAME", "SR", "2", "0");
-INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1202", "SVALBARD AND JAN MAYEN", "SJ", "1", "0");
-INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1203", "SWAZILAND", "SZ", "5", "0");
-INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1204", "SWEDEN", "SE", "1", "0");
-INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1205", "SWITZERLAND", "CH", "1", "0");
-INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1206", "SYRIAN ARAB REPUBLIC", "SY", "3", "0");
-INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1207", "SAO TOME AND PRINCIPE", "ST", "5", "0");
-INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1208", "TAIWAN", "TW", "4", "0");
-INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1209", "TAJIKISTAN", "TJ", "3", "0");
-INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1210", "TANZANIA, UNITED REPUBLIC OF", "TZ", "5", "0");
-INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1211", "THAILAND", "TH", "4", "0");
-INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1212", "BAHAMAS", "BS", "2", "0");
-INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1213", "GAMBIA", "GM", "5", "0");
-INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1214", "TOGO", "TG", "5", "0");
-INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1215", "TOKELAU", "TK", "4", "0");
-INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1216", "TONGA", "TO", "4", "0");
-INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1217", "TRINIDAD AND TOBAGO", "TT", "2", "0");
-INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1218", "TUNISIA", "TN", "3", "0");
-INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1219", "TURKEY", "TR", "1", "0");
-INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1220", "TURKMENISTAN", "TM", "1", "0");
-INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1221", "TURKS AND CAICOS ISLANDS", "TC", "2", "0");
-INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1222", "TUVALU", "TV", "4", "0");
-INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1223", "UGANDA", "UG", "5", "0");
-INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1224", "UKRAINE", "UA", "1", "0");
-INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1225", "UNITED ARAB EMIRATES", "AE", "3", "0");
-INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1226", "UNITED KINGDOM", "GB", "1", "0");
-INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1227", "UNITED STATES MINOR OUTLYING ISLANDS", "UM", "2", "0");
-INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1228", "UNITED STATES", "US", "2", "1");
-INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1229", "URUGUAY", "UY", "2", "0");
-INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1230", "UZBEKISTAN", "UZ", "1", "0");
-INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1231", "VANUATU", "VU", "4", "0");
-INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1232", "VENEZUELA", "VE", "2", "0");
-INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1233", "VIET NAM", "VN", "4", "0");
-INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1234", "VIRGIN ISLANDS, U.S.", "VI", "2", "0");
-INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1235", "WALLIS AND FUTUNA", "WF", "4", "0");
-INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1236", "WESTERN SAHARA", "EH", "3", "0");
-INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1237", "YEMEN", "YE", "3", "0");
-INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1238", "SERBIA AND MONTENEGRO", "CS", "1", "0");
-INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1239", "ZAMBIA", "ZM", "5", "0");
-INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1240", "ZIMBABWE", "ZW", "5", "0");
-INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1241", "ÅLAND ISLANDS", "AX", "1", "0");
-INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1242", "SERBIA", "RS", "1", "0");
-INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1243", "MONTENEGRO", "ME", "1", "0");
-INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1244", "JERSEY", "JE", "99", "0");
-INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1245", "GUERNSEY", "GG", "99", "0");
-INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1246", "ISLE OF MAN", "IM", "99", "0");
-INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1247", "SOUTH SUDAN", "SS", "5", "0");
-INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1248", "CURAÇAO", "CW", "2", "0");
-INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1249", "SINT MAARTEN (DUTCH PART)", "SX", "2", "0");
-INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1250", "BONAIRE, SAINT EUSTATIUS AND SABA", "BQ", "2", "0");
-INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1251", "KOSOVO", "XK", "1", "0");
-INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1252", "SAINT BARTHÉLEMY", "BL", "2", "0");
-INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1253", "SAINT MARTIN (FRENCH PART)", "MF", "2", "0");
+INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1001", "Afghanistan", "AF", "4", "0");
+INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1002", "Albania", "AL", "1", "0");
+INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1003", "Algeria", "DZ", "3", "0");
+INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1004", "American Samoa", "AS", "2", "0");
+INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1005", "Andorra", "AD", "1", "0");
+INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1006", "Angola", "AO", "5", "0");
+INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1007", "Anguilla", "AI", "2", "0");
+INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1008", "Antarctica", "AQ", "1", "0");
+INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1009", "Antigua and Barbuda", "AG", "2", "0");
+INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1010", "Argentina", "AR", "2", "0");
+INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1011", "Armenia", "AM", "1", "0");
+INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1012", "Aruba", "AW", "2", "0");
+INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1013", "Australia", "AU", "4", "0");
+INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1014", "Austria", "AT", "1", "0");
+INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1015", "Azerbaijan", "AZ", "1", "0");
+INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1016", "Bahrain", "BH", "3", "0");
+INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1017", "Bangladesh", "BD", "4", "0");
+INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1018", "Barbados", "BB", "4", "0");
+INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1019", "Belarus", "BY", "1", "0");
+INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1020", "Belgium", "BE", "1", "0");
+INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1021", "Belize", "BZ", "2", "0");
+INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1022", "Benin", "BJ", "5", "0");
+INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1023", "Bermuda", "BM", "2", "0");
+INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1024", "Bhutan", "BT", "4", "0");
+INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1025", "Bolivia", "BO", "2", "0");
+INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1026", "Bosnia and Herzegovina", "BA", "1", "0");
+INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1027", "Botswana", "BW", "5", "0");
+INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1028", "Bouvet Island", "BV", "1", "0");
+INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1029", "Brazil", "BR", "2", "0");
+INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1030", "British Indian Ocean Territory", "IO", "4", "0");
+INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1031", "Virgin Islands,British", "VG", "2", "0");
+INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1032", "Brunei Darussalam", "BN", "4", "0");
+INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1033", "Bulgaria", "BG", "1", "0");
+INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1034", "Burkina Faso", "BF", "5", "0");
+INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1035", "Myanmar", "MM", "4", "0");
+INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1036", "Burundi", "BI", "5", "0");
+INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1037", "Cambodia", "KH", "4", "0");
+INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1038", "Cameroon", "CM", "5", "0");
+INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1039", "Canada", "CA", "2", "1");
+INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1040", "Cape Verde", "CV", "5", "0");
+INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1041", "Cayman Islands", "KY", "5", "0");
+INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1042", "Central African Republic", "CF", "5", "0");
+INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1043", "Chad", "TD", "5", "0");
+INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1044", "Chile", "CL", "2", "0");
+INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1045", "China", "CN", "4", "0");
+INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1046", "Christmas Island", "CX", "4", "0");
+INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1047", "Cocos (Keeling) Islands", "CC", "4", "0");
+INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1048", "Colombia", "CO", "2", "0");
+INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1049", "Comoros", "KM", "5", "0");
+INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1050", "Congo, The Democratic Republic of the", "CD", "5", "0");
+INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1051", "Congo, Republic of the", "CG", "5", "0");
+INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1052", "Cook Islands", "CK", "4", "0");
+INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1053", "Costa Rica", "CR", "2", "0");
+INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1054", "Côte d’Ivoire", "CI", "5", "0");
+INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1055", "Croatia", "HR", "1", "0");
+INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1056", "Cuba", "CU", "2", "0");
+INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1057", "Cyprus", "CY", "1", "0");
+INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1058", "Czech Republic", "CZ", "1", "0");
+INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1059", "Denmark", "DK", "1", "0");
+INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1060", "Djibouti", "DJ", "5", "0");
+INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1061", "Dominica", "DM", "2", "0");
+INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1062", "Dominican Republic", "DO", "2", "0");
+INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1063", "Timor-Leste", "TL", "4", "0");
+INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1064", "Ecuador", "EC", "2", "0");
+INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1065", "Egypt", "EG", "3", "0");
+INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1066", "El Salvador", "SV", "2", "0");
+INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1067", "Equatorial Guinea", "GQ", "5", "0");
+INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1068", "Eritrea", "ER", "5", "0");
+INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1069", "Estonia", "EE", "1", "0");
+INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1070", "Ethiopia", "ET", "5", "0");
+-- INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1071", "European Union", "EU", "1", "0");
+INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1072", "Falkland Islands (Malvinas)", "FK", "2", "0");
+INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1073", "Faroe Islands", "FO", "1", "0");
+INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1074", "Fiji", "FJ", "4", "0");
+INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1075", "Finland", "FI", "1", "0");
+INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1076", "France", "FR", "1", "0");
+INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1077", "French Guiana", "GF", "2", "0");
+INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1078", "French Polynesia", "PF", "4", "0");
+INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1079", "French Southern Territories", "TF", "1", "0");
+INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1080", "Gabon", "GA", "5", "0");
+INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1081", "Georgia", "GE", "3", "0");
+INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1082", "Germany", "DE", "1", "0");
+INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1083", "Ghana", "GH", "5", "0");
+INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1084", "Gibraltar", "GI", "1", "0");
+INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1085", "Greece", "GR", "1", "0");
+INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1086", "Greenland", "GL", "2", "0");
+INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1087", "Grenada", "GD", "2", "0");
+INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1088", "Guadeloupe", "GP", "2", "0");
+INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1089", "Guam", "GU", "4", "0");
+INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1090", "Guatemala", "GT", "2", "0");
+INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1091", "Guinea", "GN", "5", "0");
+INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1092", "Guinea-Bissau", "GW", "5", "0");
+INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1093", "Guyana", "GY", "2", "0");
+INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1094", "Haiti", "HT", "2", "0");
+INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1095", "Heard Island and McDonald Islands", "HM", "4", "0");
+INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1096", "Holy See (Vatican City State)", "VA", "1", "0");
+INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1097", "Honduras", "HN", "2", "0");
+INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1098", "Hong Kong", "HK", "4", "0");
+INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1099", "Hungary", "HU", "1", "0");
+INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1100", "Iceland", "IS", "1", "0");
+INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1101", "India", "IN", "4", "0");
+INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1102", "Indonesia", "ID", "4", "0");
+INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1103", "Iran, Islamic Republic Of", "IR", "3", "0");
+INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1104", "Iraq", "IQ", "3", "0");
+INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1105", "Ireland", "IE", "1", "0");
+INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1106", "Israel", "IL", "3", "0");
+INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1107", "Italy", "IT", "1", "0");
+INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1108", "Jamaica", "JM", "2", "0");
+INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1109", "Japan", "JP", "4", "0");
+INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1110", "Jordan", "JO", "3", "0");
+INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1111", "Kazakhstan", "KZ", "1", "0");
+INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1112", "Kenya", "KE", "5", "0");
+INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1113", "Kiribati", "KI", "4", "0");
+INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1114", "Korea, Democratic People\'s Republic of", "KP", "4", "0");
+INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1115", "Korea, Republic of", "KR", "4", "0");
+INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1116", "Kuwait", "KW", "3", "0");
+INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1117", "Kyrgyzstan", "KG", "1", "0");
+INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1118", "Lao People\'s Democratic Republic", "LA", "4", "0");
+INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1119", "Latvia", "LV", "1", "0");
+INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1120", "Lebanon", "LB", "3", "0");
+INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1121", "Lesotho", "LS", "5", "0");
+INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1122", "Liberia", "LR", "5", "0");
+INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1123", "Libya", "LY", "3", "0");
+INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1124", "Liechtenstein", "LI", "1", "0");
+INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1125", "Lithuania", "LT", "1", "0");
+INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1126", "Luxembourg", "LU", "1", "0");
+INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1127", "Macao", "MO", "4", "0");
+INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1128", "Macedonia, Republic Of", "MK", "1", "0");
+INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1129", "Madagascar", "MG", "5", "0");
+INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1130", "Malawi", "MW", "5", "0");
+INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1131", "Malaysia", "MY", "4", "0");
+INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1132", "Maldives", "MV", "4", "0");
+INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1133", "Mali", "ML", "5", "0");
+INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1134", "Malta", "MT", "1", "0");
+INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1135", "Marshall Islands", "MH", "4", "0");
+INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1136", "Martinique", "MQ", "2", "0");
+INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1137", "Mauritania", "MR", "5", "0");
+INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1138", "Mauritius", "MU", "5", "0");
+INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1139", "Mayotte", "YT", "5", "0");
+INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1140", "Mexico", "MX", "2", "0");
+INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1141", "Micronesia, Federated States of", "FM", "4", "0");
+INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1142", "Moldova", "MD", "1", "0");
+INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1143", "Monaco", "MC", "1", "0");
+INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1144", "Mongolia", "MN", "4", "0");
+INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1145", "Montserrat", "MS", "2", "0");
+INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1146", "Morocco", "MA", "3", "0");
+INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1147", "Mozambique", "MZ", "5", "0");
+INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1148", "Namibia", "NA", "5", "0");
+INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1149", "Nauru", "NR", "4", "0");
+INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1150", "Nepal", "NP", "4", "0");
+INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1152", "Netherlands", "NL", "1", "0");
+INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1153", "New Caledonia", "NC", "4", "0");
+INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1154", "New Zealand", "NZ", "4", "0");
+INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1155", "Nicaragua", "NI", "2", "0");
+INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1156", "Niger", "NE", "5", "0");
+INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1157", "Nigeria", "NG", "5", "0");
+INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1158", "Niue", "NU", "4", "0");
+INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1159", "Norfolk Island", "NF", "4", "0");
+INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1160", "Northern Mariana Islands", "MP", "2", "0");
+INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1161", "Norway", "NO", "1", "0");
+INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1162", "Oman", "OM", "3", "0");
+INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1163", "Pakistan", "PK", "4", "0");
+INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1164", "Palau", "PW", "4", "0");
+INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1165", "Palestinian Territory", "PS", "3", "0");
+INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1166", "Panama", "PA", "2", "0");
+INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1167", "Papua New Guinea", "PG", "4", "0");
+INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1168", "Paraguay", "PY", "2", "0");
+INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1169", "Peru", "PE", "2", "0");
+INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1170", "Philippines", "PH", "4", "0");
+INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1171", "Pitcairn", "PN", "4", "0");
+INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1172", "Poland", "PL", "1", "0");
+INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1173", "Portugal", "PT", "1", "0");
+INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1174", "Puerto Rico", "PR", "2", "0");
+INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1175", "Qatar", "QA", "3", "0");
+INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1176", "Romania", "RO", "1", "0");
+INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1177", "Russian Federation", "RU", "1", "0");
+INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1178", "Rwanda", "RW", "5", "0");
+INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1179", "Reunion", "RE", "5", "0");
+INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1180", "Saint Helena", "SH", "5", "0");
+INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1181", "Saint Kitts and Nevis", "KN", "2", "0");
+INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1182", "Saint Lucia", "LC", "2", "0");
+INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1183", "Saint Pierre and Miquelon", "PM", "2", "0");
+INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1184", "Saint Vincent and the Grenadines", "VC", "2", "0");
+INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1185", "Samoa", "WS", "4", "0");
+INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1186", "San Marino", "SM", "1", "0");
+INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1187", "Saudi Arabia", "SA", "3", "0");
+INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1188", "Senegal", "SN", "5", "0");
+INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1189", "Seychelles", "SC", "5", "0");
+INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1190", "Sierra Leone", "SL", "5", "0");
+INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1191", "Singapore", "SG", "4", "0");
+INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1192", "Slovakia", "SK", "1", "0");
+INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1193", "Slovenia", "SI", "1", "0");
+INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1194", "Solomon Islands", "SB", "4", "0");
+INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1195", "Somalia", "SO", "5", "0");
+INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1196", "South Africa", "ZA", "5", "0");
+INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1197", "South Georgia and the South Sandwich Islands", "GS", "2", "0");
+INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1198", "Spain", "ES", "1", "0");
+INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1199", "Sri Lanka", "LK", "4", "0");
+INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1200", "Sudan", "SD", "3", "0");
+INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1201", "Suriname", "SR", "2", "0");
+INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1202", "Svalbard and Jan Mayen", "SJ", "1", "0");
+INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1203", "Swaziland", "SZ", "5", "0");
+INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1204", "Sweden", "SE", "1", "0");
+INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1205", "Switzerland", "CH", "1", "0");
+INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1206", "Syrian Arab Republic", "SY", "3", "0");
+INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1207", "Sao Tome and Principe", "ST", "5", "0");
+INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1208", "Taiwan", "TW", "4", "0");
+INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1209", "Tajikistan", "TJ", "3", "0");
+INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1210", "Tanzania, United Republic of", "TZ", "5", "0");
+INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1211", "Thailand", "TH", "4", "0");
+INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1212", "Bahamas", "BS", "2", "0");
+INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1213", "Gambia", "GM", "5", "0");
+INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1214", "Togo", "TG", "5", "0");
+INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1215", "Tokelau", "TK", "4", "0");
+INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1216", "Tonga", "TO", "4", "0");
+INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1217", "Trinidad and Tobago", "TT", "2", "0");
+INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1218", "Tunisia", "TN", "3", "0");
+INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1219", "Turkey", "TR", "1", "0");
+INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1220", "Turkmenistan", "TM", "1", "0");
+INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1221", "Turks and Caicos Islands", "TC", "2", "0");
+INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1222", "Tuvalu", "TV", "4", "0");
+INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1223", "Uganda", "UG", "5", "0");
+INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1224", "Ukraine", "UA", "1", "0");
+INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1225", "United Arab Emirates", "AE", "3", "0");
+INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1226", "United Kingdom", "GB", "1", "0");
+INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1227", "United States Minor Outlying Islands", "UM", "2", "0");
+INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1228", "United States", "US", "2", "1");
+INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1229", "Uruguay", "UY", "2", "0");
+INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1230", "Uzbekistan", "UZ", "1", "0");
+INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1231", "Vanuatu", "VU", "4", "0");
+INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1232", "Venezuela", "VE", "2", "0");
+INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1233", "Viet Nam", "VN", "4", "0");
+INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1234", "Virgin Islands, U.S.", "VI", "2", "0");
+INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1235", "Wallis and Futuna", "WF", "4", "0");
+INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1236", "Western Sahara", "EH", "3", "0");
+INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1237", "Yemen", "YE", "3", "0");
+INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1238", "Serbia and Montenegro", "CS", "1", "0");
+INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1239", "Zambia", "ZM", "5", "0");
+INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1240", "Zimbabwe", "ZW", "5", "0");
+INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1241", "Åland Islands", "AX", "1", "0");
+INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1242", "Serbia", "RS", "1", "0");
+INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1243", "Montenegro", "ME", "1", "0");
+INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1244", "Jersey", "JE", "99", "0");
+INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1245", "Guernsey", "GG", "99", "0");
+INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1246", "Isle of Man", "IM", "99", "0");
+INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1247", "South Sudan", "SS", "5", "0");
+INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1248", "Curaçao", "CW", "2", "0");
+INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1249", "Sint Maarten (Dutch Part)", "SX", "2", "0");
+INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1250", "Bonaire, Saint Eustatius and Saba", "BQ", "2", "0");
+INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1251", "Kosovo", "XK", "1", "0");
+INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1252", "Saint Barthélemy", "BL", "2", "0");
+INSERT INTO civicrm_country (id, name,iso_code,region_id,is_province_abbreviated) VALUES("1253", "Saint Martin (French part)", "MF", "2", "0");
 -- +--------------------------------------------------------------------+
 -- | CiviCRM version 4.7                                                |
 -- +--------------------------------------------------------------------+
@@ -3726,7 +3726,7 @@ INSERT INTO civicrm_state_province (id, country_id, abbreviation, name) VALUES
 (4978, 1227, "71", "Midway Islands"),
 (4979, 1227, "76", "Navassa Island"),
 (4980, 1227, "95", "Palmyra Atoll"),
-(4981, 1227, "79", "Wake Ialand"),
+(4981, 1227, "79", "Wake Island"),
 (4982, 1229, "AR", "Artigsa"),
 (4983, 1229, "CA", "Canelones"),
 (4984, 1229, "CL", "Cerro Largo"),
@@ -4306,7 +4306,14 @@ INSERT INTO civicrm_state_province (id, country_id, abbreviation, name) VALUES
 (NULL, 1101, "TG", "Telangana"),
 
 -- CRM-17800
-(NULL, 1187, "04", "Ash Sharqiyah");
+(NULL, 1187, "04", "Ash Sharqiyah"),
+
+-- CRM-19134 Missing French overseas departments.
+(NULL, 1076, "GP", "Guadeloupe"),
+(NULL, 1076, "MQ", "Martinique"),
+(NULL, 1076, "GF", "Guyane"),
+(NULL, 1076, "RE", "La Réunion"),
+(NULL, 1076, "YT", "Mayotte");
 -- +--------------------------------------------------------------------+
 -- | CiviCRM version 4.7                                                |
 -- +--------------------------------------------------------------------+
@@ -4658,7 +4665,7 @@ VALUES
    ('pcp_status'                    , 'PCP Status'                         , 1, 1, 1),
    ('pcp_owner_notify'              , 'PCP eigenaar notificaties'            , 1, 1, 1),
    ('participant_role'              , 'Rol van deelnemers'                   , 1, 1, 0),
-   ('event_type'                    , 'Evenementtype'                         , 1, 1, 0),
+   ('event_type'                    , 'Evenementstype'                         , 1, 1, 0),
    ('contact_view_options'          , 'Opties contact tonen'               , 1, 1, 1),
    ('contact_smart_group_display'   , 'Opties tonen contacten smartgroep'   , 1, 1, 1),
    ('contact_edit_options'          , 'Opties contact wijzigen'               , 1, 1, 1),
@@ -4670,8 +4677,8 @@ VALUES
    ('grant_type'                    , 'Type toelage'                         , 1, 1, 0),
    ('custom_search'                 , 'Aangepaste zoekopdracht'                      , 1, 1, 0),
    ('activity_status'               , 'Activiteitsstatus'                    , 1, 1, 0),
-   ('case_type'                     , 'Dossier type'                          , 1, 1, 0),
-   ('case_status'                   , 'Dossiertype'                        , 1, 1, 0),
+   ('case_type'                     , 'Dossiertype'                          , 1, 1, 0),
+   ('case_status'                   , 'Dossierstatus'                        , 1, 1, 0),
    ('participant_listing'           , 'Deelnemers overzicht'                , 1, 1, 0),
    ('safe_file_extension'           , 'Veilige bestandsextensies'                , 1, 1, 0),
    ('from_email_address'            , 'E-mailadres afzender'                 , 1, 1, 0),
@@ -4843,7 +4850,7 @@ VALUES
    (@option_group_id_act, 'Massa-mail',                         19, 'Bulk Email',         NULL, 1, NULL, 19, 'Massa-mail verzonden.',                                                    0, 1, 1, NULL, NULL),
    (@option_group_id_act, 'Dossierrol toewijzen',                   20, 'Assign Case Role', NULL,0, 0, 20, '', 0, 1, 1, @caseCompId, NULL),
    (@option_group_id_act, 'Verwijder dossierrol',                   21, 'Remove Case Role', NULL,0, 0, 21, '', 0, 1, 1, @caseCompId, NULL),
-   (@option_group_id_act, 'PDF-brief afdrukken',                   22, 'Print PDF Letter',    NULL, 0, NULL, 22, 'PDF-brief afdrukken.',                                                  0, 1, 1, NULL, NULL),
+   (@option_group_id_act, 'Print/Merge Document',               22, 'Print PDF Letter',    NULL, 0, NULL, 22, 'Export letters and other printable documents.',                                                  0, 1, 1, NULL, NULL),
    (@option_group_id_act, 'Voeg dossiers samen',                         23, 'Merge Case', NULL, 0,  NULL, 23, '', 0, 1, 1, @caseCompId, NULL ),
    (@option_group_id_act, 'Opnieuw toegewezen dossier',                    24, 'Reassigned Case', NULL, 0,  NULL, 24, '', 0, 1, 1, @caseCompId, NULL ),
    (@option_group_id_act, 'Link dossiers',                         25, 'Link Cases', NULL, 0,  NULL, 25, '', 0, 1, 1, @caseCompId, NULL ),
@@ -4898,6 +4905,9 @@ VALUES
   -- Activity Type for failed payment
    (@option_group_id_act, 'Failed Payment', 53, 'Failed Payment', NULL, 1, 0, 53, 'Failed Payment', 0, 1, 1, @contributeCompId, NULL),
 
+  -- Activity Type for Close Accounting Period
+   (@option_group_id_act, 'Close Accounting Period', 54, 'Close Accounting Period', NULL, 1, 0, 54, 'Close Accounting Period', 0, 1, 1, @contributeCompId, NULL),
+
    (@option_group_id_gender, 'Vrouw',      1, 'Female',      NULL, 0, NULL, 1, NULL, 0, 0, 1, NULL, NULL),
    (@option_group_id_gender, 'Man',        2, 'Male',        NULL, 0, NULL, 2, NULL, 0, 0, 1, NULL, NULL),
    (@option_group_id_gender, 'Transgender', 3, 'Transgender', NULL, 0, NULL, 3, NULL, 0, 0, 1, NULL, NULL),
@@ -4936,7 +4946,7 @@ VALUES
    (@option_group_id_acc, 'Discover'  ,  4, 'Discover'  , NULL, 0, NULL, 4, NULL, 0, 0, 1, NULL, NULL),
 
   (@option_group_id_pi, 'Creditcard',  1, 'Credit Card', NULL, 0, 0, 1, NULL, 0, 1, 1, NULL, NULL),
-  (@option_group_id_pi, 'Debit Card',   2, 'Debit Card',  NULL, 0, 0, 2, NULL, 0, 1, 1, NULL, NULL),
+  (@option_group_id_pi, 'Debitcard',   2, 'Debit Card',  NULL, 0, 0, 2, NULL, 0, 1, 1, NULL, NULL),
   (@option_group_id_pi, 'Cash',         3, 'Cash',        NULL, 0, 0, 3, NULL, 0, 0, 1, NULL, NULL),
   (@option_group_id_pi, 'Cheque',        4, 'Check',       NULL, 0, 1, 4, NULL, 0, 1, 1, NULL, NULL),
   (@option_group_id_pi, 'EFT',          5, 'EFT',         NULL, 0, 0, 5, NULL, 0, 0, 1, NULL, NULL),
@@ -4950,7 +4960,7 @@ VALUES
   (@option_group_id_cs, 'Terugbetaald'   , 7, 'Refunded'   , NULL, 0, NULL, 7, NULL, 0, 1, 1, NULL, NULL),
   (@option_group_id_cs, 'Gedeeltelijk betaald', 8, 'Partially paid', NULL, 0, NULL, 8, NULL, 0, 1, 1, NULL, NULL),
   (@option_group_id_cs, 'Openstaande terugbetaling', 9, 'Pending refund', NULL, 0, NULL, 9, NULL, 0, 1, 1, NULL, NULL),
-  (@option_group_id_cs, 'Terugvorderen', 10, 'Chargeback', NULL, 0, NULL, 10, NULL, 0, 1, 1, NULL, NULL),
+  (@option_group_id_cs, 'Terugboeking', 10, 'Chargeback', NULL, 0, NULL, 10, NULL, 0, 1, 1, NULL, NULL),
 
   (@option_group_id_pcp, 'Ter goedkeuring', 1, 'Waiting Review', NULL, 0, NULL, 1, NULL, 0, 1, 1, NULL, NULL),
   (@option_group_id_pcp, 'Goed gekeurd'      , 2, 'Approved'      , NULL, 0, NULL, 2, NULL, 0, 1, 1, NULL, NULL),
@@ -4998,7 +5008,7 @@ VALUES
   (@option_group_id_ceOpt, 'Communicatievoorkeuren',   3, 'CommunicationPreferences', NULL, 0, NULL, 3, NULL, 0, 0, 1, NULL, NULL),
   (@option_group_id_ceOpt, 'Notities'                    ,   4, 'Notes', NULL, 0, NULL, 4, NULL, 0, 0, 1, NULL, NULL),
   (@option_group_id_ceOpt, 'Demografie'             ,   5, 'Demographics', NULL, 0, NULL, 5, NULL, 0, 0, 1, NULL, NULL),
-  (@option_group_id_ceOpt, 'Kenmerken en Groepen'          ,   6, 'TagsAndGroups', NULL, 0, NULL, 6, NULL, 0, 0, 1, NULL, NULL),
+  (@option_group_id_ceOpt, 'Kenmerken en groepen'          ,   6, 'TagsAndGroups', NULL, 0, NULL, 6, NULL, 0, 0, 1, NULL, NULL),
   (@option_group_id_ceOpt, 'E-mail'                    ,   7, 'Email', NULL, 1, NULL, 7, NULL, 0, 0, 1, NULL, NULL),
   (@option_group_id_ceOpt, 'Telefoon'                    ,   8, 'Phone', NULL, 1, NULL, 8, NULL, 0, 0, 1, NULL, NULL),
   (@option_group_id_ceOpt, 'Instant Messenger'        ,   9, 'IM', NULL, 1, NULL, 9, NULL, 0, 0, 1, NULL, NULL),
@@ -5140,13 +5150,14 @@ VALUES
   (@option_group_id_report, 'Rapport Bijdrage Logging (Detail)', 'logging/contribute/detail', 'CRM_Report_Form_Contribute_LoggingDetail', NULL, 0, NULL, 41, 'Rapport Bijdrage aanpassingen voor logging infrastructuur (gedetailleerd).', 0, 0, 0, @contributeCompId, NULL),
   (@option_group_id_report, 'Rapport toelagen (statistieken)', 'grant/statistics', 'CRM_Report_Form_Grant_Statistics', NULL, 0, NULL, 42, 'Toont statistieken voor toelagen.', 0, 0, 1, @grantCompId, NULL),
   (@option_group_id_report, 'Detailrapport enquête',    'survey/detail', 'CRM_Report_Form_Campaign_SurveyDetails',  NULL, 0, NULL, 43, 'Gedetailleerd rapport voor onderzoeken, telebankieren, actielijsten en andere enquêtes.', 0, 0, 1, @campaignCompId, NULL),
-  (@option_group_id_report, 'Rapport Persoonlijke Campagne', 'contribute/pcp', 'CRM_Report_Form_Contribute_PCP', NULL, 0, NULL, 44, 'Samenvatting binnengehaalde bedrag met het aantal donateurs voor alle persoonlijke campagne pagina\'s.', 0, 0, 1, @contributeCompId, NULL),
+  (@option_group_id_report, 'Rapport Persoonlijke Campagne', 'contribute/pcp', 'CRM_Report_Form_Contribute_PCP', NULL, 0, NULL, 44, 'Samenvatting binnengehaalde bedrag met het aantal donateurs voor alle persoonlijke campagnepagina\'s.', 0, 0, 1, @contributeCompId, NULL),
   (@option_group_id_report , 'Overzichtsrapport toezeggingen', 'pledge/summary', 'CRM_Report_Form_Pledge_Summary', NULL, 0, NULL, 45, 'Groeperen en totaliseren van toezeggingen op grond van criteria als contact, periode, status, plaats, ... ', 0, 0, 1, @pledgeCompId, NULL),
   (@option_group_id_report , 'Bijdragen samengevoegd per relatietype',                   'contribute/history',              'CRM_Report_Form_Contribute_History',              NULL, 0, NULL, 46,  'Overzicht donatie geschiedenis van contact, per jaar gegroepeerd, inclusief bijdragen aan het contact gerelateerde contacten.', 0, 0, 1, @contributeCompId, NULL),
   (@option_group_id_report,  'Detailrapport mailings',                                            'mailing/detail',     'CRM_Report_Form_Mailing_Detail',          NULL, 0, NULL, 47,  'Geeft een overzicht van onder meer geplande en uitgevoerde leveringen, afmeldingen, reacties.',   0, 0, 1, @mailCompId, NULL),
   (@option_group_id_report, 'Gegevens contributie en lidmaatschap', 'member/contributionDetail', 'CRM_Report_Form_Member_ContributionDetail', NULL, 0, NULL, 48, 'Informatie over alle soorten bijdragen inclusief bijbehorende lidmaatschap van bijdragen voor betalingen van lidmaatschap.', 0, 0, 1, @memberCompId, NULL),
   (@option_group_id_report, 'Periodieke Bijdragen Rapport', 'contribute/recur', 'CRM_Report_Form_Contribute_Recur',               NULL, 0, NULL, 49, 'Geeft informatie over periodieke bijdragen.', 0, 0, 1, @contributeCompId, NULL),
   (@option_group_id_report, 'Overzichtsrapport periodieke bijdragen', 'contribute/recursummary', 'CRM_Report_Form_Contribute_RecurSummary',               NULL, 0, NULL, 49, 'Toont een simpele samenvatting voor alle betaalwijzen waarvoor er periodieke bijdragen bestaan (zoals creditcards en automatische incasso\'s) binnen de opgegeven datumrange.', 0, 0, 1, @contributeCompId, NULL),
+  (@option_group_id_report, 'Deferred Revenue Details', 'contribute/deferredrevenue', 'CRM_Report_Form_Contribute_DeferredRevenue', NULL, 0, NULL, 50, 'Deferred Revenue Details Report', 0, 0, 1, @contributeCompId, NULL), 
 
   (@option_group_id_acs, 'Ingepland',  1, 'Scheduled',  NULL, 0, 1,    1, NULL, 0, 1, 1, NULL, NULL),
   (@option_group_id_acs, 'Gereed',  2, 'Completed',  NULL, 0, NULL, 2, NULL, 0, 1, 1, NULL, NULL),
@@ -5178,6 +5189,7 @@ VALUES
   (@option_group_id_sfe, 'ppt',  11, 'ppt',   NULL, 0, 0, 11, NULL, 0, 0, 1, NULL, NULL),
   (@option_group_id_sfe, 'docx', 12, 'docx',  NULL, 0, 0, 12, NULL, 0, 0, 1, NULL, NULL),
   (@option_group_id_sfe, 'xlsx', 13, 'xlsx',  NULL, 0, 0, 13, NULL, 0, 0, 1, NULL, NULL),
+  (@option_group_id_sfe, 'odt',  14, 'odt',   NULL, 0, 0, 14, NULL, 0, 0, 1, NULL, NULL),
 
   (@option_group_id_we, 'Tekstvak', 1, 'Textarea', NULL, 0, NULL, 1, NULL, 0, 1, 1, NULL, NULL),
   (@option_group_id_we, 'CKEditor', 2, 'CKEditor', NULL, 0, NULL, 2, NULL, 0, 1, 1, NULL, NULL),
@@ -5382,7 +5394,7 @@ VALUES
 -- account_relationship
     (@option_group_id_arel, 'Inkomsten rekening is', 1, 'Income Account is', NULL, 0, 1, 1, 'Income Account is', 0, 1, 1, 2, NULL),
     (@option_group_id_arel, 'Credit/Tegen opbrengst-account is', 2, 'Credit/Contra Revenue Account is', NULL, 0, 0, 2, 'Credit/Contra Revenue Account is', 0, 1, 1, 2, NULL),
-    (@option_group_id_arel, 'Rekening te ontvangen betalingen is', 3, 'Accounts Receivable Account is', NULL, 0, 0, 3, 'Accounts Receivable Account is', 0, 1, 1, 2, NULL),
+    (@option_group_id_arel, 'Debiteurenrekening (te ontvangen betalingen)', 3, 'Accounts Receivable Account is', NULL, 0, 0, 3, 'Accounts Receivable Account is', 0, 1, 1, 2, NULL),
     (@option_group_id_arel, 'Credit verplichtingenrekening is', 4, 'Credit Liability Account is', NULL, 0, 0, 4, 'Credit Liability Account is', 0, 1, 0, 2, NULL),
      (@option_group_id_arel, 'Uitgavenrekening is', 5, 'Expense Account is', NULL, 0, 0, 5, 'Expense Account is', 0, 1, 1, 2, NULL),
      (@option_group_id_arel, 'Bezittingenrekening is', 6, 'Asset Account is', NULL, 0, 0, 6, 'Asset Account is', 0, 1, 1, 2, NULL),
@@ -5390,7 +5402,8 @@ VALUES
      (@option_group_id_arel, 'Geschenken Inventarisrekening is', 8, 'Premiums Inventory Account is', NULL, 0, 0, 8, 'Premiums Inventory Account is', 0, 1, 1, 2, NULL),
      (@option_group_id_arel, 'Kortingsrekening is', 9, 'Discounts Account is', NULL, 0, 0, 9, 'Discounts Account is', 0, 1, 1, 2, NULL),
      (@option_group_id_arel, 'Rekening omzetbelasting is', 10, 'Sales Tax Account is', NULL, 0, 0, 10, 'Sales Tax Account is', 0, 1, 1, 2, NULL),
-     (@option_group_id_arel, 'Rekening voor terugvorderen is', 11, 'Chargeback Account is', NULL, 0, 0, 11, 'Chargeback Account is', 0, 1, 1, 2, NULL),
+     (@option_group_id_arel, 'Rekening voor terugboekingen is', 11, 'Chargeback Account is', NULL, 0, 0, 11, 'Chargeback Account is', 0, 1, 1, 2, NULL),
+     (@option_group_id_arel, 'Deferred Revenue Account is', 12, 'Deferred Revenue Account is', NULL, 0, 0, 12, 'Deferred Revenue Account is', 0, 1, 1, 2, NULL),
 
 -- event_contacts
    (@option_group_id_ere, 'Rol van deelnemers', 1, 'participant_role', NULL, 0, NULL, 1, NULL, 0, 0, 1, NULL, NULL),
@@ -5431,7 +5444,7 @@ VALUES
    (@option_group_id_aro, 'Herinnering voor beide', 3, 'Reminder for Both', NULL, 0, NULL, 3, NULL, 0, 0, 1, NULL, NULL),
 
 -- Label Type
-   (@option_group_id_label_type, 'Evenement Badge', 1, 'Event Badge', NULL, 0, NULL, 1, NULL, 0, 0, 1, NULL, NULL),
+   (@option_group_id_label_type, 'Evenementbadge', 1, 'Event Badge', NULL, 0, NULL, 1, NULL, 0, 0, 1, NULL, NULL),
 
 -- Name Label format
    (@option_group_id_name_badge, 'Avery 5395', '{"name":"Avery 5395","paper-size":"a4","metric":"mm","lMargin":15,"tMargin":26,"NX":2,"NY":4,"SpaceX":10,"SpaceY":5,"width":83,"height":57,"font-size":12,"orientation":"portrait","font-name":"helvetica","font-style":"","lPadding":3,"tPadding":3}', 'Avery 5395', NULL, 0, NULL, 1, NULL, 0, 0, 1, NULL, NULL),
@@ -5462,7 +5475,7 @@ VALUES
 (@option_group_id_msg_mode, 'Gebruikersvoorkeur', 'User_Preference', 'User Preference', NULL, 0, 0, 3, NULL, 0, 1, 1, NULL, NULL),
 
 -- Reminder Options for Contact Date Fields
-(@option_group_id_contactDateMode, 'Alleen vandaag', '1', 'Actual date only', NULL, NULL, 0, 1, NULL, 0, 1, 1, NULL, NULL),
+(@option_group_id_contactDateMode, 'Alleen deze datum', '1', 'Actual date only', NULL, NULL, 0, 1, NULL, 0, 1, 1, NULL, NULL),
 (@option_group_id_contactDateMode, 'Elke verjaardag', '2', 'Each anniversary', NULL, NULL, 0, 2, NULL, 0, 1, 1, NULL, NULL),
 
 -- Relative Date Filters
@@ -5545,12 +5558,14 @@ VALUES
   ( 'Kosten deelname evenement'            , @contactID, @opval, 'Default account for event ticket sales', '4300', 'INC', 0, 1, 0, 0 ),
   ( 'Bankkosten'         , @contactID, @opexp, 'Payment processor fees and manually recorded banking fees', '5200', 'EXP', 0, 1, 0, 1 ),
   ( 'Deposito rekening' , @contactID, @opAsset, 'All manually recorded cash and cheques go to this account', '1100', 'BANK', 0, 1, 0, 1 ),
-  ( 'Rekeningen ontvangsten'  , @contactID, @opAsset, 'Amounts to be received later (eg pay later event revenues)', '1200', 'AR', 0, 1, 0, 0 ),
-  ( 'Rekeningen betalingen'     , @contactID, @opLiability, 'Amounts to be paid out such as grants and refunds', '2200', 'AP', 0, 1, 0, 1 ),
+  ( 'Debiteuren'  , @contactID, @opAsset, 'Amounts to be received later (eg pay later event revenues)', '1200', 'AR', 0, 1, 0, 0 ),
+  ( 'Crediteuren'     , @contactID, @opLiability, 'Amounts to be paid out such as grants and refunds', '2200', 'AP', 0, 1, 0, 1 ),
   ( 'Relatiegeschenken'             , @contactID, @opCost, 'Account to record cost of premiums provided to payors', '5100', 'COGS', 0, 1, 0, 1 ),
   ( 'Geschenken inventaris'   , @contactID, @opAsset, 'Account representing value of premiums inventory', '1375', 'OCASSET', 0, 1, 0, 0 ),
   ( 'Kortingen'            , @contactID, @opval, 'Contra-revenue account for amounts discounted from sales', '4900', 'INC', 0, 1, 0, 0 ),
-  ( 'Betaalmethode rekening', @contactID, @opAsset, 'Account to record payments into a payment processor merchant account', '1150', 'BANK', 0, 1, 0, 0
+  ( 'Betaalmethode rekening', @contactID, @opAsset, 'Account to record payments into a payment processor merchant account', '1150', 'BANK', 0, 1, 0, 0),
+  ( 'Deferred Revenue - Event Fee', @contactID, @opLiability, 'Event revenue to be recognized in future months when the events occur', '2730', 'OCLIAB', 0, 1, 0, 0),
+  ( 'Deferred Revenue - Member Dues', @contactID, @opLiability, 'Membership revenue to be recognized in future months', '2740', 'OCLIAB', 0, 1, 0, 0
 );
 
 -- Now insert option values which require domainID
@@ -5677,7 +5692,7 @@ VALUES
   (@option_group_id_languages, 0, 0, 'iu_CA', 'iu', 'Inuktitut', @counter := @counter + 1),
   (@option_group_id_languages, 0, 1, 'ja_JP', 'ja', 'Japans', @counter := @counter + 1),
   (@option_group_id_languages, 0, 0, 'jv_ID', 'jv', 'Javaans', @counter := @counter + 1),
-  (@option_group_id_languages, 0, 0, 'kl_GL', 'kl', 'Kalaallisut, Greoenlands', @counter := @counter + 1),
+  (@option_group_id_languages, 0, 0, 'kl_GL', 'kl', 'Kalaallisut, Groenlands', @counter := @counter + 1),
   (@option_group_id_languages, 0, 0, 'kn_IN', 'kn', 'Kannada', @counter := @counter + 1),
   (@option_group_id_languages, 0, 0, 'kr_NE', 'kr', 'Kanuri', @counter := @counter + 1),
   (@option_group_id_languages, 0, 0, 'ks_IN', 'ks', 'Kashmiri', @counter := @counter + 1),
@@ -5841,7 +5856,7 @@ INSERT INTO `civicrm_payment_processor_type`
  (name, title, description, is_active, is_default, user_name_label, password_label, signature_label, subject_label, class_name, url_site_default, url_api_default, url_recur_default, url_button_default, url_site_test_default, url_api_test_default, url_recur_test_default, url_button_test_default, billing_mode, is_recur )
 VALUES
  ('PayPal_Standard',    'PayPal - Website Payments Standard', NULL,1,0,'Merchant Account E-mail',NULL,NULL,NULL,'Payment_PayPalImpl','https://www.paypal.com/',NULL,'https://www.paypal.com/',NULL,'https://www.sandbox.paypal.com/',NULL,'https://www.sandbox.paypal.com/',NULL,4,1),
- ('PayPal',             'PayPal - Website Payments Pro',      NULL,1,0,'Gebruikersnaam','Wachtwoord','Handtekening',NULL,'Payment_PayPalImpl','https://www.paypal.com/','https://api-3t.paypal.com/','https://www.paypal.com/','https://www.paypal.com/en_US/i/btn/btn_xpressCheckout.gif','https://www.sandbox.paypal.com/','https://api-3t.sandbox.paypal.com/','https://www.sandbox.paypal.com/','https://www.paypal.com/en_US/i/btn/btn_xpressCheckout.gif',3, 1 ),
+ ('PayPal',             'PayPal - Website Payments Pro',      NULL,1,0,'Gebruikersnaam','Wachtwoord','Handtekening',NULL,'Payment_PayPalImpl','https://www.paypal.com/','https://api-3t.paypal.com/','https://www.paypal.com/','https://www.paypal.com/en_US/i/btn/btn_xpressCheckout.gif','https://www.sandbox.paypal.com/','https://api-3t.sandbox.paypal.com/','https://www.sandbox.paypal.com/','https://www.paypal.com/en_US/i/btn/btn_xpressCheckout.gif',3, 1),
  ('PayPal_Express',     'PayPal - Express',       NULL,1,0,'Gebruikersnaam','Wachtwoord','Handtekening',NULL,'Payment_PayPalImpl','https://www.paypal.com/','https://api-3t.paypal.com/',NULL,'https://www.paypal.com/en_US/i/btn/btn_xpressCheckout.gif','https://www.sandbox.paypal.com/','https://api-3t.sandbox.paypal.com/',NULL,'https://www.paypal.com/en_US/i/btn/btn_xpressCheckout.gif',2, 1),
  ('AuthNet',            'Authorize.Net',          NULL,1,0,'API-login','Betaal sleutel','MD5-hash',NULL,'Payment_AuthorizeNet','https://secure2.authorize.net/gateway/transact.dll',NULL,'https://api2.authorize.net/xml/v1/request.api',NULL,'https://test.authorize.net/gateway/transact.dll',NULL,'https://apitest.authorize.net/xml/v1/request.api',NULL,1,1),
  ('PayJunction',        'PayJunction',            NULL,1,0,'User Name','Password',NULL,NULL,'Payment_PayJunction','https://payjunction.com/quick_link',NULL,NULL,NULL,'https://www.payjunctionlabs.com/quick_link',NULL,NULL,NULL,1,1),
@@ -5849,8 +5864,8 @@ VALUES
  ('Payment_Express',    'DPS Payment Express',    NULL,1,0,'User ID','Key','Mac Key - pxaccess only',NULL,'Payment_PaymentExpress','https://www.paymentexpress.com/pleaseenteraurl',NULL,NULL,NULL,'https://www.paymentexpress.com/pleaseenteratesturl',NULL,NULL,NULL,4,0),
  ('Dummy',              'Dummy Betaalmethode',NULL,1,1,'Gebruikersnaam',NULL,NULL,NULL,'Payment_Dummy',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,1,1),
  ('Elavon',             'Elavon Betaalmethode','Elavon / Nova Virtual Merchant',1,0,'SSL Merchant ID ','SSL User ID','SSL PIN',NULL,'Payment_Elavon','https://www.myvirtualmerchant.com/VirtualMerchant/processxml.do',NULL,NULL,NULL,'https://www.myvirtualmerchant.com/VirtualMerchant/processxml.do',NULL,NULL,NULL,1,0),
- ('Realex',             'Realex Payment',         NULL,1,0,'Merchant ID', 'Password', NULL, 'Account', 'Payment_Realex', 'https://epage.payandshop.com/epage.cgi', NULL, NULL, NULL, 'https://epage.payandshop.com/epage-remote.cgi', NULL, NULL, NULL, 1, 0 ),
- ('PayflowPro',         'PayflowPro',             NULL,1,0,'Vendor ID', 'Password', 'Partner (merchant)', 'User', 'Payment_PayflowPro', 'https://Payflowpro.paypal.com', NULL, NULL, NULL, 'https://pilot-Payflowpro.paypal.com', NULL, NULL, NULL, 1, 0 ),
+ ('Realex',             'Realex Payment',         NULL,1,0,'Merchant ID', 'Password', NULL, 'Account', 'Payment_Realex', 'https://epage.payandshop.com/epage.cgi', NULL, NULL, NULL, 'https://epage.payandshop.com/epage-remote.cgi', NULL, NULL, NULL, 1, 0),
+ ('PayflowPro',         'PayflowPro',             NULL,1,0,'Vendor ID', 'Password', 'Partner (merchant)', 'User', 'Payment_PayflowPro', 'https://Payflowpro.paypal.com', NULL, NULL, NULL, 'https://pilot-Payflowpro.paypal.com', NULL, NULL, NULL, 1, 0),
  ('FirstData',          'FirstData (aka linkpoint)', 'FirstData (aka linkpoint)', 1, 0, 'Store name', 'certificate path', NULL, NULL, 'Payment_FirstData', 'https://secure.linkpt.net', NULL, NULL, NULL, 'https://staging.linkpt.net', NULL, NULL, NULL, 1, NULL);
 
 
@@ -6081,7 +6096,7 @@ INSERT INTO civicrm_mailing_bounce_pattern
 
 INSERT INTO civicrm_mailing_bounce_type
         (name, description, hold_threshold)
-        VALUES ('Loop', 'Mail routeer fout', 3);
+        VALUES ('Loop', 'Mail routeringsfout', 3);
 
 SELECT @bounceTypeID := max(id) FROM civicrm_mailing_bounce_type WHERE name = 'Loop';
 INSERT INTO civicrm_mailing_bounce_pattern
@@ -6302,8 +6317,8 @@ INSERT INTO civicrm_participant_status_type
   (2,  'Attended',                            'Deelgenomen',                            'Positive', 0,           1,         1,          2,      2            ),
   (3,  'No-show',                             'Niet gekomen',                             'Negative', 0,           1,         0,          3,      2            ),
   (4,  'Cancelled',                           'Geannuleerd',                           'Negative', 1,           1,         0,          4,      2            ),
-  (5,  'Pending from pay later',              'In afwachting (later betalen)',                 'Pending',  1,           1,         1,          5,      2            ),
-  (6,  'Pending from incomplete transaction', 'In afwachting (onvolledige transactie)',    'Pending',  1,           1,         0,          6,      2            ),
+  (5,  'Pending from pay later',              'In behandeling (later betalen)',                 'Pending',  1,           1,         1,          5,      2            ),
+  (6,  'Pending from incomplete transaction', 'In behandeling (onvolledige transactie)',    'Pending',  1,           1,         0,          6,      2            ),
   (7,  'On waitlist',                         'Op wachtlijst',                         'Waiting',  1,           0,         0,          7,      2            ),
   (8,  'Awaiting approval',                   'In afwachting van goedkeuring',                   'Waiting',  1,           0,         1,          8,      2            ),
   (9,  'Pending from waitlist',               'Afhankelijk van wachtlijst',               'Pending',  1,           0,         1,          9,      2            ),
@@ -6363,7 +6378,7 @@ INSERT INTO `civicrm_contact_type`
 
 INSERT INTO civicrm_option_group
   (name,                         title,            description,      is_reserved, is_active) VALUES
-    ('msg_tpl_workflow_case', 'Berichtsjabloon voor workflow bij dossiers',               'Berichtsjabloon voor workflow bij dossiers',                     1,           1) ,    ('msg_tpl_workflow_contribution', 'Berichtsjabloon voor workflow bij donaties',               'Berichtsjabloon voor workflow bij donaties',                     1,           1) ,    ('msg_tpl_workflow_event', 'Berichtsjabloon voor workflow bij evenementen',               'Berichtsjabloon voor workflow bij evenementen',                     1,           1) ,    ('msg_tpl_workflow_friend', 'Berichtsjabloon voor workflow bij Vertel-het-een-vriend',               'Berichtsjabloon voor workflow bij Vertel-het-een-vriend',                     1,           1) ,    ('msg_tpl_workflow_membership', 'Berichtsjabloon voor workflow bij lidmaatschappen',               'Berichtsjabloon voor workflow bij lidmaatschappen',                     1,           1) ,    ('msg_tpl_workflow_meta', 'Werkstroomberichtsjabloon voor meta sjablonen',               'Werkstroomberichtsjabloon voor meta sjablonen',                     1,           1) ,    ('msg_tpl_workflow_pledge', 'Berichtsjabloon voor workflow bij toezeggingen',               'Berichtsjabloon voor workflow bij toezeggingen',                     1,           1) ,    ('msg_tpl_workflow_uf', 'Berichtsjabloon voor workflow bij profielen',               'Berichtsjabloon voor workflow bij profielen',                     1,           1) ,    ('msg_tpl_workflow_petition', 'Berichtsjabloon voor workflow bij petities',               'Berichtsjabloon voor workflow bij petities',                     1,           1) ;
+    ('msg_tpl_workflow_case', 'Berichtsjabloon voor workflow bij dossiers',               'Berichtsjabloon voor workflow bij dossiers',                     1,           1) ,    ('msg_tpl_workflow_contribution', 'Berichtsjabloon voor workflow bij donaties',               'Berichtsjabloon voor workflow bij donaties',                     1,           1) ,    ('msg_tpl_workflow_event', 'Berichtsjabloon voor workflow bij evenementen',               'Berichtsjabloon voor workflow bij evenementen',                     1,           1) ,    ('msg_tpl_workflow_friend', 'Berichtsjablonen werkstroom voor mond-tot-mondreclame',               'Berichtsjablonen werkstroom voor mond-tot-mondreclame',                     1,           1) ,    ('msg_tpl_workflow_membership', 'Berichtsjabloon voor workflow bij lidmaatschappen',               'Berichtsjabloon voor workflow bij lidmaatschappen',                     1,           1) ,    ('msg_tpl_workflow_meta', 'Werkstroomberichtsjabloon voor metasjablonen',               'Werkstroomberichtsjabloon voor metasjablonen',                     1,           1) ,    ('msg_tpl_workflow_pledge', 'Berichtsjabloon voor workflow bij toezeggingen',               'Berichtsjabloon voor workflow bij toezeggingen',                     1,           1) ,    ('msg_tpl_workflow_uf', 'Berichtsjabloon voor workflow bij profielen',               'Berichtsjabloon voor workflow bij profielen',                     1,           1) ,    ('msg_tpl_workflow_petition', 'Berichtsjabloon voor workflow bij petities',               'Berichtsjabloon voor workflow bij petities',                     1,           1) ;
   SELECT @tpl_ogid_case := MAX(id) FROM civicrm_option_group WHERE name = 'msg_tpl_workflow_case';
   SELECT @tpl_ogid_contribution := MAX(id) FROM civicrm_option_group WHERE name = 'msg_tpl_workflow_contribution';
   SELECT @tpl_ogid_event := MAX(id) FROM civicrm_option_group WHERE name = 'msg_tpl_workflow_event';
@@ -6376,7 +6391,7 @@ INSERT INTO civicrm_option_group
 
 INSERT INTO civicrm_option_value
   (option_group_id,        name,       label,   value,                                  weight) VALUES
-      (@tpl_ogid_case, 'case_activity', 'Dossiers - Stuur kopie van een activiteit',            1, 1) ,      (@tpl_ogid_contribution, 'contribution_dupalert', 'Contributies - Dubbele organisatie waarschuwing',            1, 1) ,      (@tpl_ogid_contribution, 'contribution_offline_receipt', 'Contributies - Factuur (off-line)',            2, 2) ,      (@tpl_ogid_contribution, 'contribution_online_receipt', 'Bijdragen - ontvangstbewijs (online)',            3, 3) ,      (@tpl_ogid_contribution, 'contribution_invoice_receipt', 'Bijdragen - factuur',            4, 4) ,      (@tpl_ogid_contribution, 'contribution_recurring_notify', 'Bijdragen - notificatie begin en eind periodieke bijdragen',            5, 5) ,      (@tpl_ogid_contribution, 'contribution_recurring_cancelled', 'Bijdragen - bevestiging stoppen periodieke bijdrage',            6, 6) ,      (@tpl_ogid_contribution, 'contribution_recurring_billing', 'Bijdragen - wijzigingen periodieke betalingen',            7, 7) ,      (@tpl_ogid_contribution, 'contribution_recurring_edit', 'Bijdragen - periodieke wijzigingen',            8, 8) ,      (@tpl_ogid_contribution, 'pcp_notify', 'Persoonlijke campagne pagina\'s - notificatie beheerder',            9, 9) ,      (@tpl_ogid_contribution, 'pcp_status_change', 'Persoonlijke campagnepagina\'s - Notificatie statuswijziging supporter ',            10, 10) ,      (@tpl_ogid_contribution, 'pcp_supporter_notify', 'Persoonlijke campagne pagina\'s - Welkom supporter',            11, 11) ,      (@tpl_ogid_contribution, 'pcp_owner_notify', 'Persoonlijke Campagne Pagina\'s - Eigenaar notificatie',            12, 12) ,      (@tpl_ogid_contribution, 'payment_or_refund_notification', 'Aanvullende notificatie voor ontvangst betaling of terugbetaling',            13, 13) ,      (@tpl_ogid_event, 'event_offline_receipt', 'Evenementen - Bevestiging inschrijving en ontvangstbewijs (off-line)',            1, 1) ,      (@tpl_ogid_event, 'event_online_receipt', 'Evenementen - Bevestiging inschrijving en ontvangstbewijs (online)',            2, 2) ,      (@tpl_ogid_event, 'event_registration_receipt', 'Evenementen - alleen ontvangstbewijs',            3, 3) ,      (@tpl_ogid_event, 'participant_cancelled', 'Evenementen - Annulering inschrijving',            4, 4) ,      (@tpl_ogid_event, 'participant_confirm', 'Evenementen - Bevestiging inschrijving en uitnodiging',            5, 5) ,      (@tpl_ogid_event, 'participant_expired', 'Evenementen - In afwachting van verloop registratie bericht',            6, 6) ,      (@tpl_ogid_event, 'participant_transferred', 'Evenementen - registratie verzonden melding',            7, 7) ,      (@tpl_ogid_friend, 'friend', 'Informeer-een-vriend mail',            1, 1) ,      (@tpl_ogid_membership, 'membership_offline_receipt', 'Lidmaatschap - Inschrijf en vernieuw bewijs (off-line)',            1, 1) ,      (@tpl_ogid_membership, 'membership_online_receipt', 'Lidmaatschap - ontvangstbewijs (on-line)',            2, 2) ,      (@tpl_ogid_membership, 'membership_autorenew_cancelled', 'Lidmaatschappen - automatisch vernieuwen kennisgeving annulering',            3, 3) ,      (@tpl_ogid_membership, 'membership_autorenew_billing', 'Lidmaatschappen - automatisch vernieuwen facturatie updates',            4, 4) ,      (@tpl_ogid_meta, 'test_preview', 'Test - Ontvangst Kop',            1, 1) ,      (@tpl_ogid_pledge, 'pledge_acknowledge', 'Toezeggingen - bevestiging',            1, 1) ,      (@tpl_ogid_pledge, 'pledge_reminder', 'Toezeggingen - betalingsherinnering',            2, 2) ,      (@tpl_ogid_uf, 'uf_notify', 'Profiel - Notificatie beheerder',            1, 1) ,      (@tpl_ogid_petition, 'petition_sign', 'Petitie - handtekening toegevoegd',            1, 1) ,      (@tpl_ogid_petition, 'petition_confirmation_needed', 'Petitie - in afwachting van verificatie',            2, 2) ;
+      (@tpl_ogid_case, 'case_activity', 'Dossiers - Stuur kopie van een activiteit',            1, 1) ,      (@tpl_ogid_contribution, 'contribution_dupalert', 'Contributies - Dubbele organisatie waarschuwing',            1, 1) ,      (@tpl_ogid_contribution, 'contribution_offline_receipt', 'Contributies - Factuur (off-line)',            2, 2) ,      (@tpl_ogid_contribution, 'contribution_online_receipt', 'Bijdragen - ontvangstbewijs (online)',            3, 3) ,      (@tpl_ogid_contribution, 'contribution_invoice_receipt', 'Bijdragen - factuur',            4, 4) ,      (@tpl_ogid_contribution, 'contribution_recurring_notify', 'Bijdragen - notificatie begin en eind periodieke bijdragen',            5, 5) ,      (@tpl_ogid_contribution, 'contribution_recurring_cancelled', 'Bijdragen - bevestiging stoppen periodieke bijdrage',            6, 6) ,      (@tpl_ogid_contribution, 'contribution_recurring_billing', 'Bijdragen - wijzigingen periodieke betalingen',            7, 7) ,      (@tpl_ogid_contribution, 'contribution_recurring_edit', 'Bijdragen - periodieke wijzigingen',            8, 8) ,      (@tpl_ogid_contribution, 'pcp_notify', 'Persoonlijke campagne pagina\'s - notificatie beheerder',            9, 9) ,      (@tpl_ogid_contribution, 'pcp_status_change', 'Persoonlijke campagnepagina\'s - Notificatie statuswijziging supporter ',            10, 10) ,      (@tpl_ogid_contribution, 'pcp_supporter_notify', 'Persoonlijke campagne pagina\'s - Welkom supporter',            11, 11) ,      (@tpl_ogid_contribution, 'pcp_owner_notify', 'Persoonlijke campagnepagina\'s - Eigenaar notificatie',            12, 12) ,      (@tpl_ogid_contribution, 'payment_or_refund_notification', 'Aanvullende notificatie voor ontvangst betaling of terugbetaling',            13, 13) ,      (@tpl_ogid_event, 'event_offline_receipt', 'Evenementen - Bevestiging inschrijving en ontvangstbewijs (off-line)',            1, 1) ,      (@tpl_ogid_event, 'event_online_receipt', 'Evenementen - Bevestiging inschrijving en ontvangstbewijs (online)',            2, 2) ,      (@tpl_ogid_event, 'event_registration_receipt', 'Evenementen - alleen ontvangstbewijs',            3, 3) ,      (@tpl_ogid_event, 'participant_cancelled', 'Evenementen - Annulering inschrijving',            4, 4) ,      (@tpl_ogid_event, 'participant_confirm', 'Evenementen - Bevestiging inschrijving en uitnodiging',            5, 5) ,      (@tpl_ogid_event, 'participant_expired', 'Evenementen - In afwachting van verloop registratie bericht',            6, 6) ,      (@tpl_ogid_event, 'participant_transferred', 'Evenementen - notificatie inschrijving overgedragen',            7, 7) ,      (@tpl_ogid_friend, 'friend', 'Informeer-een-vriend mail',            1, 1) ,      (@tpl_ogid_membership, 'membership_offline_receipt', 'Lidmaatschap - Inschrijf en vernieuw bewijs (off-line)',            1, 1) ,      (@tpl_ogid_membership, 'membership_online_receipt', 'Lidmaatschap - ontvangstbewijs (on-line)',            2, 2) ,      (@tpl_ogid_membership, 'membership_autorenew_cancelled', 'Lidmaatschappen - automatisch vernieuwen kennisgeving annulering',            3, 3) ,      (@tpl_ogid_membership, 'membership_autorenew_billing', 'Lidmaatschappen - automatisch vernieuwen facturatie updates',            4, 4) ,      (@tpl_ogid_meta, 'test_preview', 'Test - Ontvangst Kop',            1, 1) ,      (@tpl_ogid_pledge, 'pledge_acknowledge', 'Toezeggingen - bevestiging',            1, 1) ,      (@tpl_ogid_pledge, 'pledge_reminder', 'Toezeggingen - betalingsherinnering',            2, 2) ,      (@tpl_ogid_uf, 'uf_notify', 'Profiel - Notificatie beheerder',            1, 1) ,      (@tpl_ogid_petition, 'petition_sign', 'Petitie - handtekening toegevoegd',            1, 1) ,      (@tpl_ogid_petition, 'petition_confirmation_needed', 'Petitie - in afwachting van verificatie',            2, 2) ;
     SELECT @tpl_ovid_case_activity := MAX(id) FROM civicrm_option_value WHERE option_group_id = @tpl_ogid_case AND name = 'case_activity';
     SELECT @tpl_ovid_contribution_dupalert := MAX(id) FROM civicrm_option_value WHERE option_group_id = @tpl_ogid_contribution AND name = 'contribution_dupalert';
     SELECT @tpl_ovid_contribution_offline_receipt := MAX(id) FROM civicrm_option_value WHERE option_group_id = @tpl_ogid_contribution AND name = 'contribution_offline_receipt';
@@ -11573,7 +11588,7 @@ INSERT INTO civicrm_msg_template
 ', @tpl_ovid_pcp_supporter_notify, 0,          1) ,      
       
       
-      ('Persoonlijke Campagne Pagina\'s - Eigenaar notificatie', '{ts}Someone has just donated to your personal campaign page{/ts}
+      ('Persoonlijke campagnepagina\'s - Eigenaar notificatie', '{ts}Someone has just donated to your personal campaign page{/ts}
 ', '===========================================================
 {ts}Personal Campaign Page Owner Notification{/ts}
 
@@ -11622,7 +11637,7 @@ INSERT INTO civicrm_msg_template
 </body>
 </html>
 ', @tpl_ovid_pcp_owner_notify, 1,          0),
-      ('Persoonlijke Campagne Pagina\'s - Eigenaar notificatie', '{ts}Someone has just donated to your personal campaign page{/ts}
+      ('Persoonlijke campagnepagina\'s - Eigenaar notificatie', '{ts}Someone has just donated to your personal campaign page{/ts}
 ', '===========================================================
 {ts}Personal Campaign Page Owner Notification{/ts}
 
@@ -11760,19 +11775,7 @@ INSERT INTO civicrm_msg_template
 {/if}
 
 {if $isShowLocation}
-{if $location.address.1.name}
-
-{$location.address.1.name}
-{/if}
-{if $location.address.1.street_address}{$location.address.1.street_address}
-{/if}
-{if $location.address.1.supplemental_address_1}{$location.address.1.supplemental_address_1}
-{/if}
-{if $location.address.1.supplemental_address_2}{$location.address.1.supplemental_address_2}
-{/if}
-{if $location.address.1.city}{$location.address.1.city} {$location.address.1.postal_code}{if $location.address.1.postal_code_suffix} - {$location.address.1.postal_code_suffix}{/if}
-{/if}
-
+{$location.address.1.display|strip_tags:false}
 {/if}{*End of isShowLocation condition*}
 
 {if $location.phone.1.phone || $location.email.1.email}
@@ -11994,21 +11997,7 @@ INSERT INTO civicrm_msg_template
     {if $isShowLocation}
     <tr>
       <td colspan="2" {$valueStyle}>
-        {if $location.address.1.name}
-        {$location.address.1.name}<br />
-        {/if}
-        {if $location.address.1.street_address}
-        {$location.address.1.street_address}<br />
-        {/if}
-        {if $location.address.1.supplemental_address_1}
-        {$location.address.1.supplemental_address_1}<br />
-        {/if}
-        {if $location.address.1.supplemental_address_2}
-        {$location.address.1.supplemental_address_2}<br />
-        {/if}
-        {if $location.address.1.city}
-        {$location.address.1.city} {$location.address.1.postal_code}{if $location.address.1.postal_code_suffix} - {$location.address.1.postal_code_suffix}{/if}<br />
-        {/if}
+        {$location.address.1.display|nl2br}
       </td>
     </tr>
     {/if}
@@ -12146,19 +12135,7 @@ INSERT INTO civicrm_msg_template
 {/if}
 
 {if $isShowLocation}
-{if $location.address.1.name}
-
-{$location.address.1.name}
-{/if}
-{if $location.address.1.street_address}{$location.address.1.street_address}
-{/if}
-{if $location.address.1.supplemental_address_1}{$location.address.1.supplemental_address_1}
-{/if}
-{if $location.address.1.supplemental_address_2}{$location.address.1.supplemental_address_2}
-{/if}
-{if $location.address.1.city}{$location.address.1.city} {$location.address.1.postal_code}{if $location.address.1.postal_code_suffix} - {$location.address.1.postal_code_suffix}{/if}
-{/if}
-
+{$location.address.1.display|strip_tags:false}
 {/if}{*End of isShowLocation condition*}
 
 {if $location.phone.1.phone || $location.email.1.email}
@@ -12380,21 +12357,7 @@ INSERT INTO civicrm_msg_template
     {if $isShowLocation}
     <tr>
       <td colspan="2" {$valueStyle}>
-        {if $location.address.1.name}
-        {$location.address.1.name}<br />
-        {/if}
-        {if $location.address.1.street_address}
-        {$location.address.1.street_address}<br />
-        {/if}
-        {if $location.address.1.supplemental_address_1}
-        {$location.address.1.supplemental_address_1}<br />
-        {/if}
-        {if $location.address.1.supplemental_address_2}
-        {$location.address.1.supplemental_address_2}<br />
-        {/if}
-        {if $location.address.1.city}
-        {$location.address.1.city} {$location.address.1.postal_code}{if $location.address.1.postal_code_suffix} - {$location.address.1.postal_code_suffix}{/if}<br />
-        {/if}
+        {$location.address.1.display|nl2br}
       </td>
     </tr>
     {/if}
@@ -12502,19 +12465,7 @@ INSERT INTO civicrm_msg_template
 {/if}
 
 {if $isShowLocation}
-{if $location.address.1.name}
-
-{$location.address.1.name}
-{/if}
-{if $location.address.1.street_address}{$location.address.1.street_address}
-{/if}
-{if $location.address.1.supplemental_address_1}{$location.address.1.supplemental_address_1}
-{/if}
-{if $location.address.1.supplemental_address_2}{$location.address.1.supplemental_address_2}
-{/if}
-{if $location.address.1.city}{$location.address.1.city} {$location.address.1.postal_code}{if $location.address.1.postal_code_suffix} - {$location.address.1.postal_code_suffix}{/if}
-{/if}
-
+{$location.address.1.display|strip_tags:false}
 {/if}{*End of isShowLocation condition*}
 
 {if $location.phone.1.phone || $location.email.1.email}
@@ -12828,21 +12779,7 @@ INSERT INTO civicrm_msg_template
      {if $isShowLocation}
       <tr>
        <td colspan="2" {$valueStyle}>
-        {if $location.address.1.name}
-         {$location.address.1.name}<br />
-        {/if}
-        {if $location.address.1.street_address}
-         {$location.address.1.street_address}<br />
-        {/if}
-        {if $location.address.1.supplemental_address_1}
-         {$location.address.1.supplemental_address_1}<br />
-        {/if}
-        {if $location.address.1.supplemental_address_2}
-         {$location.address.1.supplemental_address_2}<br />
-        {/if}
-        {if $location.address.1.city}
-         {$location.address.1.city} {$location.address.1.postal_code}{if $location.address.1.postal_code_suffix} - {$location.address.1.postal_code_suffix}{/if}<br />
-        {/if}
+        {$location.address.1.display|nl2br}
        </td>
       </tr>
      {/if}
@@ -13335,19 +13272,7 @@ INSERT INTO civicrm_msg_template
 {/if}
 
 {if $isShowLocation}
-{if $location.address.1.name}
-
-{$location.address.1.name}
-{/if}
-{if $location.address.1.street_address}{$location.address.1.street_address}
-{/if}
-{if $location.address.1.supplemental_address_1}{$location.address.1.supplemental_address_1}
-{/if}
-{if $location.address.1.supplemental_address_2}{$location.address.1.supplemental_address_2}
-{/if}
-{if $location.address.1.city}{$location.address.1.city} {$location.address.1.postal_code}{if $location.address.1.postal_code_suffix} - {$location.address.1.postal_code_suffix}{/if}
-{/if}
-
+{$location.address.1.display|strip_tags:false}
 {/if}{*End of isShowLocation condition*}
 
 {if $location.phone.1.phone || $location.email.1.email}
@@ -13661,21 +13586,7 @@ INSERT INTO civicrm_msg_template
      {if $isShowLocation}
       <tr>
        <td colspan="2" {$valueStyle}>
-        {if $location.address.1.name}
-         {$location.address.1.name}<br />
-        {/if}
-        {if $location.address.1.street_address}
-         {$location.address.1.street_address}<br />
-        {/if}
-        {if $location.address.1.supplemental_address_1}
-         {$location.address.1.supplemental_address_1}<br />
-        {/if}
-        {if $location.address.1.supplemental_address_2}
-         {$location.address.1.supplemental_address_2}<br />
-        {/if}
-        {if $location.address.1.city}
-         {$location.address.1.city} {$location.address.1.postal_code}{if $location.address.1.postal_code_suffix} - {$location.address.1.postal_code_suffix}{/if}<br />
-        {/if}
+        {$location.address.1.display|nl2br}
        </td>
       </tr>
      {/if}
@@ -14193,19 +14104,7 @@ INSERT INTO civicrm_msg_template
 {/if}
 
 {if $isShowLocation}
-{if $location.address.1.name}
-
-{$location.address.1.name}
-{/if}
-{if $location.address.1.street_address}{$location.address.1.street_address}
-{/if}
-{if $location.address.1.supplemental_address_1}{$location.address.1.supplemental_address_1}
-{/if}
-{if $location.address.1.supplemental_address_2}{$location.address.1.supplemental_address_2}
-{/if}
-{if $location.address.1.city}{$location.address.1.city}, {$location.address.1.state_province} {$location.address.1.postal_code}{if $location.address.1.postal_code_suffix} - {$location.address.1.postal_code_suffix}{/if}
-{/if}
-
+{$location.address.1.display|strip_tags:false}
 {/if}{*End of isShowLocation condition*}
 
 {if $location.phone.1.phone || $location.email.1.email}
@@ -14538,21 +14437,7 @@ You were registered by: {$payer.name}
      {if $isShowLocation}
       <tr>
        <td colspan="2" {$valueStyle}>
-        {if $location.address.1.name}
-         {$location.address.1.name}<br />
-        {/if}
-        {if $location.address.1.street_address}
-         {$location.address.1.street_address}<br />
-        {/if}
-        {if $location.address.1.supplemental_address_1}
-         {$location.address.1.supplemental_address_1}<br />
-        {/if}
-        {if $location.address.1.supplemental_address_2}
-         {$location.address.1.supplemental_address_2}<br />
-        {/if}
-        {if $location.address.1.city}
-         {$location.address.1.city}, {$location.address.1.state_province} {$location.address.1.postal_code}{if $location.address.1.postal_code_suffix} - {$location.address.1.postal_code_suffix}{/if}<br />
-        {/if}
+        {$location.address.1.display|nl2br}
        </td>
       </tr>
      {/if}
@@ -15036,19 +14921,7 @@ You were registered by: {$payer.name}
 {/if}
 
 {if $isShowLocation}
-{if $location.address.1.name}
-
-{$location.address.1.name}
-{/if}
-{if $location.address.1.street_address}{$location.address.1.street_address}
-{/if}
-{if $location.address.1.supplemental_address_1}{$location.address.1.supplemental_address_1}
-{/if}
-{if $location.address.1.supplemental_address_2}{$location.address.1.supplemental_address_2}
-{/if}
-{if $location.address.1.city}{$location.address.1.city}, {$location.address.1.state_province} {$location.address.1.postal_code}{if $location.address.1.postal_code_suffix} - {$location.address.1.postal_code_suffix}{/if}
-{/if}
-
+{$location.address.1.display|strip_tags:false}
 {/if}{*End of isShowLocation condition*}
 
 {if $location.phone.1.phone || $location.email.1.email}
@@ -15381,21 +15254,7 @@ You were registered by: {$payer.name}
      {if $isShowLocation}
       <tr>
        <td colspan="2" {$valueStyle}>
-        {if $location.address.1.name}
-         {$location.address.1.name}<br />
-        {/if}
-        {if $location.address.1.street_address}
-         {$location.address.1.street_address}<br />
-        {/if}
-        {if $location.address.1.supplemental_address_1}
-         {$location.address.1.supplemental_address_1}<br />
-        {/if}
-        {if $location.address.1.supplemental_address_2}
-         {$location.address.1.supplemental_address_2}<br />
-        {/if}
-        {if $location.address.1.city}
-         {$location.address.1.city}, {$location.address.1.state_province} {$location.address.1.postal_code}{if $location.address.1.postal_code_suffix} - {$location.address.1.postal_code_suffix}{/if}<br />
-        {/if}
+        {$location.address.1.display|nl2br}
        </td>
       </tr>
      {/if}
@@ -15840,21 +15699,7 @@ You were registered by: {$payer.name}
 {foreach from=$line_items item=line_item}
 {$line_item.event->title} ({$line_item.event->start_date|date_format:"%D"})
 {if $line_item.event->is_show_location}
-  {if $line_item.location.address.1.name}
-    {$line_item.location.address.1.name}
-  {/if}
-  {if $line_item.location.address.1.street_address}
-    {$line_item.location.address.1.street_address}
-  {/if}
-  {if $line_item.location.address.1.supplemental_address_1}
-    {$line_item.location.address.1.supplemental_address_1}
-  {/if}
-  {if $line_item.location.address.1.supplemental_address_2}
-    {$line_item.location.address.1.supplemental_address_2}
-  {/if}
-  {if $line_item.location.address.1.city}
-    {$line_item.location.address.1.city}, {$line_item.location.address.1.state_province} {$line_item.location.address.1.postal_code}
-  {/if}
+  {$line_item.location.address.1.display|strip_tags:false}
 {/if}{*End of isShowLocation condition*}
 {$line_item.event->start_date|date_format:"%D %I:%M %p"} - {$line_item.event->end_date|date_format:"%I:%M %p"}
 
@@ -15993,21 +15838,7 @@ Total: {$total|crmMoney:$currency|string_format:"%10s"}
     <td style="width: 220px">
       {$line_item.event->title} ({$line_item.event->start_date|date_format:"%D"})<br />
       {if $line_item.event->is_show_location}
-        {if $line_item.location.address.1.name}
-    {$line_item.location.address.1.name}<br />
-        {/if}
-        {if $line_item.location.address.1.street_address}
-    {$line_item.location.address.1.street_address}<br />
-        {/if}
-        {if $line_item.location.address.1.supplemental_address_1}
-    {$line_item.location.address.1.supplemental_address_1}<br />
-        {/if}
-        {if $line_item.location.address.1.supplemental_address_2}
-    {$line_item.location.address.1.supplemental_address_2}<br />
-        {/if}
-        {if $line_item.location.address.1.city}
-    {$line_item.location.address.1.city}, {$line_item.location.address.1.state_province} {$location.address.1.postal_code}
-        {/if}
+        {$line_item.location.address.1.display|nl2br}
       {/if}{*End of isShowLocation condition*}<br /><br />
       {$line_item.event->start_date|date_format:"%D %I:%M %p"} - {$line_item.event->end_date|date_format:"%I:%M %p"}
     </td>
@@ -16125,21 +15956,7 @@ Total: {$total|crmMoney:$currency|string_format:"%10s"}
 {foreach from=$line_items item=line_item}
 {$line_item.event->title} ({$line_item.event->start_date|date_format:"%D"})
 {if $line_item.event->is_show_location}
-  {if $line_item.location.address.1.name}
-    {$line_item.location.address.1.name}
-  {/if}
-  {if $line_item.location.address.1.street_address}
-    {$line_item.location.address.1.street_address}
-  {/if}
-  {if $line_item.location.address.1.supplemental_address_1}
-    {$line_item.location.address.1.supplemental_address_1}
-  {/if}
-  {if $line_item.location.address.1.supplemental_address_2}
-    {$line_item.location.address.1.supplemental_address_2}
-  {/if}
-  {if $line_item.location.address.1.city}
-    {$line_item.location.address.1.city}, {$line_item.location.address.1.state_province} {$line_item.location.address.1.postal_code}
-  {/if}
+  {$line_item.location.address.1.display|strip_tags:false}
 {/if}{*End of isShowLocation condition*}
 {$line_item.event->start_date|date_format:"%D %I:%M %p"} - {$line_item.event->end_date|date_format:"%I:%M %p"}
 
@@ -16278,21 +16095,7 @@ Total: {$total|crmMoney:$currency|string_format:"%10s"}
     <td style="width: 220px">
       {$line_item.event->title} ({$line_item.event->start_date|date_format:"%D"})<br />
       {if $line_item.event->is_show_location}
-        {if $line_item.location.address.1.name}
-    {$line_item.location.address.1.name}<br />
-        {/if}
-        {if $line_item.location.address.1.street_address}
-    {$line_item.location.address.1.street_address}<br />
-        {/if}
-        {if $line_item.location.address.1.supplemental_address_1}
-    {$line_item.location.address.1.supplemental_address_1}<br />
-        {/if}
-        {if $line_item.location.address.1.supplemental_address_2}
-    {$line_item.location.address.1.supplemental_address_2}<br />
-        {/if}
-        {if $line_item.location.address.1.city}
-    {$line_item.location.address.1.city}, {$line_item.location.address.1.state_province} {$location.address.1.postal_code}
-        {/if}
+        {$line_item.location.address.1.display|nl2br}
       {/if}{*End of isShowLocation condition*}<br /><br />
       {$line_item.event->start_date|date_format:"%D %I:%M %p"} - {$line_item.event->end_date|date_format:"%I:%M %p"}
     </td>
@@ -16391,19 +16194,7 @@ Total: {$total|crmMoney:$currency|string_format:"%10s"}
 {ts}Participant Role{/ts}: {$participant.role}
 
 {if $isShowLocation}
-{if $event.location.address.1.name}
-
-{$event.location.address.1.name}
-{/if}
-{if $event.location.address.1.street_address}{$event.location.address.1.street_address}
-{/if}
-{if $event.location.address.1.supplemental_address_1}{$event.location.address.1.supplemental_address_1}
-{/if}
-{if $event.location.address.1.supplemental_address_2}{$event.location.address.1.supplemental_address_2}
-{/if}
-{if $event.location.address.1.city}{$event.location.address.1.city} {$event.location.address.1.postal_code}{if $event.location.address.1.postal_code_suffix} - {$event.location.address.1.postal_code_suffix}{/if}
-{/if}
-
+{$event.location.address.1.display|strip_tags:false}
 {/if}{*End of isShowLocation condition*}
 
 {if $event.location.phone.1.phone || $event.location.email.1.email}
@@ -16488,24 +16279,7 @@ Total: {$total|crmMoney:$currency|string_format:"%10s"}
      {if $isShowLocation}
       <tr>
        <td colspan="2" {$valueStyle}>
-        {if $event.location.address.1.name}
-         {$event.location.address.1.name}<br />
-        {/if}
-        {if $event.location.address.1.street_address}
-         {$event.location.address.1.street_address}<br />
-        {/if}
-        {if $event.location.address.1.supplemental_address_1}
-         {$event.location.address.1.supplemental_address_1}<br />
-        {/if}
-        {if $event.location.address.1.supplemental_address_2}
-         {$event.location.address.1.supplemental_address_2}<br />
-        {/if}
-        {if $event.location.address.1.city}
-         {$event.location.address.1.city} {$event.location.address.1.postal_code}
-         {if $event.location.address.1.postal_code_suffix}
-          - {$event.location.address.1.postal_code_suffix}
-         {/if}
-        {/if}
+        {$event.location.address.1.display|nl2br}
        </td>
       </tr>
      {/if}
@@ -16598,19 +16372,7 @@ Total: {$total|crmMoney:$currency|string_format:"%10s"}
 {ts}Participant Role{/ts}: {$participant.role}
 
 {if $isShowLocation}
-{if $event.location.address.1.name}
-
-{$event.location.address.1.name}
-{/if}
-{if $event.location.address.1.street_address}{$event.location.address.1.street_address}
-{/if}
-{if $event.location.address.1.supplemental_address_1}{$event.location.address.1.supplemental_address_1}
-{/if}
-{if $event.location.address.1.supplemental_address_2}{$event.location.address.1.supplemental_address_2}
-{/if}
-{if $event.location.address.1.city}{$event.location.address.1.city} {$event.location.address.1.postal_code}{if $event.location.address.1.postal_code_suffix} - {$event.location.address.1.postal_code_suffix}{/if}
-{/if}
-
+{$event.location.address.1.display|strip_tags:false}
 {/if}{*End of isShowLocation condition*}
 
 {if $event.location.phone.1.phone || $event.location.email.1.email}
@@ -16695,24 +16457,7 @@ Total: {$total|crmMoney:$currency|string_format:"%10s"}
      {if $isShowLocation}
       <tr>
        <td colspan="2" {$valueStyle}>
-        {if $event.location.address.1.name}
-         {$event.location.address.1.name}<br />
-        {/if}
-        {if $event.location.address.1.street_address}
-         {$event.location.address.1.street_address}<br />
-        {/if}
-        {if $event.location.address.1.supplemental_address_1}
-         {$event.location.address.1.supplemental_address_1}<br />
-        {/if}
-        {if $event.location.address.1.supplemental_address_2}
-         {$event.location.address.1.supplemental_address_2}<br />
-        {/if}
-        {if $event.location.address.1.city}
-         {$event.location.address.1.city} {$event.location.address.1.postal_code}
-         {if $event.location.address.1.postal_code_suffix}
-          - {$event.location.address.1.postal_code_suffix}
-         {/if}
-        {/if}
+        {$event.location.address.1.display|nl2br}
        </td>
       </tr>
      {/if}
@@ -16836,19 +16581,7 @@ Click this link to go to a web page where you can confirm your registration onli
 {ts}Participant Role{/ts}: {$participant.role}
 
 {if $isShowLocation}
-{if $event.location.address.1.name}
-
-{$event.location.address.1.name}
-{/if}
-{if $event.location.address.1.street_address}{$event.location.address.1.street_address}
-{/if}
-{if $event.location.address.1.supplemental_address_1}{$event.location.address.1.supplemental_address_1}
-{/if}
-{if $event.location.address.1.supplemental_address_2}{$event.location.address.1.supplemental_address_2}
-{/if}
-{if $event.location.address.1.city}{$event.location.address.1.city} {$event.location.address.1.postal_code}{if $event.location.address.1.postal_code_suffix} - {$event.location.address.1.postal_code_suffix}{/if}
-{/if}
-
+{$event.location.address.1.display|strip_tags:false}
 {/if}{*End of isShowLocation condition*}
 
 {if $event.location.phone.1.phone || $event.location.email.1.email}
@@ -16976,24 +16709,7 @@ Click this link to go to a web page where you can confirm your registration onli
      {if $isShowLocation}
       <tr>
        <td colspan="2" {$valueStyle}>
-        {if $event.location.address.1.name}
-         {$event.location.address.1.name}<br />
-        {/if}
-        {if $event.location.address.1.street_address}
-         {$event.location.address.1.street_address}<br />
-        {/if}
-        {if $event.location.address.1.supplemental_address_1}
-         {$event.location.address.1.supplemental_address_1}<br />
-        {/if}
-        {if $event.location.address.1.supplemental_address_2}
-         {$event.location.address.1.supplemental_address_2}<br />
-        {/if}
-        {if $event.location.address.1.city}
-         {$event.location.address.1.city} {$event.location.address.1.postal_code}
-         {if $event.location.address.1.postal_code_suffix}
-          - {$event.location.address.1.postal_code_suffix}
-         {/if}
-        {/if}
+        {$event.location.address.1.display|nl2br}
        </td>
       </tr>
      {/if}
@@ -17132,19 +16848,7 @@ Click this link to go to a web page where you can confirm your registration onli
 {ts}Participant Role{/ts}: {$participant.role}
 
 {if $isShowLocation}
-{if $event.location.address.1.name}
-
-{$event.location.address.1.name}
-{/if}
-{if $event.location.address.1.street_address}{$event.location.address.1.street_address}
-{/if}
-{if $event.location.address.1.supplemental_address_1}{$event.location.address.1.supplemental_address_1}
-{/if}
-{if $event.location.address.1.supplemental_address_2}{$event.location.address.1.supplemental_address_2}
-{/if}
-{if $event.location.address.1.city}{$event.location.address.1.city} {$event.location.address.1.postal_code}{if $event.location.address.1.postal_code_suffix} - {$event.location.address.1.postal_code_suffix}{/if}
-{/if}
-
+{$event.location.address.1.display|strip_tags:false}
 {/if}{*End of isShowLocation condition*}
 
 {if $event.location.phone.1.phone || $event.location.email.1.email}
@@ -17272,24 +16976,7 @@ Click this link to go to a web page where you can confirm your registration onli
      {if $isShowLocation}
       <tr>
        <td colspan="2" {$valueStyle}>
-        {if $event.location.address.1.name}
-         {$event.location.address.1.name}<br />
-        {/if}
-        {if $event.location.address.1.street_address}
-         {$event.location.address.1.street_address}<br />
-        {/if}
-        {if $event.location.address.1.supplemental_address_1}
-         {$event.location.address.1.supplemental_address_1}<br />
-        {/if}
-        {if $event.location.address.1.supplemental_address_2}
-         {$event.location.address.1.supplemental_address_2}<br />
-        {/if}
-        {if $event.location.address.1.city}
-         {$event.location.address.1.city} {$event.location.address.1.postal_code}
-         {if $event.location.address.1.postal_code_suffix}
-          - {$event.location.address.1.postal_code_suffix}
-         {/if}
-        {/if}
+        {$event.location.address.1.display|nl2br}
        </td>
       </tr>
      {/if}
@@ -17405,19 +17092,7 @@ or want to inquire about reinstating your registration for this event.{/ts}
 {ts}Participant Role{/ts}: {$participant.role}
 
 {if $isShowLocation}
-{if $event.location.address.1.name}
-
-{$event.location.address.1.name}
-{/if}
-{if $event.location.address.1.street_address}{$event.location.address.1.street_address}
-{/if}
-{if $event.location.address.1.supplemental_address_1}{$event.location.address.1.supplemental_address_1}
-{/if}
-{if $event.location.address.1.supplemental_address_2}{$event.location.address.1.supplemental_address_2}
-{/if}
-{if $event.location.address.1.city}{$event.location.address.1.city} {$event.location.address.1.postal_code}{if $event.location.address.1.postal_code_suffix} - {$event.location.address.1.postal_code_suffix}{/if}
-{/if}
-
+{$event.location.address.1.display|strip_tags:false}
 {/if}{*End of isShowLocation condition*}
 
 {if $event.location.phone.1.phone || $event.location.email.1.email}
@@ -17505,24 +17180,7 @@ or want to inquire about reinstating your registration for this event.{/ts}</p>
      {if $isShowLocation}
       <tr>
        <td colspan="2" {$valueStyle}>
-        {if $event.location.address.1.name}
-         {$event.location.address.1.name}<br />
-        {/if}
-        {if $event.location.address.1.street_address}
-         {$event.location.address.1.street_address}<br />
-        {/if}
-        {if $event.location.address.1.supplemental_address_1}
-         {$event.location.address.1.supplemental_address_1}<br />
-        {/if}
-        {if $event.location.address.1.supplemental_address_2}
-         {$event.location.address.1.supplemental_address_2}<br />
-        {/if}
-        {if $event.location.address.1.city}
-         {$event.location.address.1.city} {$event.location.address.1.postal_code}
-         {if $event.location.address.1.postal_code_suffix}
-          - {$event.location.address.1.postal_code_suffix}
-         {/if}
-        {/if}
+        {$event.location.address.1.display|nl2br}
        </td>
       </tr>
      {/if}
@@ -17619,19 +17277,7 @@ or want to inquire about reinstating your registration for this event.{/ts}
 {ts}Participant Role{/ts}: {$participant.role}
 
 {if $isShowLocation}
-{if $event.location.address.1.name}
-
-{$event.location.address.1.name}
-{/if}
-{if $event.location.address.1.street_address}{$event.location.address.1.street_address}
-{/if}
-{if $event.location.address.1.supplemental_address_1}{$event.location.address.1.supplemental_address_1}
-{/if}
-{if $event.location.address.1.supplemental_address_2}{$event.location.address.1.supplemental_address_2}
-{/if}
-{if $event.location.address.1.city}{$event.location.address.1.city} {$event.location.address.1.postal_code}{if $event.location.address.1.postal_code_suffix} - {$event.location.address.1.postal_code_suffix}{/if}
-{/if}
-
+{$event.location.address.1.display|strip_tags:false}
 {/if}{*End of isShowLocation condition*}
 
 {if $event.location.phone.1.phone || $event.location.email.1.email}
@@ -17719,24 +17365,7 @@ or want to inquire about reinstating your registration for this event.{/ts}</p>
      {if $isShowLocation}
       <tr>
        <td colspan="2" {$valueStyle}>
-        {if $event.location.address.1.name}
-         {$event.location.address.1.name}<br />
-        {/if}
-        {if $event.location.address.1.street_address}
-         {$event.location.address.1.street_address}<br />
-        {/if}
-        {if $event.location.address.1.supplemental_address_1}
-         {$event.location.address.1.supplemental_address_1}<br />
-        {/if}
-        {if $event.location.address.1.supplemental_address_2}
-         {$event.location.address.1.supplemental_address_2}<br />
-        {/if}
-        {if $event.location.address.1.city}
-         {$event.location.address.1.city} {$event.location.address.1.postal_code}
-         {if $event.location.address.1.postal_code_suffix}
-          - {$event.location.address.1.postal_code_suffix}
-         {/if}
-        {/if}
+        {$event.location.address.1.display|nl2br}
        </td>
       </tr>
      {/if}
@@ -17815,7 +17444,7 @@ or want to inquire about reinstating your registration for this event.{/ts}</p>
 ', @tpl_ovid_participant_expired, 0,          1) ,      
       
       
-      ('Evenementen - registratie verzonden melding', '{ts 1=$event.event_title}Event Registration Transferred for %1{/ts}
+      ('Evenementen - notificatie inschrijving overgedragen', '{ts 1=$event.event_title}Event Registration Transferred for %1{/ts}
 ', '{ts 1=$contact.display_name}Dear %1{/ts},
 
 {ts 1=$to_participant}Your Event Registration has been transferred to %1.{/ts}
@@ -17830,19 +17459,7 @@ or want to inquire about reinstating your registration for this event.{/ts}</p>
 {ts}Participant Role{/ts}: {$participant.role}
 
 {if $isShowLocation}
-{if $event.location.address.1.name}
-
-{$event.location.address.1.name}
-{/if}
-{if $event.location.address.1.street_address}{$event.location.address.1.street_address}
-{/if}
-{if $event.location.address.1.supplemental_address_1}{$event.location.address.1.supplemental_address_1}
-{/if}
-{if $event.location.address.1.supplemental_address_2}{$event.location.address.1.supplemental_address_2}
-{/if}
-{if $event.location.address.1.city}{$event.location.address.1.city} {$event.location.address.1.postal_code}{if $event.location.address.1.postal_code_suffix} - $event.location.address.1.postal_code_suffix}{/if}
-{/if}
-
+{$event.location.address.1.display|strip_tags:false}
 {/if}{*End of isShowLocation condition*}
 
 {if $event.location.phone.1.phone || $event.location.email.1.email}
@@ -17926,24 +17543,7 @@ or want to inquire about reinstating your registration for this event.{/ts}</p>
      {if $isShowLocation}
       <tr>
        <td colspan="2" {$valueStyle}>
-        {if $event.location.address.1.name}
-         {$event.location.address.1.name}<br />
-        {/if}
-        {if $event.location.address.1.street_address}
-         {$event.location.address.1.street_address}<br />
-        {/if}
-        {if $event.location.address.1.supplemental_address_1}
-         {$event.location.address.1.supplemental_address_1}<br />
-        {/if}
-        {if $event.location.address.1.supplemental_address_2}
-         {$event.location.address.1.supplemental_address_2}<br />
-        {/if}
-        {if $event.location.address.1.city}
-         {$event.location.address.1.city} {$event.location.address.1.postal_code}
-         {if $event.location.address.1.postal_code_suffix}
-          - {$event.location.address.1.postal_code_suffix}
-         {/if}
-        {/if}
+        {$event.location.address.1.display|nl2br}
        </td>
       </tr>
      {/if}
@@ -18020,7 +17620,7 @@ or want to inquire about reinstating your registration for this event.{/ts}</p>
 </body>
 </html>
 ', @tpl_ovid_participant_transferred, 1,          0),
-      ('Evenementen - registratie verzonden melding', '{ts 1=$event.event_title}Event Registration Transferred for %1{/ts}
+      ('Evenementen - notificatie inschrijving overgedragen', '{ts 1=$event.event_title}Event Registration Transferred for %1{/ts}
 ', '{ts 1=$contact.display_name}Dear %1{/ts},
 
 {ts 1=$to_participant}Your Event Registration has been transferred to %1.{/ts}
@@ -18035,19 +17635,7 @@ or want to inquire about reinstating your registration for this event.{/ts}</p>
 {ts}Participant Role{/ts}: {$participant.role}
 
 {if $isShowLocation}
-{if $event.location.address.1.name}
-
-{$event.location.address.1.name}
-{/if}
-{if $event.location.address.1.street_address}{$event.location.address.1.street_address}
-{/if}
-{if $event.location.address.1.supplemental_address_1}{$event.location.address.1.supplemental_address_1}
-{/if}
-{if $event.location.address.1.supplemental_address_2}{$event.location.address.1.supplemental_address_2}
-{/if}
-{if $event.location.address.1.city}{$event.location.address.1.city} {$event.location.address.1.postal_code}{if $event.location.address.1.postal_code_suffix} - $event.location.address.1.postal_code_suffix}{/if}
-{/if}
-
+{$event.location.address.1.display|strip_tags:false}
 {/if}{*End of isShowLocation condition*}
 
 {if $event.location.phone.1.phone || $event.location.email.1.email}
@@ -18131,24 +17719,7 @@ or want to inquire about reinstating your registration for this event.{/ts}</p>
      {if $isShowLocation}
       <tr>
        <td colspan="2" {$valueStyle}>
-        {if $event.location.address.1.name}
-         {$event.location.address.1.name}<br />
-        {/if}
-        {if $event.location.address.1.street_address}
-         {$event.location.address.1.street_address}<br />
-        {/if}
-        {if $event.location.address.1.supplemental_address_1}
-         {$event.location.address.1.supplemental_address_1}<br />
-        {/if}
-        {if $event.location.address.1.supplemental_address_2}
-         {$event.location.address.1.supplemental_address_2}<br />
-        {/if}
-        {if $event.location.address.1.city}
-         {$event.location.address.1.city} {$event.location.address.1.postal_code}
-         {if $event.location.address.1.postal_code_suffix}
-          - {$event.location.address.1.postal_code_suffix}
-         {/if}
-        {/if}
+        {$event.location.address.1.display|nl2br}
        </td>
       </tr>
      {/if}
@@ -23371,6 +22942,7 @@ SELECT @option_value_rel_id_exp  := value FROM civicrm_option_value WHERE option
 SELECT @option_value_rel_id_ar  := value FROM civicrm_option_value WHERE option_group_id = @option_group_id_arel AND name = 'Accounts Receivable Account is';
 SELECT @option_value_rel_id_as  := value FROM civicrm_option_value WHERE option_group_id = @option_group_id_arel AND name = 'Asset Account is';
 SELECT @option_value_rel_id_cg  := value FROM civicrm_option_value WHERE option_group_id = @option_group_id_arel AND name = 'Cost of Sales Account is';
+SELECT @option_value_rel_id_dr  := value FROM civicrm_option_value WHERE option_group_id = @option_group_id_arel AND name = 'Deferred Revenue Account is';
 
 SELECT @financial_type_id_dtn          := max(id) FROM civicrm_financial_type WHERE name = 'Donatie';
 SELECT @financial_type_id_md         := max(id) FROM civicrm_financial_type WHERE name = 'Contributie';
@@ -23382,10 +22954,12 @@ SELECT @financial_account_id_md         := max(id) FROM civicrm_financial_accoun
 SELECT @financial_account_id_cc         := max(id) FROM civicrm_financial_account WHERE name = 'Bijdrage via campagne';
 SELECT @financial_account_id_ef         := max(id) FROM civicrm_financial_account WHERE name = 'Kosten deelname evenement';
 SELECT @financial_account_id_bf         := max(id) FROM civicrm_financial_account WHERE name = 'Bankkosten';
-SELECT @financial_account_id_ap        := max(id) FROM civicrm_financial_account WHERE name = 'Rekeningen ontvangsten';
+SELECT @financial_account_id_ap        := max(id) FROM civicrm_financial_account WHERE name = 'Debiteuren';
 SELECT @financial_account_id_ar        := max(id) FROM civicrm_financial_account WHERE name = 'Deposito rekening';
 SELECT @financial_account_id_pp        := max(id) FROM civicrm_financial_account WHERE name = 'Betaalmethode rekening';
 SELECT @financial_account_id_pr        := max(id) FROM civicrm_financial_account WHERE name = 'Relatiegeschenken';
+SELECT @financial_account_id_dref      := max(id) FROM civicrm_financial_account WHERE name = 'Deferred Revenue - Event Fee';
+SELECT @financial_account_id_drmd      := max(id) FROM civicrm_financial_account WHERE name = 'Deferred Revenue - Member Dues';
 
 INSERT INTO `civicrm_entity_financial_account`
      ( entity_table, entity_id, account_relationship, financial_account_id )
@@ -23398,6 +22972,7 @@ VALUES
      ( 'civicrm_financial_type', @financial_type_id_md, @option_value_rel_id_exp, @financial_account_id_bf ),
      ( 'civicrm_financial_type', @financial_type_id_md, @option_value_rel_id_ar, @financial_account_id_ap ),
      ( 'civicrm_financial_type', @financial_type_id_md, @option_value_rel_id_cg, @financial_account_id_pr ),
+     ( 'civicrm_financial_type', @financial_type_id_md, @option_value_rel_id_dr, @financial_account_id_drmd ),
      ( 'civicrm_financial_type', @financial_type_id_cc, @option_value_rel_id, @financial_account_id_cc ),
      ( 'civicrm_financial_type', @financial_type_id_cc, @option_value_rel_id_exp, @financial_account_id_bf ),
      ( 'civicrm_financial_type', @financial_type_id_cc, @option_value_rel_id_ar, @financial_account_id_ap ),
@@ -23405,6 +22980,7 @@ VALUES
      ( 'civicrm_financial_type', @financial_type_id_ef, @option_value_rel_id_exp, @financial_account_id_bf ),
      ( 'civicrm_financial_type', @financial_type_id_ef, @option_value_rel_id_ar, @financial_account_id_ap ),
      ( 'civicrm_financial_type', @financial_type_id_ef, @option_value_rel_id, @financial_account_id_ef ),
+     ( 'civicrm_financial_type', @financial_type_id_ef, @option_value_rel_id_dr, @financial_account_id_dref ),
      ( 'civicrm_financial_type', @financial_type_id_ef, @option_value_rel_id_cg, @financial_account_id_pr );
 
 -- CRM-11516
@@ -23496,15 +23072,15 @@ INSERT INTO civicrm_mail_settings (domain_id, name, is_default, domain) VALUES (
 -- activity and case dashlets
 
 INSERT INTO `civicrm_dashboard`
-    ( `domain_id`, `name`, `label`, `url`, `permission`, `permission_operator`, `column_no`, `is_minimized`, `is_active`, `weight`, `fullscreen_url`, `is_fullscreen`, `is_reserved`)
+    ( `domain_id`, `name`, `label`, `url`, `permission`, `permission_operator`, `is_active`, `fullscreen_url`, `is_reserved`, `cache_minutes`)
     VALUES
-    ( @domainID, 'blog', 'CiviCRM News', 'civicrm/dashlet/blog?reset=1&snippet=5', 'access CiviCRM', NULL, 0, 0, 1, 0, 'civicrm/dashlet/blog?reset=1&snippet=5&context=dashletFullscreen', 1, 1),
-    ( @domainID, 'getting-started', 'Getting Started', 'civicrm/dashlet/getting-started?reset=1&snippet=5', 'access CiviCRM', NULL, 0, 0, 1, 0, 'civicrm/dashlet/getting-started?reset=1&snippet=5&context=dashletFullscreen', 1, 1),
+    ( @domainID, 'blog', 'CiviCRM News', 'civicrm/dashlet/blog?reset=1', 'access CiviCRM', NULL, 1, 'civicrm/dashlet/blog?reset=1&context=dashletFullscreen', 1, 1440),
+    ( @domainID, 'getting-started', 'CiviCRM Resources', 'civicrm/dashlet/getting-started?reset=1', 'access CiviCRM', NULL, 1, 'civicrm/dashlet/getting-started?reset=1&context=dashletFullscreen', 1, 7200),
 
-    ( @domainID, 'activity', 'Activiteiten', 'civicrm/dashlet/activity?reset=1&snippet=5', 'access CiviCRM', NULL, 0, 0, 1, 1, 'civicrm/dashlet/activity?reset=1&snippet=5&context=dashletFullscreen', 1, 1),
-    ( @domainID, 'myCases', 'Mijn dossiers', 'civicrm/dashlet/myCases?reset=1&snippet=5', 'access my cases and activities', NULL , 0, 0, 1, 2, 'civicrm/dashlet/myCases?reset=1&snippet=5&context=dashletFullscreen', 1, 1),
-    ( @domainID, 'allCases', 'All Cases', 'civicrm/dashlet/allCases?reset=1&snippet=5', 'access all cases and activities', NULL , 0, 0, 1, 3, 'civicrm/dashlet/allCases?reset=1&snippet=5&context=dashletFullscreen', 1, 1),
-    ( @domainID, 'casedashboard', 'Case Dashboard Dashlet', 'civicrm/dashlet/casedashboard?reset=1&snippet=5', 'access my cases and activities,access all cases and activities', 'OR' , 0, 0, 1, 4, 'civicrm/dashlet/casedashboard?reset=1&snippet=5&context=dashletFullscreen', 1, 1);
+    ( @domainID, 'activity', 'Activiteiten', 'civicrm/dashlet/activity?reset=1', 'access CiviCRM', NULL, 1, 'civicrm/dashlet/activity?reset=1&context=dashletFullscreen', 1, 7200),
+    ( @domainID, 'myCases', 'Mijn dossiers', 'civicrm/dashlet/myCases?reset=1', 'access my cases and activities', NULL, 1, 'civicrm/dashlet/myCases?reset=1&context=dashletFullscreen', 1, 60),
+    ( @domainID, 'allCases', 'All Cases', 'civicrm/dashlet/allCases?reset=1', 'access all cases and activities', NULL, 1, 'civicrm/dashlet/allCases?reset=1&context=dashletFullscreen', 1, 60),
+    ( @domainID, 'casedashboard', 'Case Dashboard Dashlet', 'civicrm/dashlet/casedashboard?reset=1', 'access my cases and activities,access all cases and activities', 'OR', 1, 'civicrm/dashlet/casedashboard?reset=1&context=dashletFullscreen', 1, 60);
 
 -- event badge
 INSERT INTO civicrm_print_label (title, name, description, label_format_name, label_type_id, is_default, is_reserved, is_active, data)
@@ -23615,7 +23191,8 @@ VALUES
     ( @domainID, 'civicrm/admin/pcp?reset=1&page_type=contribute',          'Personal Campaign Pages',    'Personal Campaign Pages',   'access CiviContribute,administer CiviCRM', 'AND',  @contributionlastID, '1', NULL, 11 ),
     ( @domainID, 'civicrm/admin/contribute/managePremiums?reset=1',         'Premiums (Thank-you Gifts)', 'Premiums',                  'access CiviContribute,administer CiviCRM', 'AND',  @contributionlastID, '1', 1,    12 ),
     ( @domainID, 'civicrm/admin/price?reset=1&action=add',                  'New Price Set',              'New Price Set',             'access CiviContribute,administer CiviCRM', 'AND',  @contributionlastID, '1', NULL, 13 ),
-    ( @domainID, 'civicrm/admin/price?reset=1',                             'Manage Price Sets',          'Manage Price Sets',         'access CiviContribute,administer CiviCRM', 'AND',  @contributionlastID, '1', NULL, 14 ),
+    ( @domainID, 'civicrm/admin/price?reset=1',                             'Manage Price Sets',          'Manage Price Sets',         'access CiviContribute,administer CiviCRM', 'AND',  @contributionlastID, '1', 1, 14 ),
+    ( @domainID, 'civicrm/admin/contribute/closeaccperiod?reset=1',         'Close Accounting Period',    'Close Accounting Period',   'access CiviContribute,administer CiviCRM,administer Accounting', 'AND',  @contributionlastID, '1', NULL, 15 ),
 
     ( @domainID, 'civicrm/financial/batch?reset=1&action=add',                             'New Batch',          'New Batch',         'create manual batch', 'AND',  @financialTransactionID, '1', NULL, 1 ),
     ( @domainID, 'civicrm/financial/financialbatches?reset=1&batchStatus=1', 'Open Batches',          'Open Batches',         'view own manual batches,view all manual batches', 'OR',  @financialTransactionID, '1', NULL, 2 ),
@@ -23773,7 +23350,7 @@ VALUES
     ( @domainID, 'civicrm/admin/options/subtype?reset=1',   'Contact Types','Contact Types',                              'administer CiviCRM', '',   @CustomizelastID, '1', NULL, 6 ),
     ( @domainID, 'civicrm/admin/setting/preferences/display?reset=1',   'Display Preferences', 'Display Preferences',     'administer CiviCRM', '',   @CustomizelastID, '1', NULL, 9 ),
     ( @domainID, 'civicrm/admin/setting/search?reset=1',    'Search Preferences',    'Search Preferences',                'administer CiviCRM', '',   @CustomizelastID, '1', NULL, 10 ),
-    ( @domainID, 'civicrm/admin/setting/preferences/date?reset=1', 'Date Preferences', 'Date Preferences', 'administer CiviCRM', '', @CustomizelastID, '1', NULL, 11 ), 
+    ( @domainID, 'civicrm/admin/setting/preferences/date?reset=1', 'Date Preferences', 'Date Preferences', 'administer CiviCRM', '', @CustomizelastID, '1', NULL, 11 ),
     ( @domainID, 'civicrm/admin/menu?reset=1',              'Navigation Menu', 'Navigation Menu',                         'administer CiviCRM', '',   @CustomizelastID, '1', NULL, 12 ),
     ( @domainID, 'civicrm/admin/options/wordreplacements?reset=1','Word Replacements','Word Replacements',                'administer CiviCRM', '',   @CustomizelastID, '1', NULL, 13 ),
     ( @domainID, 'civicrm/admin/options/custom_search?reset=1', 'Manage Custom Searches', 'Manage Custom Searches', 'administer CiviCRM', '', @CustomizelastID, '1', NULL, 14 );
@@ -24006,7 +23583,6 @@ VALUES
     ( @domainID, 'civicrm/admin/report/template/list?reset=1',             'Create New Report from Template', 'Create New Report from Template', 'administer Reports', '', @adminReportlastID, '1', NULL, 2 ),
     ( @domainID, 'civicrm/admin/report/options/report_template?reset=1',   'Manage Templates', 'Manage Templates', 'administer Reports',  '', @adminReportlastID, '1', NULL, 3 ),
     ( @domainID, 'civicrm/admin/report/register?reset=1',                  'Register Report',  'Register Report',  'administer Reports',  '', @adminReportlastID, '1', NULL, 4 );
-
 INSERT INTO civicrm_navigation
     ( domain_id, url, label, name, permission, permission_operator, parent_id, is_active, has_separator, weight )
 VALUES
@@ -24081,7 +23657,8 @@ VALUES
 INSERT INTO civicrm_navigation
     ( domain_id, url, label, name, permission, permission_operator, parent_id, is_active, has_separator, weight )
 VALUES
-    ( @domainID, 'civicrm/report/list?reset=1', 'All Reports', 'All Reports', 'access CiviReport', '', @reportlastID, '1', 1,    10 );
+    ( @domainID, 'civicrm/report/list?reset=1', 'All Reports', 'All Reports', 'access CiviReport', '', @reportlastID, '1', 1,    10 ),
+( @domainID, 'civicrm/report/list?myreports=1&reset=1',                'My Reports', 'My Reports', 'access CiviReport', '', @reportlastID, '1', 1, 11);
 
 -- sample report instances
 
@@ -24276,4 +23853,4 @@ INSERT INTO `civicrm_report_instance`
 VALUES
     (  @domainID, 'Survey Details', 'survey/detail', 'Detailed report for canvassing, phone-banking, walk lists or other surveys.', 'access CiviReport', 'a:39:{s:6:"fields";a:2:{s:9:"sort_name";s:1:"1";s:6:"result";s:1:"1";}s:22:"assignee_contact_id_op";s:2:"eq";s:25:"assignee_contact_id_value";s:0:"";s:12:"sort_name_op";s:3:"has";s:15:"sort_name_value";s:0:"";s:17:"street_number_min";s:0:"";s:17:"street_number_max";s:0:"";s:16:"street_number_op";s:3:"lte";s:19:"street_number_value";s:0:"";s:14:"street_name_op";s:3:"has";s:17:"street_name_value";s:0:"";s:15:"postal_code_min";s:0:"";s:15:"postal_code_max";s:0:"";s:14:"postal_code_op";s:3:"lte";s:17:"postal_code_value";s:0:"";s:7:"city_op";s:3:"has";s:10:"city_value";s:0:"";s:20:"state_province_id_op";s:2:"in";s:23:"state_province_id_value";a:0:{}s:13:"country_id_op";s:2:"in";s:16:"country_id_value";a:0:{}s:12:"survey_id_op";s:2:"in";s:15:"survey_id_value";a:0:{}s:12:"status_id_op";s:2:"eq";s:15:"status_id_value";s:1:"1";s:11:"custom_1_op";s:2:"in";s:14:"custom_1_value";a:0:{}s:11:"custom_2_op";s:2:"in";s:14:"custom_2_value";a:0:{}s:17:"custom_3_relative";s:1:"0";s:13:"custom_3_from";s:0:"";s:11:"custom_3_to";s:0:"";s:11:"description";s:75:"Detailed report for canvassing, phone-banking, walk lists or other surveys.";s:13:"email_subject";s:0:"";s:8:"email_to";s:0:"";s:8:"email_cc";s:0:"";s:10:"permission";s:17:"access CiviReport";s:6:"groups";s:0:"";s:9:"domain_id";i:1;}');
 
-UPDATE civicrm_domain SET version = '4.7.8';
+UPDATE civicrm_domain SET version = '4.7.11';
