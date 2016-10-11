@@ -4649,86 +4649,86 @@ VALUES
 -- option groups and values for 'preferred communication methods' , 'activity types', 'gender', etc.
 
 INSERT INTO
-   `civicrm_option_group` (`name`, `title`, `is_reserved`, `is_active`, `is_locked`)
+   `civicrm_option_group` (`name`, `title`, `data_type`, `is_reserved`, `is_active`, `is_locked`)
 VALUES
-   ('preferred_communication_method', 'Kommunikationspräferenzen'     , 1, 1, 0),
-   ('activity_type'                 , 'Aktivitätstyp'                      , 1, 1, 0),
-   ('gender'                        , 'Geschlecht'                             , 1, 1, 0),
-   ('instant_messenger_service'     , 'Benutzernamen von Sofortnachrichtendiensten', 1, 1, 0),
-   ('mobile_provider'               , 'Mobilfunkprovider'             , 1, 1, 0),
-   ('individual_prefix'             , 'Anreden'        , 1, 1, 0),
-   ('individual_suffix'             , 'Nachgestellter Namenszusatz (Suffix) eines Personenkontakts'        , 1, 1, 0),
-   ('acl_role'                      , 'ACL-Rolle'                           , 1, 1, 0),
-   ('accept_creditcard'             , 'Akzeptierte Kreditkarten'              , 1, 1, 0),
-   ('payment_instrument'            , 'Zahlungsmethoden'                    , 1, 1, 0),
-   ('contribution_status'           , 'Status der Zuwendung'                , 1, 1, 1),
-   ('pcp_status'                    , 'PCP Status'                         , 1, 1, 1),
-   ('pcp_owner_notify'              , 'PCP-Besitzerbenachrichtigungen'            , 1, 1, 1),
-   ('participant_role'              , 'Teilnehmerrolle'                   , 1, 1, 0),
-   ('event_type'                    , 'Veranstaltungstyp'                         , 1, 1, 0),
-   ('contact_view_options'          , 'Kontakt Anzeige Optionen'               , 1, 1, 1),
-   ('contact_smart_group_display'   , 'Contact Smart Group View Options'   , 1, 1, 1),
-   ('contact_edit_options'          , 'Bearbeitungsoptionen des Kontakts'               , 1, 1, 1),
-   ('advanced_search_options'       , 'Erweiterte Suchoptionen'            , 1, 1, 1),
-   ('user_dashboard_options'        , 'User Übersichtsseite Optionen'             , 1, 1, 1),
-   ('address_options'               , 'Adressierungsoptionen'                 , 1, 1, 0),
-   ('group_type'                    , 'Gruppenart'                         , 1, 1, 0),
-   ('grant_status'                  , 'Zuschussstatus'                       , 1, 1, 0),
-   ('grant_type'                    , 'Zuschussart'                         , 1, 1, 0),
-   ('custom_search'                 , 'benutzerdefinierte Suche'                      , 1, 1, 0),
-   ('activity_status'               , 'Status der Aktivität'                    , 1, 1, 0),
-   ('case_type'                     , 'Falltyp'                          , 1, 1, 0),
-   ('case_status'                   , 'Fall Status'                        , 1, 1, 0),
-   ('participant_listing'           , 'Teilnehmendenliste'                , 1, 1, 0),
-   ('safe_file_extension'           , 'Zugelassene/sichere Dateiendungen'                , 1, 1, 0),
-   ('from_email_address'            , 'E-Mail-Absenderadresse'                 , 1, 1, 0),
-   ('mapping_type'                  , 'Mapping Type'                       , 1, 1, 1),
-   ('wysiwyg_editor'                , 'WYSIWYG Editor'                     , 1, 1, 0),
-   ('recur_frequency_units'         , 'Recurring Frequency Units'          , 1, 1, 0),
-   ('phone_type'                    , 'Anschlussart'                         , 1, 1, 0),
-   ('custom_data_type'              , 'Benutzerdefinierter Datentyp'                   , 1, 1, 0),
-   ('visibility'                    , 'Sichtbarkeit'                         , 1, 1, 0),
-   ('mail_protocol'                 , 'Mailprotokoll'                      , 1, 1, 0),
-   ('priority'                      , 'Priorität'                           , 1, 1, 0),
-   ('redaction_rule'                , 'Redaktionsregel'                     , 1, 1, 0),
-   ('report_template'               , 'Berichtsvorlage'                    , 1, 1, 0),
-   ('email_greeting'                , 'Typ der E-Mail-Grußformel'                , 1, 1, 0),
-   ('postal_greeting'               , 'Art der Brief-Grußformel'               , 1, 1, 0),
-   ('addressee'                     , 'Art des Adressats'                     , 1, 1, 0),
-   ('contact_autocomplete_options'  , 'Kontaktsuche automatisch vervollständigen'        , 1, 1, 1),
-   ('contact_reference_options'     , 'Contact Reference Autocomplete Options', 1, 1, 1),
-   ('website_type'                  , 'Art der Präsenz im Internet'                       , 1, 1, 0),
-   ('tag_used_for'                  , 'Tag genutzt für'                       , 1, 1, 1),
-   ('currencies_enabled'            , 'Währungen aktiviert'                 , 1, 1, 0),
-   ('event_badge'                   , 'Namensschilder (Aufkleber) für Veranstaltungen'                   , 1, 1, 0),
-   ('note_privacy'                  , 'Datenschutzstufen für Notizen'           , 1, 1, 0),
-   ('campaign_type'                 , 'Kampagnentyp'                      , 1, 1, 0),
-   ('campaign_status'               , 'Kampagnenstatus'                    , 1, 1, 0),
-   ('system_extensions'             , 'CiviCRM-Erweiterungen'                 , 1, 1, 0),
-   ('mail_approval_status'          , 'CiviMail Genehmigungsstatus'           , 1, 1, 0),
-   ('engagement_index'              , 'Aktivitäts-Index'                   , 1, 1, 0),
-   ('cg_extend_objects'             , 'Objects a custom group extends to'  , 1, 1, 0),
-   ('paper_size'                    , 'Papierformat'                         , 1, 1, 0),
-   ('pdf_format'                    , 'PDF Seitenformat'                    , 1, 1, 0),
-   ('label_format'                  , 'Adressaufkleberformat'               , 1, 1, 0),
-   ('activity_contacts'             , 'Aktivität Kontakte'                  , 1, 1, 1),
-   ('account_relationship'          , 'Kontobeziehung'               , 1, 1, 0),
-   ('event_contacts'                , 'Veranstaltungsempfänger'                   , 1, 1, 0),
-   ('conference_slot'               , 'Zeitfenster für Vorträge'                    , 1, 1, 0),
-   ('batch_type'                    , 'Batch Typ'                         , 1, 1, 1),
-   ('batch_mode'                    , 'Batch Modus'                         , 1, 1, 1),
-   ('batch_status'                  , 'Batch Status'                       , 1, 1, 1),
-   ('sms_api_type'                  , 'API Typ'                           , 1, 1, 0),
-   ('sms_provider_name'             , 'SMS Provider interner Name'         , 1, 1, 0),
-   ('auto_renew_options'            , 'Automatische Verlängerung'                 , 1, 1, 1),
-   ('financial_account_type'        , 'Art des Sachkontos'             , 1, 1, 0),
-   ('financial_item_status'         , 'Financial Item Status'              , 1, 1, 1),
-   ('label_type'                    , 'Label-Typ'                         , 1, 1, 0),
-   ('name_badge'                    , 'Namensschild-Format'                  , 1, 1, 0),
-   ('communication_style'           , 'Anredestil'                , 1, 1, 0),
-   ('msg_mode'                      , 'Message Mode'                       , 1, 1, 0),
-   ('contact_date_reminder_options' , 'Contact Date Reminder Options'      , 1, 1, 1),
-   ('relative_date_filters'         , 'Relative Date Filters'              , 1, 1, 0);
+   ('preferred_communication_method', 'Kommunikationspräferenzen'     , NULL, 1, 1, 0),
+   ('activity_type'                 , 'Aktivitätstyp'                      , 'Integer', 1, 1, 0),
+   ('gender'                        , 'Geschlecht'                             , 'Integer', 1, 1, 0),
+   ('instant_messenger_service'     , 'Benutzernamen von Sofortnachrichtendiensten', NULL, 1, 1, 0),
+   ('mobile_provider'               , 'Mobilfunkprovider'             , NULL, 1, 1, 0),
+   ('individual_prefix'             , 'Anreden'        , NULL, 1, 1, 0),
+   ('individual_suffix'             , 'Nachgestellter Namenszusatz (Suffix) eines Personenkontakts'        , NULL, 1, 1, 0),
+   ('acl_role'                      , 'ACL-Rolle'                           , NULL, 1, 1, 0),
+   ('accept_creditcard'             , 'Akzeptierte Kreditkarten'              , NULL, 1, 1, 0),
+   ('payment_instrument'            , 'Zahlungsmethoden'                    , 'Integer', 1, 1, 0),
+   ('contribution_status'           , 'Status der Zuwendung'                , NULL, 1, 1, 1),
+   ('pcp_status'                    , 'PCP Status'                         , NULL, 1, 1, 1),
+   ('pcp_owner_notify'              , 'PCP-Besitzerbenachrichtigungen'            , NULL, 1, 1, 1),
+   ('participant_role'              , 'Teilnehmerrolle'                   , 'Integer', 1, 1, 0),
+   ('event_type'                    , 'Veranstaltungstyp'                         , 'Integer', 1, 1, 0),
+   ('contact_view_options'          , 'Kontakt Anzeige Optionen'               , NULL, 1, 1, 1),
+   ('contact_smart_group_display'   , 'Contact Smart Group View Options'   , NULL, 1, 1, 1),
+   ('contact_edit_options'          , 'Bearbeitungsoptionen des Kontakts'               , NULL, 1, 1, 1),
+   ('advanced_search_options'       , 'Erweiterte Suchoptionen'            , NULL, 1, 1, 1),
+   ('user_dashboard_options'        , 'User Übersichtsseite Optionen'             , NULL, 1, 1, 1),
+   ('address_options'               , 'Adressierungsoptionen'                 , NULL, 1, 1, 0),
+   ('group_type'                    , 'Gruppenart'                         , NULL, 1, 1, 0),
+   ('grant_status'                  , 'Zuschussstatus'                       , NULL, 1, 1, 0),
+   ('grant_type'                    , 'Zuschussart'                         , NULL, 1, 1, 0),
+   ('custom_search'                 , 'benutzerdefinierte Suche'                      , NULL, 1, 1, 0),
+   ('activity_status'               , 'Status der Aktivität'                    , 'Integer', 1, 1, 0),
+   ('case_type'                     , 'Falltyp'                          , NULL, 1, 1, 0),
+   ('case_status'                   , 'Fall Status'                        , NULL, 1, 1, 0),
+   ('participant_listing'           , 'Teilnehmendenliste'                , NULL, 1, 1, 0),
+   ('safe_file_extension'           , 'Zugelassene/sichere Dateiendungen'                , NULL, 1, 1, 0),
+   ('from_email_address'            , 'E-Mail-Absenderadresse'                 , NULL, 1, 1, 0),
+   ('mapping_type'                  , 'Mapping Type'                       , NULL, 1, 1, 1),
+   ('wysiwyg_editor'                , 'WYSIWYG Editor'                     , NULL, 1, 1, 0),
+   ('recur_frequency_units'         , 'Recurring Frequency Units'          , NULL, 1, 1, 0),
+   ('phone_type'                    , 'Anschlussart'                         , NULL, 1, 1, 0),
+   ('custom_data_type'              , 'Benutzerdefinierter Datentyp'                   , NULL, 1, 1, 0),
+   ('visibility'                    , 'Sichtbarkeit'                         , NULL, 1, 1, 0),
+   ('mail_protocol'                 , 'Mailprotokoll'                      , NULL, 1, 1, 0),
+   ('priority'                      , 'Priorität'                           , NULL, 1, 1, 0),
+   ('redaction_rule'                , 'Redaktionsregel'                     , NULL, 1, 1, 0),
+   ('report_template'               , 'Berichtsvorlage'                    , NULL, 1, 1, 0),
+   ('email_greeting'                , 'Typ der E-Mail-Grußformel'                , NULL, 1, 1, 0),
+   ('postal_greeting'               , 'Art der Brief-Grußformel'               , NULL, 1, 1, 0),
+   ('addressee'                     , 'Art des Adressats'                     , NULL, 1, 1, 0),
+   ('contact_autocomplete_options'  , 'Kontaktsuche automatisch vervollständigen'        , NULL, 1, 1, 1),
+   ('contact_reference_options'     , 'Contact Reference Autocomplete Options', NULL, 1, 1, 1),
+   ('website_type'                  , 'Art der Präsenz im Internet'                       , NULL, 1, 1, 0),
+   ('tag_used_for'                  , 'Tag genutzt für'                       , NULL, 1, 1, 1),
+   ('currencies_enabled'            , 'Währungen aktiviert'                 , NULL, 1, 1, 0),
+   ('event_badge'                   , 'Namensschilder (Aufkleber) für Veranstaltungen'                   , NULL, 1, 1, 0),
+   ('note_privacy'                  , 'Datenschutzstufen für Notizen'           , NULL, 1, 1, 0),
+   ('campaign_type'                 , 'Kampagnentyp'                      , NULL, 1, 1, 0),
+   ('campaign_status'               , 'Kampagnenstatus'                    , NULL, 1, 1, 0),
+   ('system_extensions'             , 'CiviCRM-Erweiterungen'                 , NULL, 1, 1, 0),
+   ('mail_approval_status'          , 'CiviMail Genehmigungsstatus'           , NULL, 1, 1, 0),
+   ('engagement_index'              , 'Aktivitäts-Index'                   , NULL, 1, 1, 0),
+   ('cg_extend_objects'             , 'Objects a custom group extends to'  , NULL, 1, 1, 0),
+   ('paper_size'                    , 'Papierformat'                         , NULL, 1, 1, 0),
+   ('pdf_format'                    , 'PDF Seitenformat'                    , NULL, 1, 1, 0),
+   ('label_format'                  , 'Adressaufkleberformat'               , NULL, 1, 1, 0),
+   ('activity_contacts'             , 'Aktivität Kontakte'                  , NULL, 1, 1, 1),
+   ('account_relationship'          , 'Kontobeziehung'               , NULL, 1, 1, 0),
+   ('event_contacts'                , 'Veranstaltungsempfänger'                   , NULL, 1, 1, 0),
+   ('conference_slot'               , 'Zeitfenster für Vorträge'                    , NULL, 1, 1, 0),
+   ('batch_type'                    , 'Batch Typ'                         , NULL, 1, 1, 1),
+   ('batch_mode'                    , 'Batch Modus'                         , NULL, 1, 1, 1),
+   ('batch_status'                  , 'Batch Status'                       , NULL, 1, 1, 1),
+   ('sms_api_type'                  , 'API Typ'                           , NULL, 1, 1, 0),
+   ('sms_provider_name'             , 'SMS Provider interner Name'         , NULL, 1, 1, 0),
+   ('auto_renew_options'            , 'Automatische Verlängerung'                 , NULL, 1, 1, 1),
+   ('financial_account_type'        , 'Art des Sachkontos'             , NULL, 1, 1, 0),
+   ('financial_item_status'         , 'Financial Item Status'              , NULL, 1, 1, 1),
+   ('label_type'                    , 'Label-Typ'                         , NULL, 1, 1, 0),
+   ('name_badge'                    , 'Namensschild-Format'                  , NULL, 1, 1, 0),
+   ('communication_style'           , 'Anredestil'                , NULL, 1, 1, 0),
+   ('msg_mode'                      , 'Message Mode'                       , NULL, 1, 1, 0),
+   ('contact_date_reminder_options' , 'Contact Date Reminder Options'      , NULL, 1, 1, 1),
+   ('relative_date_filters'         , 'Relative Date Filters'              , NULL, 1, 1, 0);
 
 SELECT @option_group_id_pcm            := max(id) from civicrm_option_group where name = 'preferred_communication_method';
 SELECT @option_group_id_act            := max(id) from civicrm_option_group where name = 'activity_type';
@@ -5047,7 +5047,7 @@ VALUES
   (@option_group_id_udOpt, 'Unterstützungszusagen'                    , 7, 'CiviPledge', NULL, 0, NULL, 7, NULL, 0, 0, 1, NULL, NULL),
   (@option_group_id_udOpt, 'Persönliche Kampagnenseiten'    , 8, 'PCP', NULL, 0, NULL, 8, NULL, 0, 0, 1, NULL, NULL),
   (@option_group_id_udOpt, 'Zugeordnete Aktivitäten'        , 9, 'Assigned Activities', NULL, 0, NULL, 9, NULL, 0, 0, 1, NULL, NULL),
-  (@option_group_id_udOpt, 'Invoices / Credit Notes'     , 10, 'Invoices / Credit Notes', NULL, 0, NULL, 10, NULL, 0, 0, 1, NULL, NULL),
+  (@option_group_id_udOpt, 'Rechnungen / Rückerstattungen'     , 10, 'Invoices / Credit Notes', NULL, 0, NULL, 10, NULL, 0, 0, 1, NULL, NULL),
 
   (@option_group_id_acsOpt, 'E-Mail-Adresse'   , 2, 'email'         , NULL, 0, NULL, 2, NULL, 0, 0, 1, NULL, NULL),
   (@option_group_id_acsOpt, 'Telefon'           , 3, 'phone'         , NULL, 0, NULL, 3, NULL, 0, 0, 1, NULL, NULL),
@@ -5386,7 +5386,7 @@ VALUES
 -- financial_account_type
 -- grouping field is specific to Quickbooks for mapping to .iif format
    (@option_group_id_fat, 'Aktivposten', 1, 'Asset', NULL, 0, 0, 1, 'Things you own', 0, 1, 1, 2, NULL),
-   (@option_group_id_fat, 'Verbindlichkeit', 2, 'Liability', NULL, 0, 0, 2, 'Things you own, like a grant still to be disbursed', 0, 1, 1, 2, NULL),
+   (@option_group_id_fat, 'Verbindlichkeit', 2, 'Liability', NULL, 0, 0, 2, 'Things you owe, like a grant still to be disbursed', 0, 1, 1, 2, NULL),
    (@option_group_id_fat, 'Einnahmen', 3, 'Revenue', NULL, 0, 1, 3, 'Income from contributions and sales of tickets and memberships', 0, 1, 1, 2, NULL),
    (@option_group_id_fat, 'Materialaufwand', 4, 'Cost of Sales', NULL, 0, 0, 4, 'Costs incurred to get revenue, e.g. premiums for donations, dinner for a fundraising dinner ticket', 0, 1, 1, 2, NULL),
    (@option_group_id_fat, 'Ausgaben', 5, 'Expenses', NULL, 0, 0, 5, 'Things that are paid for that are consumable, e.g. grants disbursed', 0, 1, 1, 2, NULL),
@@ -6391,7 +6391,7 @@ INSERT INTO civicrm_option_group
 
 INSERT INTO civicrm_option_value
   (option_group_id,        name,       label,   value,                                  weight) VALUES
-      (@tpl_ogid_case, 'case_activity', 'Fälle - sende eine Kopie einer Aktivität',            1, 1) ,      (@tpl_ogid_contribution, 'contribution_dupalert', 'Contributions - Duplicate Organization Alert',            1, 1) ,      (@tpl_ogid_contribution, 'contribution_offline_receipt', 'Zahlungsbeleg für eine Zuwendung (off-line)',            2, 2) ,      (@tpl_ogid_contribution, 'contribution_online_receipt', 'Zahlungsbeleg für eine Zuwendung (on-line)',            3, 3) ,      (@tpl_ogid_contribution, 'contribution_invoice_receipt', 'Contributions - Invoice',            4, 4) ,      (@tpl_ogid_contribution, 'contribution_recurring_notify', 'Contributions - Recurring Start and End Notification',            5, 5) ,      (@tpl_ogid_contribution, 'contribution_recurring_cancelled', 'Contributions - Recurring Cancellation Notification',            6, 6) ,      (@tpl_ogid_contribution, 'contribution_recurring_billing', 'Contributions - Recurring Billing Updates',            7, 7) ,      (@tpl_ogid_contribution, 'contribution_recurring_edit', 'Contributions - Recurring Updates',            8, 8) ,      (@tpl_ogid_contribution, 'pcp_notify', 'Personal Campaign Pages - Admin Notification',            9, 9) ,      (@tpl_ogid_contribution, 'pcp_status_change', 'Personal Campaign Pages - Supporter Status Change Notification',            10, 10) ,      (@tpl_ogid_contribution, 'pcp_supporter_notify', 'Personal Campaign Pages - Supporter Welcome',            11, 11) ,      (@tpl_ogid_contribution, 'pcp_owner_notify', 'Personal Campaign Pages - Owner Notification',            12, 12) ,      (@tpl_ogid_contribution, 'payment_or_refund_notification', 'Zusätzlicher Zahlungs- oder Rückzahlungsbeleg',            13, 13) ,      (@tpl_ogid_event, 'event_offline_receipt', 'Events - Registration Confirmation and Receipt (off-line)',            1, 1) ,      (@tpl_ogid_event, 'event_online_receipt', 'Events - Registration Confirmation and Receipt (on-line)',            2, 2) ,      (@tpl_ogid_event, 'event_registration_receipt', 'Events - Receipt only',            3, 3) ,      (@tpl_ogid_event, 'participant_cancelled', 'Events - Registration Cancellation Notice',            4, 4) ,      (@tpl_ogid_event, 'participant_confirm', 'Events - Registration Confirmation Invite',            5, 5) ,      (@tpl_ogid_event, 'participant_expired', 'Veranstaltungen - Mitteilung über den Zeitablauf einer unerledigten Anmeldung',            6, 6) ,      (@tpl_ogid_event, 'participant_transferred', 'Events - Registration Transferred Notice',            7, 7) ,      (@tpl_ogid_friend, 'friend', '\"Weitersagen\" E-Mail',            1, 1) ,      (@tpl_ogid_membership, 'membership_offline_receipt', 'Mitgliedschaften - Zahlungsbelege für die Anmeldung und Verlängerung (offline)',            1, 1) ,      (@tpl_ogid_membership, 'membership_online_receipt', 'Mitgliedschaften - Zahlungsbeleg (online)',            2, 2) ,      (@tpl_ogid_membership, 'membership_autorenew_cancelled', 'Memberships - Auto-renew Cancellation Notification',            3, 3) ,      (@tpl_ogid_membership, 'membership_autorenew_billing', 'Memberships - Auto-renew Billing Updates',            4, 4) ,      (@tpl_ogid_meta, 'test_preview', 'Test-drive - Receipt Header',            1, 1) ,      (@tpl_ogid_pledge, 'pledge_acknowledge', 'Pledges - Acknowledgement',            1, 1) ,      (@tpl_ogid_pledge, 'pledge_reminder', 'Pledges - Payment Reminder',            2, 2) ,      (@tpl_ogid_uf, 'uf_notify', 'Profiles - Admin Notification',            1, 1) ,      (@tpl_ogid_petition, 'petition_sign', 'Petition - Unterschrift hinzugefügt',            1, 1) ,      (@tpl_ogid_petition, 'petition_confirmation_needed', 'Bestätigung für Petition erforderlich',            2, 2) ;
+      (@tpl_ogid_case, 'case_activity', 'Fälle - sende eine Kopie einer Aktivität',            1, 1) ,      (@tpl_ogid_contribution, 'contribution_dupalert', 'Contributions - Duplicate Organization Alert',            1, 1) ,      (@tpl_ogid_contribution, 'contribution_offline_receipt', 'Zahlungsbeleg für eine Zuwendung (off-line)',            2, 2) ,      (@tpl_ogid_contribution, 'contribution_online_receipt', 'Zahlungsbeleg für eine Zuwendung (on-line)',            3, 3) ,      (@tpl_ogid_contribution, 'contribution_invoice_receipt', 'Zuwendungen - Rechnung',            4, 4) ,      (@tpl_ogid_contribution, 'contribution_recurring_notify', 'Contributions - Recurring Start and End Notification',            5, 5) ,      (@tpl_ogid_contribution, 'contribution_recurring_cancelled', 'Contributions - Recurring Cancellation Notification',            6, 6) ,      (@tpl_ogid_contribution, 'contribution_recurring_billing', 'Contributions - Recurring Billing Updates',            7, 7) ,      (@tpl_ogid_contribution, 'contribution_recurring_edit', 'Contributions - Recurring Updates',            8, 8) ,      (@tpl_ogid_contribution, 'pcp_notify', 'Personal Campaign Pages - Admin Notification',            9, 9) ,      (@tpl_ogid_contribution, 'pcp_status_change', 'Personal Campaign Pages - Supporter Status Change Notification',            10, 10) ,      (@tpl_ogid_contribution, 'pcp_supporter_notify', 'Personal Campaign Pages - Supporter Welcome',            11, 11) ,      (@tpl_ogid_contribution, 'pcp_owner_notify', 'Personal Campaign Pages - Owner Notification',            12, 12) ,      (@tpl_ogid_contribution, 'payment_or_refund_notification', 'Zusätzlicher Zahlungs- oder Rückzahlungsbeleg',            13, 13) ,      (@tpl_ogid_event, 'event_offline_receipt', 'Events - Registration Confirmation and Receipt (off-line)',            1, 1) ,      (@tpl_ogid_event, 'event_online_receipt', 'Events - Registration Confirmation and Receipt (on-line)',            2, 2) ,      (@tpl_ogid_event, 'event_registration_receipt', 'Events - Receipt only',            3, 3) ,      (@tpl_ogid_event, 'participant_cancelled', 'Events - Registration Cancellation Notice',            4, 4) ,      (@tpl_ogid_event, 'participant_confirm', 'Events - Registration Confirmation Invite',            5, 5) ,      (@tpl_ogid_event, 'participant_expired', 'Veranstaltungen - Mitteilung über den Zeitablauf einer unerledigten Anmeldung',            6, 6) ,      (@tpl_ogid_event, 'participant_transferred', 'Events - Registration Transferred Notice',            7, 7) ,      (@tpl_ogid_friend, 'friend', '\"Weitersagen\" E-Mail',            1, 1) ,      (@tpl_ogid_membership, 'membership_offline_receipt', 'Mitgliedschaften - Zahlungsbelege für die Anmeldung und Verlängerung (offline)',            1, 1) ,      (@tpl_ogid_membership, 'membership_online_receipt', 'Mitgliedschaften - Zahlungsbeleg (online)',            2, 2) ,      (@tpl_ogid_membership, 'membership_autorenew_cancelled', 'Memberships - Auto-renew Cancellation Notification',            3, 3) ,      (@tpl_ogid_membership, 'membership_autorenew_billing', 'Memberships - Auto-renew Billing Updates',            4, 4) ,      (@tpl_ogid_meta, 'test_preview', 'Test-drive - Receipt Header',            1, 1) ,      (@tpl_ogid_pledge, 'pledge_acknowledge', 'Pledges - Acknowledgement',            1, 1) ,      (@tpl_ogid_pledge, 'pledge_reminder', 'Pledges - Payment Reminder',            2, 2) ,      (@tpl_ogid_uf, 'uf_notify', 'Profiles - Admin Notification',            1, 1) ,      (@tpl_ogid_petition, 'petition_sign', 'Petition - Unterschrift hinzugefügt',            1, 1) ,      (@tpl_ogid_petition, 'petition_confirmation_needed', 'Bestätigung für Petition erforderlich',            2, 2) ;
     SELECT @tpl_ovid_case_activity := MAX(id) FROM civicrm_option_value WHERE option_group_id = @tpl_ogid_case AND name = 'case_activity';
     SELECT @tpl_ovid_contribution_dupalert := MAX(id) FROM civicrm_option_value WHERE option_group_id = @tpl_ogid_contribution AND name = 'contribution_dupalert';
     SELECT @tpl_ovid_contribution_offline_receipt := MAX(id) FROM civicrm_option_value WHERE option_group_id = @tpl_ogid_contribution AND name = 'contribution_offline_receipt';
@@ -9180,7 +9180,7 @@ INSERT INTO civicrm_msg_template
 ', @tpl_ovid_contribution_online_receipt, 0,          1) ,      
       
       
-      ('Contributions - Invoice', '{if $title}
+      ('Zuwendungen - Rechnung', '{if $title}
   {if $component}
     {if $component == \'event\'}
       {ts 1=$title}Event Registration Invoice: %1{/ts}
@@ -9650,7 +9650,7 @@ INSERT INTO civicrm_msg_template
   </body>
 </html>
 ', @tpl_ovid_contribution_invoice_receipt, 1,          0),
-      ('Contributions - Invoice', '{if $title}
+      ('Zuwendungen - Rechnung', '{if $title}
   {if $component}
     {if $component == \'event\'}
       {ts 1=$title}Event Registration Invoice: %1{/ts}
@@ -23853,4 +23853,4 @@ INSERT INTO `civicrm_report_instance`
 VALUES
     (  @domainID, 'Survey Details', 'survey/detail', 'Detailed report for canvassing, phone-banking, walk lists or other surveys.', 'access CiviReport', 'a:39:{s:6:"fields";a:2:{s:9:"sort_name";s:1:"1";s:6:"result";s:1:"1";}s:22:"assignee_contact_id_op";s:2:"eq";s:25:"assignee_contact_id_value";s:0:"";s:12:"sort_name_op";s:3:"has";s:15:"sort_name_value";s:0:"";s:17:"street_number_min";s:0:"";s:17:"street_number_max";s:0:"";s:16:"street_number_op";s:3:"lte";s:19:"street_number_value";s:0:"";s:14:"street_name_op";s:3:"has";s:17:"street_name_value";s:0:"";s:15:"postal_code_min";s:0:"";s:15:"postal_code_max";s:0:"";s:14:"postal_code_op";s:3:"lte";s:17:"postal_code_value";s:0:"";s:7:"city_op";s:3:"has";s:10:"city_value";s:0:"";s:20:"state_province_id_op";s:2:"in";s:23:"state_province_id_value";a:0:{}s:13:"country_id_op";s:2:"in";s:16:"country_id_value";a:0:{}s:12:"survey_id_op";s:2:"in";s:15:"survey_id_value";a:0:{}s:12:"status_id_op";s:2:"eq";s:15:"status_id_value";s:1:"1";s:11:"custom_1_op";s:2:"in";s:14:"custom_1_value";a:0:{}s:11:"custom_2_op";s:2:"in";s:14:"custom_2_value";a:0:{}s:17:"custom_3_relative";s:1:"0";s:13:"custom_3_from";s:0:"";s:11:"custom_3_to";s:0:"";s:11:"description";s:75:"Detailed report for canvassing, phone-banking, walk lists or other surveys.";s:13:"email_subject";s:0:"";s:8:"email_to";s:0:"";s:8:"email_cc";s:0:"";s:10:"permission";s:17:"access CiviReport";s:6:"groups";s:0:"";s:9:"domain_id";i:1;}');
 
-UPDATE civicrm_domain SET version = '4.7.11';
+UPDATE civicrm_domain SET version = '4.7.12';
