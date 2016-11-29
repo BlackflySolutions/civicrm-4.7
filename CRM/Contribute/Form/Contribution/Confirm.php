@@ -52,6 +52,108 @@ class CRM_Contribute_Form_Contribution_Confirm extends CRM_Contribute_Form_Contr
   public $_contributionID;
 
   /**
+   * @param $form
+   * @param $params
+   * @param $contributionParams
+   * @param $pledgeID
+   * @param $contribution
+   * @param $isEmailReceipt
+   * @return mixed
+   */
+  public static function handlePledge(&$form, $params, $contributionParams, $pledgeID, $contribution, $isEmailReceipt) {
+    if ($pledgeID) {
+      //when user doing pledge payments.
+      //update the schedule when payment(s) are made
+      $amount = $params['amount'];
+      $pledgePaymentParams = array();
+      foreach ($params['pledge_amount'] as $paymentId => $dontCare) {
+        $scheduledAmount = CRM_Core_DAO::getFieldValue(
+          'CRM_Pledge_DAO_PledgePayment',
+          $paymentId,
+          'scheduled_amount',
+          'id'
+        );
+
+        $pledgePayment = ($amount >= $scheduledAmount) ? $scheduledAmount : $amount;
+        if ($pledgePayment > 0) {
+          $pledgePaymentParams[] = array(
+            'id' => $paymentId,
+            'contribution_id' => $contribution->id,
+            'status_id' => $contribution->contribution_status_id,
+            'actual_amount' => $pledgePayment,
+          );
+          $amount -= $pledgePayment;
+        }
+      }
+      if ($amount > 0 && count($pledgePaymentParams)) {
+        $pledgePaymentParams[count($pledgePaymentParams) - 1]['actual_amount'] += $amount;
+      }
+      foreach ($pledgePaymentParams as $p) {
+        CRM_Pledge_BAO_PledgePayment::add($p);
+      }
+
+      //update pledge status according to the new payment statuses
+      CRM_Pledge_BAO_PledgePayment::updatePledgePaymentStatus($pledgeID);
+      return $form;
+    }
+    else {
+      //when user creating pledge record.
+      $pledgeParams = array();
+      $pledgeParams['contact_id'] = $contribution->contact_id;
+      $pledgeParams['installment_amount'] = $pledgeParams['actual_amount'] = $contribution->total_amount;
+      $pledgeParams['contribution_id'] = $contribution->id;
+      $pledgeParams['contribution_page_id'] = $contribution->contribution_page_id;
+      $pledgeParams['financial_type_id'] = $contribution->financial_type_id;
+      $pledgeParams['frequency_interval'] = $params['pledge_frequency_interval'];
+      $pledgeParams['installments'] = $params['pledge_installments'];
+      $pledgeParams['frequency_unit'] = $params['pledge_frequency_unit'];
+      if ($pledgeParams['frequency_unit'] == 'month') {
+        $pledgeParams['frequency_day'] = intval(date("d"));
+      }
+      else {
+        $pledgeParams['frequency_day'] = 1;
+      }
+      $pledgeParams['create_date'] = $pledgeParams['start_date'] = $pledgeParams['scheduled_date'] = date("Ymd");
+      if (CRM_Utils_Array::value('start_date', $params)) {
+        $pledgeParams['frequency_day'] = intval(date("d", strtotime(CRM_Utils_Array::value('start_date', $params))));
+        $pledgeParams['start_date'] = $pledgeParams['scheduled_date'] = date('Ymd', strtotime(CRM_Utils_Array::value('start_date', $params)));
+      }
+      $pledgeParams['status_id'] = $contribution->contribution_status_id;
+      $pledgeParams['max_reminders'] = $form->_values['max_reminders'];
+      $pledgeParams['initial_reminder_day'] = $form->_values['initial_reminder_day'];
+      $pledgeParams['additional_reminder_day'] = $form->_values['additional_reminder_day'];
+      $pledgeParams['is_test'] = $contribution->is_test;
+      $pledgeParams['acknowledge_date'] = date('Ymd');
+      $pledgeParams['original_installment_amount'] = $pledgeParams['installment_amount'];
+
+      //inherit campaign from contirb page.
+      $pledgeParams['campaign_id'] = CRM_Utils_Array::value('campaign_id', $contributionParams);
+
+      $pledge = CRM_Pledge_BAO_Pledge::create($pledgeParams);
+
+      $form->_params['pledge_id'] = $pledge->id;
+
+      //send acknowledgment email. only when pledge is created
+      if ($pledge->id && $isEmailReceipt) {
+        //build params to send acknowledgment.
+        $pledgeParams['id'] = $pledge->id;
+        $pledgeParams['receipt_from_name'] = $form->_values['receipt_from_name'];
+        $pledgeParams['receipt_from_email'] = $form->_values['receipt_from_email'];
+
+        //scheduled amount will be same as installment_amount.
+        $pledgeParams['scheduled_amount'] = $pledgeParams['installment_amount'];
+
+        //get total pledge amount.
+        $pledgeParams['total_pledge_amount'] = $pledge->amount;
+
+        CRM_Pledge_BAO_Pledge::sendAcknowledgment($form, $pledgeParams);
+        return $form;
+      }
+      return $form;
+    }
+  }
+
+  /**
    * Set the parameters to be passed to contribution create function.
    *
    * @param array $params
@@ -218,13 +320,23 @@ class CRM_Contribute_Form_Contribution_Confirm extends CRM_Contribute_Form_Contr
     if (!empty($this->_membershipBlock)) {
       $this->_params['selectMembership'] = $this->get('selectMembership');
     }
-    if (!empty($this->_paymentProcessor) &&  $this->_paymentProcessor['object']->supports('preApproval')) {
-      $preApprovalParams = $this->_paymentProcessor['object']->getPreApprovalDetails($this->get('pre_approval_parameters'));
-      $this->_params = array_merge($this->_params, $preApprovalParams);
+    if (!empty($this->_paymentProcessor)) {
+      if ($this->_paymentProcessor['object']->supports('preApproval')) {
+        $preApprovalParams = $this->_paymentProcessor['object']->getPreApprovalDetails($this->get('pre_approval_parameters'));
+        $this->_params = array_merge($this->_params, $preApprovalParams);
 
-      // We may have fetched some billing details from the getPreApprovalDetails function so we
-      // want to ensure we set this after that function has been called.
-      CRM_Core_Payment_Form::mapParams($this->_bltID, $preApprovalParams, $this->_params, FALSE);
+        // We may have fetched some billing details from the getPreApprovalDetails function so we
+        // want to ensure we set this after that function has been called.
+        CRM_Core_Payment_Form::mapParams($this->_bltID, $preApprovalParams, $this->_params, FALSE);
+      }
+
+      // Set text version of state & country if present.
+      if (!empty($this->_params["billing_state_province_id-{$this->_bltID}"])) {
+        $this->_params["state_province-{$this->_bltID}"] = CRM_Core_PseudoConstant::stateProvinceAbbreviation($this->_params["billing_state_province_id-{$this->_bltID}"]);
+      }
+      if (!empty($this->_params["billing_country_id-{$this->_bltID}"])) {
+        $this->_params["country-{$this->_bltID}"] = CRM_Core_PseudoConstant::countryIsoCode($this->_params["billing_country_id-{$this->_bltID}"]);
+      }
     }
 
     $this->_params['is_pay_later'] = $this->get('is_pay_later');
@@ -895,96 +1007,8 @@ class CRM_Contribute_Form_Contribution_Confirm extends CRM_Contribute_Form_Contr
     //CRM-13981, processing honor contact into soft-credit contribution
     CRM_Contribute_BAO_ContributionSoft::processSoftContribution($params, $contribution);
 
-    //handle pledge stuff.
     if ($isPledge) {
-      if ($pledgeID) {
-        //when user doing pledge payments.
-        //update the schedule when payment(s) are made
-        $amount = $params['amount'];
-        $pledgePaymentParams = array();
-        foreach ($params['pledge_amount'] as $paymentId => $dontCare) {
-          $scheduledAmount = CRM_Core_DAO::getFieldValue(
-            'CRM_Pledge_DAO_PledgePayment',
-            $paymentId,
-            'scheduled_amount',
-            'id'
-          );
-
-          $pledgePayment = ($amount >= $scheduledAmount) ? $scheduledAmount : $amount;
-          if ($pledgePayment > 0) {
-            $pledgePaymentParams[] = array(
-              'id' => $paymentId,
-              'contribution_id' => $contribution->id,
-              'status_id' => $contribution->contribution_status_id,
-              'actual_amount' => $pledgePayment,
-            );
-            $amount -= $pledgePayment;
-          }
-        }
-        if ($amount > 0 && count($pledgePaymentParams)) {
-          $pledgePaymentParams[count($pledgePaymentParams) - 1]['actual_amount'] += $amount;
-        }
-        foreach ($pledgePaymentParams as $p) {
-          CRM_Pledge_BAO_PledgePayment::add($p);
-        }
-
-        //update pledge status according to the new payment statuses
-        CRM_Pledge_BAO_PledgePayment::updatePledgePaymentStatus($pledgeID);
-      }
-      else {
-        //when user creating pledge record.
-        $pledgeParams = array();
-        $pledgeParams['contact_id'] = $contribution->contact_id;
-        $pledgeParams['installment_amount'] = $pledgeParams['actual_amount'] = $contribution->total_amount;
-        $pledgeParams['contribution_id'] = $contribution->id;
-        $pledgeParams['contribution_page_id'] = $contribution->contribution_page_id;
-        $pledgeParams['financial_type_id'] = $contribution->financial_type_id;
-        $pledgeParams['frequency_interval'] = $params['pledge_frequency_interval'];
-        $pledgeParams['installments'] = $params['pledge_installments'];
-        $pledgeParams['frequency_unit'] = $params['pledge_frequency_unit'];
-        if ($pledgeParams['frequency_unit'] == 'month') {
-          $pledgeParams['frequency_day'] = intval(date("d"));
-        }
-        else {
-          $pledgeParams['frequency_day'] = 1;
-        }
-        $pledgeParams['create_date'] = $pledgeParams['start_date'] = $pledgeParams['scheduled_date'] = date("Ymd");
-        $pledgeBlock = CRM_Pledge_BAO_PledgeBlock::getPledgeBlock($contribution->contribution_page_id);
-        if (CRM_Utils_Array::value('start_date', $params) || !CRM_Utils_Array::value('is_pledge_start_date_visible', $pledgeBlock)) {
-          $pledgeStartDate = CRM_Utils_Array::value('start_date', $params, NULL);
-          $pledgeParams['start_date'] = $pledgeParams['scheduled_date'] = CRM_Pledge_BAO_Pledge::getPledgeStartDate($pledgeStartDate, $pledgeBlock);
-        }
-        $pledgeParams['status_id'] = $contribution->contribution_status_id;
-        $pledgeParams['max_reminders'] = $form->_values['max_reminders'];
-        $pledgeParams['initial_reminder_day'] = $form->_values['initial_reminder_day'];
-        $pledgeParams['additional_reminder_day'] = $form->_values['additional_reminder_day'];
-        $pledgeParams['is_test'] = $contribution->is_test;
-        $pledgeParams['acknowledge_date'] = date('Ymd');
-        $pledgeParams['original_installment_amount'] = $pledgeParams['installment_amount'];
-
-        //inherit campaign from contirb page.
-        $pledgeParams['campaign_id'] = CRM_Utils_Array::value('campaign_id', $contributionParams);
-
-        $pledge = CRM_Pledge_BAO_Pledge::create($pledgeParams);
-
-        $form->_params['pledge_id'] = $pledge->id;
-
-        //send acknowledgment email. only when pledge is created
-        if ($pledge->id && $isEmailReceipt) {
-          //build params to send acknowledgment.
-          $pledgeParams['id'] = $pledge->id;
-          $pledgeParams['receipt_from_name'] = $form->_values['receipt_from_name'];
-          $pledgeParams['receipt_from_email'] = $form->_values['receipt_from_email'];
-
-          //scheduled amount will be same as installment_amount.
-          $pledgeParams['scheduled_amount'] = $pledgeParams['installment_amount'];
-
-          //get total pledge amount.
-          $pledgeParams['total_pledge_amount'] = $pledge->amount;
-
-          CRM_Pledge_BAO_Pledge::sendAcknowledgment($form, $pledgeParams);
-        }
-      }
+      $form = self::handlePledge($form, $params, $contributionParams, $pledgeID, $contribution, $isEmailReceipt);
     }
 
     if ($online && $contribution) {
@@ -1071,6 +1095,7 @@ class CRM_Contribute_Form_Contribution_Confirm extends CRM_Contribute_Form_Contr
     $recurParams['installments'] = CRM_Utils_Array::value('installments', $params);
     $recurParams['financial_type_id'] = CRM_Utils_Array::value('financial_type_id', $params);
     $recurParams['currency'] = CRM_Utils_Array::value('currency', $params);
+    $recurParams['payment_instrument_id'] = $params['payment_instrument_id'];
 
     // CRM-14354: For an auto-renewing membership with an additional contribution,
     // if separate payments is not enabled, make sure only the membership fee recurs
@@ -1094,7 +1119,7 @@ class CRM_Contribute_Form_Contribution_Confirm extends CRM_Contribute_Form_Contr
 
     $recurParams['start_date'] = $recurParams['create_date'] = $recurParams['modified_date'] = date('YmdHis');
     if (!empty($params['receive_date'])) {
-      $recurParams['start_date'] = $params['receive_date'];
+      $recurParams['start_date'] = date('YmdHis', strtotime($params['receive_date']));
     }
     $recurParams['invoice_id'] = CRM_Utils_Array::value('invoiceID', $params);
     $recurParams['contribution_status_id'] = CRM_Core_PseudoConstant::getKey('CRM_Contribute_BAO_Contribution', 'contribution_status_id', 'Pending');
@@ -1105,13 +1130,8 @@ class CRM_Contribute_Form_Contribution_Confirm extends CRM_Contribute_Form_Contr
     $recurParams['trxn_id'] = CRM_Utils_Array::value('trxn_id', $params, $params['invoiceID']);
     $recurParams['financial_type_id'] = $contributionType->id;
 
-    if (!empty($form->_values['is_monetary'])) {
-      $recurParams['payment_instrument_id'] = 1;
-    }
-
     $campaignId = CRM_Utils_Array::value('campaign_id', $params, CRM_Utils_Array::value('campaign_id', $form->_values));
     $recurParams['campaign_id'] = $campaignId;
-
     $recurring = CRM_Contribute_BAO_ContributionRecur::add($recurParams);
     if (is_a($recurring, 'CRM_Core_Error')) {
       CRM_Core_Error::displaySessionError($recurring);
@@ -1436,6 +1456,7 @@ class CRM_Contribute_Form_Contribution_Confirm extends CRM_Contribute_Form_Contr
     $errors = $paymentResults = array();
     $form->_values['isMembership'] = TRUE;
     $isRecurForFirstTransaction = CRM_Utils_Array::value('is_recur', $form->_values, CRM_Utils_Array::value('is_recur', $membershipParams));
+    $unprocessedLineItems = $form->_lineItem;
     $totalAmount = $membershipParams['amount'];
 
     if ($isPaidMembership) {
@@ -1447,6 +1468,14 @@ class CRM_Contribute_Form_Contribution_Confirm extends CRM_Contribute_Form_Contr
         }
       }
 
+      if (!$isProcessSeparateMembershipTransaction) {
+        $membershipParams['skipLineItem'] = 1;
+      }
+      else {
+        $membershipParams['total_amount'] = $totalAmount;
+        CRM_Price_BAO_LineItem::getLineItemArray($membershipParams);
+
+      }
       $paymentResult = CRM_Contribute_BAO_Contribution_Utils::processConfirm($form, $membershipParams,
         $contactID,
         $financialTypeID,
@@ -1471,7 +1500,7 @@ class CRM_Contribute_Form_Contribution_Confirm extends CRM_Contribute_Form_Contr
         if (empty($form->_params['auto_renew']) && !empty($membershipParams['is_recur'])) {
           unset($membershipParams['is_recur']);
         }
-        list($membershipContribution, $secondPaymentResult) = $this->processSecondaryFinancialTransaction($contactID, $form, $membershipParams,
+        list($membershipContribution, $secondPaymentResult) = $this->processSecondaryFinancialTransaction($contactID, $form, array_merge($membershipParams, array('skipLineItem' => 1)),
           $isTest, $membershipLineItems, CRM_Utils_Array::value('minimum_fee', $membershipDetails, 0), CRM_Utils_Array::value('financial_type_id', $membershipDetails));
         $paymentResults[] = array('contribution_id' => $membershipContribution->id, 'result' => $secondPaymentResult);
       }
@@ -1493,7 +1522,26 @@ class CRM_Contribute_Form_Contribution_Confirm extends CRM_Contribute_Form_Contr
     //@todo it should no longer be possible for it to get to this point & membership to not be an array
     if (is_array($membershipTypeIDs) && !empty($membershipContributionID)) {
       $typesTerms = CRM_Utils_Array::value('types_terms', $membershipParams, array());
+
+      $membershipLines = $nonMembershipLines = array();
+      foreach ($unprocessedLineItems as $priceSetID => $lines) {
+        foreach ($lines as $line) {
+          if (!empty($line['membership_type_id'])) {
+            $membershipLines[$line['membership_type_id']] = $line['price_field_value_id'];
+          }
+        }
+      }
+
+      $i = 1;
       foreach ($membershipTypeIDs as $memType) {
+        if ($i < count($membershipTypeIDs)) {
+          $membershipLineItems[$priceSetID][$membershipLines[$memType]] = $unprocessedLineItems[$priceSetID][$membershipLines[$memType]];
+          unset($unprocessedLineItems[$priceSetID][$membershipLines[$memType]]);
+        }
+        else {
+          $membershipLineItems = $unprocessedLineItems;
+        }
+        $i++;
         $numTerms = CRM_Utils_Array::value($memType, $typesTerms, 1);
         if (!empty($membershipContribution)) {
           $pendingStatus = CRM_Core_OptionGroup::getValue('contribution_status', 'Pending', 'name');
@@ -1523,12 +1571,13 @@ class CRM_Contribute_Form_Contribution_Confirm extends CRM_Contribute_Form_Contr
           }
         }
 
-        list($membership, $renewalMode, $dates) = CRM_Member_BAO_Membership::renewMembership(
+        list($membership, $renewalMode, $dates) = CRM_Member_BAO_Membership::processMembership(
           $contactID, $memType, $isTest,
           date('YmdHis'), CRM_Utils_Array::value('cms_contactID', $membershipParams),
           $customFieldsFormatted,
           $numTerms, $membershipID, $pending,
-          $contributionRecurID, $membershipSource, $isPayLater, $campaignId
+          $contributionRecurID, $membershipSource, $isPayLater, $campaignId, array(), $membershipContribution,
+          $membershipLineItems
         );
 
         $form->set('renewal_mode', $renewalMode);
@@ -1540,6 +1589,7 @@ class CRM_Contribute_Form_Contribution_Confirm extends CRM_Contribute_Form_Contr
         if (!empty($membershipContribution)) {
           // update recurring id for membership record
           CRM_Member_BAO_Membership::updateRecurMembership($membership, $membershipContribution);
+          // Next line is probably redundant. Checksprevent it happening twice.
           CRM_Member_BAO_Membership::linkMembershipPayment($membership, $membershipContribution);
         }
       }
@@ -1877,6 +1927,7 @@ class CRM_Contribute_Form_Contribution_Confirm extends CRM_Contribute_Form_Contr
     $form->_fields['billing_last_name'] = 1;
     // CRM-18854 - Set form values to allow pledge to be created for api test.
     if (CRM_Utils_Array::value('pledge_block_id', $params)) {
+      $form->_values['pledge_id'] = CRM_Utils_Array::value('pledge_id', $params, NULL);
       $form->_values['pledge_block_id'] = $params['pledge_block_id'];
       $pledgeBlock = CRM_Pledge_BAO_PledgeBlock::getPledgeBlock($params['id']);
       $form->_values['max_reminders'] = $pledgeBlock['max_reminders'];
@@ -1905,9 +1956,20 @@ class CRM_Contribute_Form_Contribution_Confirm extends CRM_Contribute_Form_Contr
     else {
       $form->_params['payment_processor_id'] = 0;
     }
+
     $priceFields = $priceFields[$priceSetID]['fields'];
     CRM_Price_BAO_PriceSet::processAmount($priceFields, $paramsProcessedForForm, $lineItems, 'civicrm_contribution');
     $form->_lineItem = array($priceSetID => $lineItems);
+    $membershipPriceFieldIDs = array();
+    foreach ((array) $lineItems as $lineItem) {
+      if (!empty($lineItem['membership_type_id'])) {
+        $form->set('useForMember', 1);
+        $form->_useForMember = 1;
+        $membershipPriceFieldIDs['id'] = $priceSetID;
+        $membershipPriceFieldIDs[] = $lineItem['price_field_value_id'];
+      }
+    }
+    $form->set('memberPriceFieldIDS', $membershipPriceFieldIDs);
     $form->processFormSubmission(CRM_Utils_Array::value('contact_id', $params));
   }
 
@@ -1972,9 +2034,10 @@ class CRM_Contribute_Form_Contribution_Confirm extends CRM_Contribute_Form_Contr
     $this->_params['currencyID'] = CRM_Core_Config::singleton()->defaultCurrency;
 
     // CRM-18854
-    if (CRM_Utils_Array::value('adjust_recur_start_date', $this->_values)) {
+    if (CRM_Utils_Array::value('is_pledge', $this->_params) && !CRM_Utils_Array::value('pledge_id', $this->_values) && CRM_Utils_Array::value('adjust_recur_start_date', $this->_values)) {
       $pledgeBlock = CRM_Pledge_BAO_PledgeBlock::getPledgeBlock($this->_id);
-      if (CRM_Utils_Array::value('start_date', $this->_params) || !CRM_Utils_Array::value('is_pledge_start_date_visible', $pledgeBlock)) {
+      if (CRM_Utils_Array::value('start_date', $this->_params) || !CRM_Utils_Array::value('is_pledge_start_date_visible', $pledgeBlock)
+          || !CRM_Utils_Array::value('is_pledge_start_date_editable', $pledgeBlock)) {
         $pledgeStartDate = CRM_Utils_Array::value('start_date', $this->_params, NULL);
         $this->_params['receive_date'] = CRM_Pledge_BAO_Pledge::getPledgeStartDate($pledgeStartDate, $pledgeBlock);
         $recurParams = CRM_Pledge_BAO_Pledge::buildRecurParams($this->_params);
@@ -2293,7 +2356,7 @@ class CRM_Contribute_Form_Contribution_Confirm extends CRM_Contribute_Form_Contr
     $priceFieldIds = $this->get('memberPriceFieldIDS');
 
     if (!empty($priceFieldIds)) {
-      $contributionTypeID = CRM_Core_DAO::getFieldValue('CRM_Price_DAO_PriceSet', $priceFieldIds['id'], 'financial_type_id');
+      $financialTypeID = CRM_Core_DAO::getFieldValue('CRM_Price_DAO_PriceSet', $priceFieldIds['id'], 'financial_type_id');
       unset($priceFieldIds['id']);
       $membershipTypeIds = array();
       $membershipTypeTerms = array();
@@ -2312,7 +2375,7 @@ class CRM_Contribute_Form_Contribution_Confirm extends CRM_Contribute_Form_Contr
         }
       }
       $membershipParams['selectMembership'] = $membershipTypeIds;
-      $membershipParams['financial_type_id'] = $contributionTypeID;
+      $membershipParams['financial_type_id'] = $financialTypeID;
       $membershipParams['types_terms'] = $membershipTypeTerms;
     }
     if (!empty($membershipParams['selectMembership'])) {

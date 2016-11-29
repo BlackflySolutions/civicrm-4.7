@@ -223,8 +223,8 @@ class CRM_Upgrade_Incremental_php_FourSeven extends CRM_Upgrade_Incremental_Base
    */
   public function upgrade_4_7_10($rev) {
     $this->addTask(ts('Upgrade DB to %1: SQL', array(1 => $rev)), 'runSql', $rev);
-    $this->addTask(ts('Upgrade Add Help Pre and Post Fields to price value table'), 'addHelpPreAndHelpPostFieldsPriceFieldValue');
-    $this->addTask(ts('Alter index and type for image URL'), 'alterIndexAndTypeForImageURL');
+    $this->addTask('Upgrade Add Help Pre and Post Fields to price value table', 'addHelpPreAndHelpPostFieldsPriceFieldValue');
+    $this->addTask('Alter index and type for image URL', 'alterIndexAndTypeForImageURL');
   }
 
   /**
@@ -235,7 +235,7 @@ class CRM_Upgrade_Incremental_php_FourSeven extends CRM_Upgrade_Incremental_Base
   public function upgrade_4_7_11($rev) {
     $this->addTask(ts('Upgrade DB to %1: SQL', array(1 => $rev)), 'runSql', $rev);
     $this->addTask('Dashboard schema updates', 'dashboardSchemaUpdate');
-    $this->addTask(ts('Fill in setting "remote_profile_submissions"'), 'migrateRemoteSubmissionsSetting');
+    $this->addTask('Fill in setting "remote_profile_submissions"', 'migrateRemoteSubmissionsSetting');
   }
 
   /**
@@ -245,7 +245,7 @@ class CRM_Upgrade_Incremental_php_FourSeven extends CRM_Upgrade_Incremental_Base
    */
   public function upgrade_4_7_12($rev) {
     $this->addTask(ts('Upgrade DB to %1: SQL', array(1 => $rev)), 'runSql', $rev);
-    $this->addTask(ts('Add Data Type column to civicrm_option_group'), 'addDataTypeColumnToOptionGroupTable');
+    $this->addTask('Add Data Type column to civicrm_option_group', 'addDataTypeColumnToOptionGroupTable');
   }
   /**
    * Upgrade function.
@@ -254,12 +254,21 @@ class CRM_Upgrade_Incremental_php_FourSeven extends CRM_Upgrade_Incremental_Base
    */
   public function upgrade_4_7_13($rev) {
     $this->addTask(ts('Upgrade DB to %1: SQL', array(1 => $rev)), 'runSql', $rev);
-    $this->addTask(ts('Add column to allow for payment processors to set what card types are accepted'), 'addAcceptedCardTypesField');
+    $this->addTask('Add column to allow for payment processors to set what card types are accepted', 'addAcceptedCardTypesField');
   }
 
+  /**
+   * Upgrade function.
+   *
+   * @param string $rev
+   */
+  public function upgrade_4_7_14($rev) {
+    $this->addTask(ts('Upgrade DB to %1: SQL', array(1 => $rev)), 'runSql', $rev);
+    $this->addTask('Add WYSIWYG Editor Presets', 'addWysiwygPresets');
+  }
 
   /*
-   * Important! All upgrade functions MUST call the 'runSql' task.
+   * Important! All upgrade functions MUST add a 'runSql' task.
    * Uncomment and use the following template for a new upgrade version
    * (change the x in the function name):
    */
@@ -272,6 +281,8 @@ class CRM_Upgrade_Incremental_php_FourSeven extends CRM_Upgrade_Incremental_Base
   //  public function upgrade_4_7_x($rev) {
   //    $this->addTask(ts('Upgrade DB to %1: SQL', array(1 => $rev)), 'runSql', $rev);
   //    // Additional tasks here...
+  //    // Note: do not use ts() in the addTask description because it adds unnecessary strings to transifex.
+  //    // The above is an exception because 'Upgrade DB to %1: SQL' is generic & reusable.
   //  }
 
   /**
@@ -876,6 +887,42 @@ FROM `civicrm_dashboard_contact` JOIN `civicrm_contact` WHERE civicrm_dashboard_
   public static function addAcceptedCardTypesField() {
     if (!CRM_Core_BAO_SchemaHandler::checkIfFieldExists('civicrm_payment_processor', 'accepted_credit_cards')) {
       CRM_Core_DAO::executeQuery("ALTER TABLE civicrm_payment_processor ADD COLUMN `accepted_credit_cards` text   DEFAULT NULL COMMENT 'array of accepted credit card types'");
+    }
+    return TRUE;
+  }
+
+  /**
+   * CRM-19372 Add field to store accepted credit credit cards for a payment processor.
+   * @return bool
+   */
+  public static function addWysiwygPresets() {
+    CRM_Core_BAO_OptionGroup::ensureOptionGroupExists(array(
+      'name' => 'wysiwyg_presets',
+      'title' => ts('WYSIWYG Editor Presets'),
+      'is_reserved' => 1,
+    ));
+    $values = array(
+      'default' => array('label' => ts('Default'), 'is_default' => 1),
+      'civimail' => array('label' => ts('CiviMail'), 'component_id' => 'CiviMail'),
+      'civievent' => array('label' => ts('CiviEvent'), 'component_id' => 'CiviEvent'),
+    );
+    foreach ($values as $name => $value) {
+      civicrm_api3('OptionValue', 'create', $value + array(
+        'options' => array('match' => array('name', 'option_group_id')),
+        'name' => $name,
+        'option_group_id' => 'wysiwyg_presets',
+      ));
+    }
+    $fileName = Civi::paths()->getPath('[civicrm.files]/persist/crm-ckeditor-config.js');
+    // Ensure the config file contains the allowedContent setting
+    if (file_exists($fileName)) {
+      $config = file_get_contents($fileName);
+      $pos = strrpos($config, '};');
+      $setting = "\n\tconfig.allowedContent = true;\n";
+      $config = substr_replace($config, $setting, $pos, 0);
+      unlink($fileName);
+      $newFileName = Civi::paths()->getPath('[civicrm.files]/persist/crm-ckeditor-default.js');
+      file_put_contents($newFileName, $config);
     }
     return TRUE;
   }
