@@ -3,7 +3,7 @@
  +--------------------------------------------------------------------+
  | CiviCRM version 4.7                                                |
  +--------------------------------------------------------------------+
- | Copyright CiviCRM LLC (c) 2004-2016                                |
+ | Copyright CiviCRM LLC (c) 2004-2017                                |
  +--------------------------------------------------------------------+
  | This file is a part of CiviCRM.                                    |
  |                                                                    |
@@ -28,7 +28,7 @@
 /**
  *
  * @package CRM
- * @copyright CiviCRM LLC (c) 2004-2016
+ * @copyright CiviCRM LLC (c) 2004-2017
  */
 
 /**
@@ -280,6 +280,7 @@ class CRM_Contribute_Form_Search extends CRM_Core_Form_Search {
         'contribution_product_id',
         'invoice_id',
         'payment_instrument_id',
+        'contribution_batch_id',
       );
       CRM_Contact_BAO_Query::processSpecialFormValue($this->_formValues, $specialParams);
 
