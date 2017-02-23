@@ -362,7 +362,7 @@ class CRM_Contribute_DAO_Contribution extends CRM_Core_DAO {
           'bao' => 'CRM_Contribute_BAO_Contribution',
           'html' => array(
             'type' => 'Select Date',
-            'format' => 'activityDateTime',
+            'formatType' => 'activityDateTime',
           ) ,
         ) ,
         'non_deductible_amount' => array(
@@ -529,7 +529,7 @@ class CRM_Contribute_DAO_Contribution extends CRM_Core_DAO {
           'bao' => 'CRM_Contribute_BAO_Contribution',
           'html' => array(
             'type' => 'Select Date',
-            'format' => 'activityDateTime',
+            'formatType' => 'activityDateTime',
           ) ,
         ) ,
         'cancel_reason' => array(
@@ -563,7 +563,7 @@ class CRM_Contribute_DAO_Contribution extends CRM_Core_DAO {
           'bao' => 'CRM_Contribute_BAO_Contribution',
           'html' => array(
             'type' => 'Select Date',
-            'format' => 'activityDateTime',
+            'formatType' => 'activityDateTime',
           ) ,
         ) ,
         'thankyou_date' => array(
@@ -581,7 +581,7 @@ class CRM_Contribute_DAO_Contribution extends CRM_Core_DAO {
           'bao' => 'CRM_Contribute_BAO_Contribution',
           'html' => array(
             'type' => 'Select Date',
-            'format' => 'activityDateTime',
+            'formatType' => 'activityDateTime',
           ) ,
         ) ,
         'contribution_source' => array(
@@ -788,7 +788,7 @@ class CRM_Contribute_DAO_Contribution extends CRM_Core_DAO {
           'bao' => 'CRM_Contribute_BAO_Contribution',
           'html' => array(
             'type' => 'Select Date',
-            'format' => 'activityDateTime',
+            'formatType' => 'activityDateTime',
           ) ,
         ) ,
       );
