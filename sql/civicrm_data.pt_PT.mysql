@@ -4590,10 +4590,10 @@ SELECT @domainID := id FROM civicrm_domain where name = 'Default Domain Name';
 -- we have not yet finished modifying all places where the 'name' is shown.
 INSERT INTO civicrm_location_type( name, display_name, vcard_name, description, is_reserved, is_active, is_default ) VALUES( 'Casa', 'Casa', 'HOME', 'Place of residence', 0, 1, 1 );
 INSERT INTO civicrm_location_type( name, display_name, vcard_name, description, is_reserved, is_active ) VALUES( 'Work', 'Work', 'WORK', 'Work location', 0, 1 );
-INSERT INTO civicrm_location_type( name, display_name, vcard_name, description, is_reserved, is_active ) VALUES( 'Main', 'Main', NULL, 'Main office location', 0, 1 );
+INSERT INTO civicrm_location_type( name, display_name, vcard_name, description, is_reserved, is_active ) VALUES( 'Principal', 'Principal', NULL, 'Main office location', 0, 1 );
 INSERT INTO civicrm_location_type( name, display_name, vcard_name, description, is_reserved, is_active ) VALUES( 'Outro', 'Outro', NULL, 'Other location', 0, 1 );
 -- the following location must stay with the untranslated Billing name, CRM-2064
-INSERT INTO civicrm_location_type( name, display_name, vcard_name, description, is_reserved, is_active ) VALUES( 'Billing',  'Billing', NULL, 'Billing Address location', 1, 1 );
+INSERT INTO civicrm_location_type( name, display_name, vcard_name, description, is_reserved, is_active ) VALUES( 'Billing',  'Faturação', NULL, 'Morada para faturação', 1, 1 );
 
 -- Sample relationship types
 INSERT INTO civicrm_relationship_type( name_a_b,label_a_b, name_b_a,label_b_a, description, contact_type_a, contact_type_b, is_reserved )
@@ -4641,7 +4641,7 @@ VALUES
 INSERT INTO
    civicrm_financial_type(name, is_reserved, is_active, is_deductible)
 VALUES
-  ( 'Donation'             , 0, 1, 1 ),
+  ( 'Donativo'             , 0, 1, 1 ),
   ( 'Member Dues'          , 0, 1, 1 ),
   ( 'Campaign Contribution', 0, 1, 0 ),
   ( 'Event Fee'            , 0, 1, 0 );
@@ -4681,7 +4681,7 @@ VALUES
    ('case_status'                   , 'Estado do Processo'                        , NULL, 1, 1, 0),
    ('participant_listing'           , 'Participant Listing'                , NULL, 1, 1, 0),
    ('safe_file_extension'           , 'Safe File Extension'                , NULL, 1, 1, 0),
-   ('from_email_address'            , 'From Email Address'                 , NULL, 1, 1, 0),
+   ('from_email_address'            , 'Do Endereço de Email'                 , NULL, 1, 1, 0),
    ('mapping_type'                  , 'Mapping Type'                       , NULL, 1, 1, 1),
    ('wysiwyg_editor'                , 'WYSIWYG Editor'                     , NULL, 1, 1, 0),
    ('recur_frequency_units'         , 'Recurring Frequency Units'          , NULL, 1, 1, 0),
@@ -4910,7 +4910,7 @@ VALUES
   -- Activity Type for Close Accounting Period
    (@option_group_id_act, 'Close Accounting Period', 54, 'Close Accounting Period', NULL, 1, 0, 54, 'Close Accounting Period', 0, 1, 1, @contributeCompId, NULL, NULL),
 
-   (@option_group_id_gender, 'Female', 1, 'Female', NULL, 0, NULL, 1, NULL, 0, 0, 1, NULL, NULL, NULL),
+   (@option_group_id_gender, 'Feminino', 1, 'Female', NULL, 0, NULL, 1, NULL, 0, 0, 1, NULL, NULL, NULL),
    (@option_group_id_gender, 'Masculino',   2, 'Male',   NULL, 0, NULL, 2, NULL, 0, 0, 1, NULL, NULL, NULL),
    (@option_group_id_gender, 'Outro',  3, 'Other',  NULL, 0, NULL, 3, NULL, 0, 0, 1, NULL, NULL, NULL),
 
@@ -4927,7 +4927,7 @@ VALUES
 
    (@option_group_id_prefix, 'Mrs.', 1, 'Mrs.', NULL, 0, NULL, 1, NULL, 0, 0, 1, NULL, NULL, NULL),
    (@option_group_id_prefix, 'Ms.',  2, 'Ms.',  NULL, 0, NULL, 2, NULL, 0, 0, 1, NULL, NULL, NULL),
-   (@option_group_id_prefix, 'Mr.',  3, 'Mr.',  NULL, 0, NULL, 3, NULL, 0, 0, 1, NULL, NULL, NULL),
+   (@option_group_id_prefix, 'Sr.',  3, 'Mr.',  NULL, 0, NULL, 3, NULL, 0, 0, 1, NULL, NULL, NULL),
    (@option_group_id_prefix, 'Dr.',  4, 'Dr.',  NULL, 0, NULL, 4, NULL, 0, 0, 1, NULL, NULL, NULL),
 
    (@option_group_id_suffix, 'Jr.',  1, 'Jr.', NULL, 0, NULL, 1, NULL, 0, 0, 1, NULL, NULL, NULL),
@@ -4939,7 +4939,7 @@ VALUES
    (@option_group_id_suffix, 'VI',  7, 'VI',  NULL, 0, NULL, 7, NULL, 0, 0, 1, NULL, NULL, NULL),
    (@option_group_id_suffix, 'VII', 8, 'VII', NULL, 0, NULL, 8, NULL, 0, 0, 1, NULL, NULL, NULL),
 
-   (@option_group_id_aclRole, 'Administrator',  1, 'Admin', NULL, 0, NULL, 1, NULL, 0, 0, 1, NULL, NULL, NULL),
+   (@option_group_id_aclRole, 'Administrador',  1, 'Admin', NULL, 0, NULL, 1, NULL, 0, 0, 1, NULL, NULL, NULL),
    (@option_group_id_aclRole, 'Authenticated',  2, 'Auth' , NULL, 0, NULL, 2, NULL, 0, 1, 1, NULL, NULL, NULL),
 
    (@option_group_id_acc, 'Visa'      ,  1, 'Visa'      , NULL, 0, NULL, 1, NULL, 0, 0, 1, NULL, NULL, NULL),
@@ -4947,15 +4947,15 @@ VALUES
    (@option_group_id_acc, 'Amex'      ,  3, 'Amex'      , NULL, 0, NULL, 3, NULL, 0, 0, 1, NULL, NULL, NULL),
    (@option_group_id_acc, 'Discover'  ,  4, 'Discover'  , NULL, 0, NULL, 4, NULL, 0, 0, 1, NULL, NULL, NULL),
 
-  (@option_group_id_pi, 'Credit Card',  1, 'Credit Card', NULL, 0, 0, 1, NULL, 0, 1, 1, NULL, NULL, NULL),
-  (@option_group_id_pi, 'Debit Card',   2, 'Debit Card',  NULL, 0, 0, 2, NULL, 0, 1, 1, NULL, NULL, NULL),
+  (@option_group_id_pi, 'Cartão de crédito',  1, 'Credit Card', NULL, 0, 0, 1, NULL, 0, 1, 1, NULL, NULL, NULL),
+  (@option_group_id_pi, 'Cartão de Débito',   2, 'Debit Card',  NULL, 0, 0, 2, NULL, 0, 1, 1, NULL, NULL, NULL),
   (@option_group_id_pi, 'Cash',         3, 'Cash',        NULL, 0, 0, 3, NULL, 0, 0, 1, NULL, NULL, NULL),
   (@option_group_id_pi, 'Check',        4, 'Check',       NULL, 0, 1, 4, NULL, 0, 1, 1, NULL, NULL, NULL),
   (@option_group_id_pi, 'EFT',          5, 'EFT',         NULL, 0, 0, 5, NULL, 0, 0, 1, NULL, NULL, NULL),
 
   (@option_group_id_cs, 'Completed'  , 1, 'Completed'  , NULL, 0, NULL, 1, NULL, 0, 1, 1, NULL, NULL, NULL),
   (@option_group_id_cs, 'Pendente'    , 2, 'Pending'    , NULL, 0, NULL, 2, NULL, 0, 1, 1, NULL, NULL, NULL),
-  (@option_group_id_cs, 'Cancelled'  , 3, 'Cancelled'  , NULL, 0, NULL, 3, NULL, 0, 1, 1, NULL, NULL, NULL),
+  (@option_group_id_cs, 'Cancelado'  , 3, 'Cancelled'  , NULL, 0, NULL, 3, NULL, 0, 1, 1, NULL, NULL, NULL),
   (@option_group_id_cs, 'Failed'     , 4, 'Failed'     , NULL, 0, NULL, 4, NULL, 0, 1, 1, NULL, NULL, NULL),
   (@option_group_id_cs, 'In Progress', 5, 'In Progress', NULL, 0, NULL, 5, NULL, 0, 1, 1, NULL, NULL, NULL),
   (@option_group_id_cs, 'Overdue'    , 6, 'Overdue'    , NULL, 0, NULL, 6, NULL, 0, 1, 1, NULL, NULL, NULL),
@@ -4965,8 +4965,8 @@ VALUES
   (@option_group_id_cs, 'Chargeback', 10, 'Chargeback', NULL, 0, NULL, 10, NULL, 0, 1, 1, NULL, NULL, NULL),
 
   (@option_group_id_pcp, 'Waiting Review', 1, 'Waiting Review', NULL, 0, NULL, 1, NULL, 0, 1, 1, NULL, NULL, NULL),
-  (@option_group_id_pcp, 'Approved'      , 2, 'Approved'      , NULL, 0, NULL, 2, NULL, 0, 1, 1, NULL, NULL, NULL),
-  (@option_group_id_pcp, 'Not Approved'  , 3, 'Not Approved'  , NULL, 0, NULL, 3, NULL, 0, 1, 1, NULL, NULL, NULL),
+  (@option_group_id_pcp, 'Arpovado'      , 2, 'Approved'      , NULL, 0, NULL, 2, NULL, 0, 1, 1, NULL, NULL, NULL),
+  (@option_group_id_pcp, 'Rejeitado'  , 3, 'Not Approved'  , NULL, 0, NULL, 3, NULL, 0, 1, 1, NULL, NULL, NULL),
 
   (@option_group_id_pcpOwnerNotify, 'Owner chooses whether to receive notifications', 1, 'owner_chooses', NULL, 0, 1, 1, NULL, 0, 1, 1, NULL, NULL, NULL),
   (@option_group_id_pcpOwnerNotify, 'Notifications are sent to ALL owners'      , 2, 'all_owners'      , NULL, 0, 0, 2, NULL, 0, 1, 1, NULL, NULL, NULL),
@@ -5054,27 +5054,27 @@ VALUES
   (@option_group_id_acsOpt, 'Endereço de Email'   , 2, 'email'         , NULL, 0, NULL, 2, NULL, 0, 0, 1, NULL, NULL, NULL),
   (@option_group_id_acsOpt, 'Telefone'           , 3, 'phone'         , NULL, 0, NULL, 3, NULL, 0, 0, 1, NULL, NULL, NULL),
   (@option_group_id_acsOpt, 'Morada'  , 4, 'street_address', NULL, 0, NULL, 4, NULL, 0, 0, 1, NULL, NULL, NULL),
-  (@option_group_id_acsOpt, 'Cidade'            , 5, 'city'          , NULL, 0, NULL, 5, NULL, 0, 0, 1, NULL, NULL, NULL),
-  (@option_group_id_acsOpt, 'Estado/Região'  , 6, 'state_province', NULL, 0, NULL, 6, NULL, 0, 0, 1, NULL, NULL, NULL),
+  (@option_group_id_acsOpt, 'Localidade'            , 5, 'city'          , NULL, 0, NULL, 5, NULL, 0, 0, 1, NULL, NULL, NULL),
+  (@option_group_id_acsOpt, 'Distrito/Região'  , 6, 'state_province', NULL, 0, NULL, 6, NULL, 0, 0, 1, NULL, NULL, NULL),
   (@option_group_id_acsOpt, 'País'         , 7, 'country'       , NULL, 0, NULL, 7, NULL, 0, 0, 1, NULL, NULL, NULL),
   (@option_group_id_acsOpt, 'Código postal'     , 8, 'postal_code'   , NULL, 0, NULL, 8, NULL, 0, 0, 1, NULL, NULL, NULL),
 
   (@option_group_id_acConRef, 'Endereço de Email'   , 2, 'email'         , NULL, 0, NULL, 2, NULL, 0, 0, 1, NULL, NULL, NULL),
   (@option_group_id_acConRef, 'Telefone'           , 3, 'phone'         , NULL, 0, NULL, 3, NULL, 0, 0, 1, NULL, NULL, NULL),
   (@option_group_id_acConRef, 'Morada'  , 4, 'street_address', NULL, 0, NULL, 4, NULL, 0, 0, 1, NULL, NULL, NULL),
-  (@option_group_id_acConRef, 'Cidade'            , 5, 'city'          , NULL, 0, NULL, 5, NULL, 0, 0, 1, NULL, NULL, NULL),
-  (@option_group_id_acConRef, 'Estado/Região'  , 6, 'state_province', NULL, 0, NULL, 6, NULL, 0, 0, 1, NULL, NULL, NULL),
+  (@option_group_id_acConRef, 'Localidade'            , 5, 'city'          , NULL, 0, NULL, 5, NULL, 0, 0, 1, NULL, NULL, NULL),
+  (@option_group_id_acConRef, 'Distrito/Região'  , 6, 'state_province', NULL, 0, NULL, 6, NULL, 0, 0, 1, NULL, NULL, NULL),
   (@option_group_id_acConRef, 'País'         , 7, 'country'       , NULL, 0, NULL, 7, NULL, 0, 0, 1, NULL, NULL, NULL),
   (@option_group_id_acConRef, 'Código postal'     , 8, 'country'       , NULL, 0, NULL, 8, NULL, 0, 0, 1, NULL, NULL, NULL),
 
   (@option_group_id_adOpt, 'Morada'    ,  1, 'street_address', NULL, 0, NULL,  1, NULL, 0, 0, 1, NULL, NULL, NULL),
   (@option_group_id_adOpt, 'Supplemental Address 1'  ,  2, 'supplemental_address_1', NULL, 0, NULL,  2, NULL, 0, 0, 1, NULL, NULL, NULL),
   (@option_group_id_adOpt, 'Supplemental Address 2'  ,  3, 'supplemental_address_2', NULL, 0, NULL,  3, NULL, 0, 0, 1, NULL, NULL, NULL),
-  (@option_group_id_adOpt, 'Cidade'              ,  4, 'city'          , NULL, 0, NULL,  4, NULL, 0, 0, 1, NULL, NULL, NULL),
+  (@option_group_id_adOpt, 'Localidade'              ,  4, 'city'          , NULL, 0, NULL,  4, NULL, 0, 0, 1, NULL, NULL, NULL),
   (@option_group_id_adOpt, 'Código postal' ,  5, 'postal_code'   , NULL, 0, NULL,  5, NULL, 0, 0, 1, NULL, NULL, NULL),
   (@option_group_id_adOpt, 'Sufixo do Código Postal',  6, 'postal_code_suffix', NULL, 0, NULL,  6, NULL, 0, 0, 1, NULL, NULL, NULL),
-  (@option_group_id_adOpt, 'Distrito'            ,  7, 'county'        , NULL, 0, NULL,  7, NULL, 0, 0, 1, NULL, NULL, NULL),
-  (@option_group_id_adOpt, 'Estado/Região'  ,  8, 'state_province', NULL, 0, NULL,  8, NULL, 0, 0, 1, NULL, NULL, NULL),
+  (@option_group_id_adOpt, 'Concelho'            ,  7, 'county'        , NULL, 0, NULL,  7, NULL, 0, 0, 1, NULL, NULL, NULL),
+  (@option_group_id_adOpt, 'Distrito/Região'  ,  8, 'state_province', NULL, 0, NULL,  8, NULL, 0, 0, 1, NULL, NULL, NULL),
   (@option_group_id_adOpt, 'País'           ,  9, 'country'       , NULL, 0, NULL,  9, NULL, 0, 0, 1, NULL, NULL, NULL),
   (@option_group_id_adOpt, 'Latitude'          , 10, 'geo_code_1'    , NULL, 0, NULL, 10, NULL, 0, 0, 1, NULL, NULL, NULL),
   (@option_group_id_adOpt, 'Longitude'         , 11, 'geo_code_2', NULL, 0, NULL, 11, NULL, 0, 0, 1, NULL, NULL, NULL),
@@ -5163,7 +5163,7 @@ VALUES
 
   (@option_group_id_acs, 'Scheduled',  1, 'Scheduled',  NULL, 0, 1,    1, NULL, 0, 1, 1, NULL, NULL, NULL),
   (@option_group_id_acs, 'Completed',  2, 'Completed',  NULL, 0, NULL, 2, NULL, 0, 1, 1, NULL, NULL, NULL),
-  (@option_group_id_acs, 'Cancelled',  3, 'Cancelled',  NULL, 0, NULL, 3, NULL, 0, 1, 1, NULL, NULL, NULL),
+  (@option_group_id_acs, 'Cancelado',  3, 'Cancelled',  NULL, 0, NULL, 3, NULL, 0, 1, 1, NULL, NULL, NULL),
   (@option_group_id_acs, 'Left Message', 4, 'Left Message', NULL, 0, NULL, 4, NULL, 0, 0, 1, NULL, NULL, NULL),
   (@option_group_id_acs, 'Unreachable', 5, 'Unreachable', NULL, 0, NULL, 5, NULL, 0, 0, 1, NULL, NULL, NULL),
   (@option_group_id_acs, 'Not Required',  6, 'Not Required',  NULL, 0, NULL, 6, NULL, 0, 0, 1, NULL, NULL, NULL),
@@ -5171,11 +5171,11 @@ VALUES
   (@option_group_id_acs, 'No-show',  8, 'No_show',  NULL, 0, NULL, 8, NULL, 0, 0, 1, NULL, NULL, NULL),
 
   (@option_group_id_cas, 'Ongoing' , 1, 'Open'  ,  'Opened', 0, 1,    1, NULL, 0, 1, 1, NULL, NULL, NULL),
-  (@option_group_id_cas, 'Resolved', 2, 'Closed',  'Closed', 0, NULL, 2, NULL, 0, 1, 1, NULL, NULL, NULL),
-  (@option_group_id_cas, 'Urgent'  , 3, 'Urgent',  'Opened', 0, NULL, 3, NULL, 0, 0, 1, NULL, NULL, NULL),
+  (@option_group_id_cas, 'Resolvido', 2, 'Closed',  'Closed', 0, NULL, 2, NULL, 0, 1, 1, NULL, NULL, NULL),
+  (@option_group_id_cas, 'Urgente'  , 3, 'Urgent',  'Opened', 0, NULL, 3, NULL, 0, 0, 1, NULL, NULL, NULL),
 
   (@option_group_id_pl, 'Name Only'     , 1, 'Name Only'      ,  NULL, 0, 0, 1, 'CRM_Event_Page_ParticipantListing_Name', 0, 1, 1, NULL, NULL, NULL),
-  (@option_group_id_pl, 'Name and Email', 2, 'Name and Email' ,  NULL, 0, 0, 2, 'CRM_Event_Page_ParticipantListing_NameAndEmail', 0, 1, 1, NULL, NULL, NULL),
+  (@option_group_id_pl, 'Nome e Email', 2, 'Name and Email' ,  NULL, 0, 0, 2, 'CRM_Event_Page_ParticipantListing_NameAndEmail', 0, 1, 1, NULL, NULL, NULL),
   (@option_group_id_pl, 'Name, Status and Register Date' , 3, 'Name, Status and Register Date',  NULL, 0, 0, 3, 'CRM_Event_Page_ParticipantListing_NameStatusAndDate', 0, 1, 1, NULL, NULL, NULL),
 
   (@option_group_id_sfe, 'jpg',   1, 'jpg',   NULL, 0, 0,  1, NULL, 0, 0, 1, NULL, NULL, NULL),
@@ -5197,12 +5197,12 @@ VALUES
   (@option_group_id_we, 'CKEditor', 2, 'CKEditor', NULL, 0, NULL, 2, NULL, 0, 1, 1, NULL, NULL, NULL),
 
   (@option_group_id_mt, 'Construtor de Pesquisas',      1, 'Search Builder',      NULL, 0, 0,    1, NULL, 0, 1, 1, NULL, NULL, NULL),
-  (@option_group_id_mt, 'Import Contact',      2, 'Import Contact',      NULL, 0, 0,    2, NULL, 0, 1, 1, NULL, NULL, NULL),
+  (@option_group_id_mt, 'Importar Contacto',      2, 'Import Contact',      NULL, 0, 0,    2, NULL, 0, 1, 1, NULL, NULL, NULL),
   (@option_group_id_mt, 'Import Activity',     3, 'Import Activity',     NULL, 0, 0,    3, NULL, 0, 1, 1, NULL, NULL, NULL),
   (@option_group_id_mt, 'Import Contribution', 4, 'Import Contribution', NULL, 0, 0,    4, NULL, 0, 1, 1, NULL, NULL, NULL),
   (@option_group_id_mt, 'Import Membership',   5, 'Import Membership',   NULL, 0, 0,    5, NULL, 0, 1, 1, NULL, NULL, NULL),
   (@option_group_id_mt, 'Import Participant',  6, 'Import Participant',  NULL, 0, 0,    6, NULL, 0, 1, 1, NULL, NULL, NULL),
-  (@option_group_id_mt, 'Export Contact',      7, 'Export Contact',      NULL, 0, 0,    7, NULL, 0, 1, 1, NULL, NULL, NULL),
+  (@option_group_id_mt, 'Exportar Contacto',      7, 'Export Contact',      NULL, 0, 0,    7, NULL, 0, 1, 1, NULL, NULL, NULL),
   (@option_group_id_mt, 'Export Contribution', 8, 'Export Contribution', NULL, 0, 0,    8, NULL, 0, 1, 1, NULL, NULL, NULL),
   (@option_group_id_mt, 'Export Membership',   9, 'Export Membership',   NULL, 0, 0,    9, NULL, 0, 1, 1, NULL, NULL, NULL),
   (@option_group_id_mt, 'Export Participant', 10, 'Export Participant',  NULL, 0, 0,   10, NULL, 0, 1, 1, NULL, NULL, NULL),
@@ -5239,9 +5239,9 @@ VALUES
   (@option_group_id_mp, 'Localdir', 4, 'Localdir', NULL, 0, NULL, 4, NULL, 0, 0, 1, NULL, NULL , NULL),
 
 -- priority
-  (@option_group_id_priority, 'Urgent', 1, 'Urgent', NULL, 0, NULL, 1, NULL, 0, 0, 1, NULL, NULL, NULL),
+  (@option_group_id_priority, 'Urgente', 1, 'Urgent', NULL, 0, NULL, 1, NULL, 0, 0, 1, NULL, NULL, NULL),
   (@option_group_id_priority, 'Normal', 2, 'Normal', NULL, 0, NULL, 2, NULL, 0, 0, 1, NULL, NULL, NULL),
-  (@option_group_id_priority, 'Low',    3, 'Low',    NULL, 0, NULL, 3, NULL, 0, 0, 1, NULL, NULL, NULL),
+  (@option_group_id_priority, 'Baixo',    3, 'Low',    NULL, 0, NULL, 3, NULL, 0, 0, 1, NULL, NULL, NULL),
 
 -- redaction rule FIXME: should this be in sample data instead?
   (@option_group_id_rr, 'Vancouver', 'city_', 'city_', NULL, 0, NULL, 1, NULL, 0, 0, 0, NULL, NULL, NULL),
@@ -5307,7 +5307,7 @@ VALUES
   (@option_group_id_campaignStatus, 'Planned', 1, 'Planned',  NULL, 0, NULL, 1, NULL, 0, 0, 1, NULL, NULL, NULL),
   (@option_group_id_campaignStatus, 'In Progress', 2, 'In Progress',  NULL, 0, NULL, 1, NULL, 0, 0, 1, NULL, NULL, NULL),
   (@option_group_id_campaignStatus, 'Completed', 3, 'Completed',  NULL, 0, NULL, 1, NULL, 0, 0, 1, NULL, NULL, NULL),
-  (@option_group_id_campaignStatus, 'Cancelled', 4, 'Cancelled',  NULL, 0, NULL, 1, NULL, 0, 0, 1, NULL, NULL, NULL),
+  (@option_group_id_campaignStatus, 'Cancelado', 4, 'Cancelled',  NULL, 0, NULL, 1, NULL, 0, 0, 1, NULL, NULL, NULL),
 
 -- Engagement Level
   (@option_group_id_engagement_index, '1', 1, '1',  NULL, 0, NULL, 1, NULL, 0, 0, 1, NULL, NULL , NULL),
@@ -5420,8 +5420,8 @@ VALUES
    (@option_group_id_batch_type, 'Pledge Payment', 3, 'Pledge Payment', NULL, 0, NULL, 3, NULL, 0, 0, 1, NULL, NULL, NULL),
 
 -- default batch statuses
-   (@option_group_id_batch_status, 'Open', 1, 'Open', NULL, 0, NULL, 1, NULL, 0, 0, 1, NULL, NULL, NULL),
-   (@option_group_id_batch_status, 'Closed', 2, 'Closed', NULL, 0, NULL, 2, NULL, 0, 0, 1, NULL, NULL, NULL),
+   (@option_group_id_batch_status, 'Aberto', 1, 'Open', NULL, 0, NULL, 1, NULL, 0, 0, 1, NULL, NULL, NULL),
+   (@option_group_id_batch_status, 'Fechado', 2, 'Closed', NULL, 0, NULL, 2, NULL, 0, 0, 1, NULL, NULL, NULL),
    (@option_group_id_batch_status, 'Data Entry', 3, 'Data Entry', NULL, 0, NULL, 3, NULL, 0, 0, 1, NULL, NULL, NULL),
    (@option_group_id_batch_status, 'Reopened', 4, 'Reopened', NULL, 0, NULL, 4, NULL, 0, 0, 1, NULL, NULL, NULL),
    (@option_group_id_batch_status, 'Exported', 5, 'Exported', NULL, 0, NULL, 5, NULL, 0, 0, 1, NULL, NULL, NULL),
@@ -5559,7 +5559,7 @@ SELECT @opCost := value FROM civicrm_option_value WHERE name = 'Cost of Sales' a
 INSERT INTO
    `civicrm_financial_account` (`name`, `contact_id`, `financial_account_type_id`, `description`, `accounting_code`, `account_type_code`, `is_reserved`, `is_active`, `is_deductible`, `is_default`)
 VALUES
-  ( 'Donation'            , @contactID, @opval, 'Default account for donations', '4200', 'INC', 0, 1, 1, 1 ),
+  ( 'Donativo'            , @contactID, @opval, 'Default account for donations', '4200', 'INC', 0, 1, 1, 1 ),
   ( 'Member Dues'          , @contactID, @opval, 'Default account for membership sales', '4400', 'INC', 0, 1, 1, 0 ),
   ( 'Campaign Contribution', @contactID, @opval, 'Sample account for recording payments to a campaign', '4100', 'INC', 0, 1, 0, 0 ),
   ( 'Event Fee'            , @contactID, @opval, 'Default account for event ticket sales', '4300', 'INC', 0, 1, 0, 0 ),
@@ -5591,7 +5591,7 @@ VALUES
   (@option_group_id_grantTyp, 'Impunity'           , 4, 'Impunity'          , NULL, 0, NULL, 4, NULL, 0, 0, 1, NULL, @domainID, NULL),
 
 -- Mail Approval Status Preferences
-  (@option_group_id_mail_approval_status, 'Approved' , 1, 'Approved', NULL, 0, 1, 1, NULL, 0, 1, 1, @mailCompId, @domainID, NULL),
+  (@option_group_id_mail_approval_status, 'Arpovado' , 1, 'Approved', NULL, 0, 1, 1, NULL, 0, 1, 1, @mailCompId, @domainID, NULL),
   (@option_group_id_mail_approval_status, 'Rejected' , 2, 'Rejected', NULL, 0, 0, 2, NULL, 0, 1, 1, @mailCompId, @domainID, NULL),
   (@option_group_id_mail_approval_status, 'Nenhum' , 3, 'None', NULL, 0, 0, 3, NULL, 0, 1, 1, @mailCompId, @domainID, NULL),
 
@@ -5838,7 +5838,7 @@ VALUES
     ('Grace',     'Graça', 'end_date', null, null,'end_date','month', 1, 1, 0, 3, 0, 1, 0),
     ('Expired',   'Expirado', 'end_date', 'month', 1, null, null, null, 0, 0, 4, 0, 1, 0),
     ('Pending',   'Pendente', 'join_date', null, null,'join_date',null,null, 0, 0, 5, 0, 1, 1),
-    ('Cancelled', 'Cancelled', 'join_date', null, null,'join_date',null,null, 0, 0, 6, 0, 1, 1),
+    ('Cancelled', 'Cancelado', 'join_date', null, null,'join_date',null,null, 0, 0, 6, 0, 1, 1),
     ('Deceased',  'Falecido', null, null, null, null, null, null, 0, 1, 7, 0, 1, 1);
 
 
@@ -5888,7 +5888,7 @@ VALUES (@drgid, 'civicrm_contact', 'first_name', 5),
        (@drgid, 'civicrm_email'  , 'email',     10);
 
 INSERT INTO civicrm_dedupe_rule_group (contact_type, threshold, used, name, title, is_reserved)
-VALUES ('Organization', 10, 'Supervised', 'OrganizationSupervised', 'Name and Email', 0);
+VALUES ('Organization', 10, 'Supervised', 'OrganizationSupervised', 'Nome e Email', 0);
 
 SELECT @drgid := MAX(id) FROM civicrm_dedupe_rule_group;
 INSERT INTO civicrm_dedupe_rule (dedupe_rule_group_id, rule_table, rule_field, rule_weight)
@@ -5896,7 +5896,7 @@ VALUES (@drgid, 'civicrm_contact', 'organization_name', 10),
        (@drgid, 'civicrm_email'  , 'email',             10);
 
 INSERT INTO civicrm_dedupe_rule_group (contact_type, threshold, used, name, title, is_reserved)
-VALUES ('Household', 10, 'Supervised', 'HouseholdSupervised', 'Name and Email', 0);
+VALUES ('Household', 10, 'Supervised', 'HouseholdSupervised', 'Nome e Email', 0);
 
 SELECT @drgid := MAX(id) FROM civicrm_dedupe_rule_group;
 INSERT INTO civicrm_dedupe_rule (dedupe_rule_group_id, rule_table, rule_field, rule_weight)
@@ -5913,7 +5913,7 @@ INSERT INTO civicrm_dedupe_rule (dedupe_rule_group_id, rule_table, rule_field, r
 VALUES (@drgid, 'civicrm_email', 'email', 10);
 
 INSERT INTO civicrm_dedupe_rule_group (contact_type, threshold, used, name, title, is_reserved)
-VALUES ('Organization', 10,  'Unsupervised', 'OrganizationUnsupervised', 'Name and Email', 0);
+VALUES ('Organization', 10,  'Unsupervised', 'OrganizationUnsupervised', 'Nome e Email', 0);
 
 SELECT @drgid := MAX(id) FROM civicrm_dedupe_rule_group;
 INSERT INTO civicrm_dedupe_rule (dedupe_rule_group_id, rule_table, rule_field, rule_weight)
@@ -5921,7 +5921,7 @@ VALUES (@drgid, 'civicrm_contact', 'organization_name', 10),
        (@drgid, 'civicrm_email'  , 'email',             10);
 
 INSERT INTO civicrm_dedupe_rule_group (contact_type, threshold, used, name, title, is_reserved)
-VALUES ('Household', 10, 'Unsupervised', 'HouseholdUnsupervised', 'Name and Email', 0);
+VALUES ('Household', 10, 'Unsupervised', 'HouseholdUnsupervised', 'Nome e Email', 0);
 
 SELECT @drgid := MAX(id) FROM civicrm_dedupe_rule_group;
 INSERT INTO civicrm_dedupe_rule (dedupe_rule_group_id, rule_table, rule_field, rule_weight)
@@ -6223,7 +6223,7 @@ INSERT INTO civicrm_uf_group
     (5,  'new_organization',   'Organization,Contact','New Organization'  ,             0,      1,           NULL),
     (6,  'new_household',      'Household,Contact',   'New Household'     ,             0,      1,           NULL),
     (7,  'summary_overlay',    'Contact',             'Summary Overlay'   ,             0,      1,           NULL),
-    (8,  'shared_address',     'Contact',             'Shared Address'                , 0,      1,           NULL),
+    (8,  'shared_address',     'Contact',             'Partilhar Morada'                , 0,      1,           NULL),
     (9,  'on_behalf_organization', 'Contact,Organization','On Behalf Of Organization',  0,      1,           NULL),
     (10, 'contribution_batch_entry', 'Contribution', 'Contribution Bulk Entry' ,       0,      1,           NULL),
     (11, 'membership_batch_entry', 'Membership',     'Membership Bulk Entry' ,         0,      1,           NULL),
@@ -6245,10 +6245,10 @@ INSERT INTO civicrm_uf_field
        (  1,           'first_name',            1,           0,           1,      'User and User Admin Only',  0,           0,             NULL,          'Nome Próprio',               'Individual',   NULL,  NULL),
        (  1,           'last_name',             1,           0,           2,      'User and User Admin Only',  0,           0,             NULL,          'Apelido',                'Individual',   NULL,  NULL),
        (  1,           'street_address',        0,           0,           3,      'User and User Admin Only',  0,           0,             1,             'Morada (Casa)',    'Contact',      NULL,  NULL),
-       (  1,           'city',                  0,           0,           4,      'User and User Admin Only',  0,           0,             1,             'Cidade (Casa)',              'Contact',      NULL,  NULL),
+       (  1,           'city',                  0,           0,           4,      'User and User Admin Only',  0,           0,             1,             'Localidade (Casa)',              'Contact',      NULL,  NULL),
        (  1,           'postal_code',           0,           0,           5,      'User and User Admin Only',  0,           0,             1,             'Código Postal (Casa)',       'Contact',      NULL,  NULL),
        (  1,           'country',               0,           0,           6,      'User and User Admin Only',  0,           0,             1,             'País (Casa)',           'Contact',      NULL,  NULL),
-       (  1,           'state_province',        0,           0,           7,      'User and User Admin Only',  0,           0,             1,             'Província (Casa)',             'Contact',      NULL,  NULL),
+       (  1,           'state_province',        0,           0,           7,      'User and User Admin Only',  0,           0,             1,             'Distrito (Casa)',             'Contact',      NULL,  NULL),
        (  2,           'first_name',            1,           0,           1,      'User and User Admin Only',  0,           0,             NULL,          'Nome Próprio',               'Individual',   NULL,  NULL),
        (  2,           'last_name',             1,           0,           2,      'User and User Admin Only',  0,           0,             NULL,          'Apelido',                'Individual',   NULL,  NULL),
        (  2,           'email',                 1,           0,           3,      'User and User Admin Only',  0,           0,             NULL,          'Endereço de Email',            'Contact',      NULL,  NULL),
@@ -6263,8 +6263,8 @@ INSERT INTO civicrm_uf_field
        (  7,           'phone',                 1,           0,           1,      'User and User Admin Only',  0,           0,             1,             'Telefone de Casa',               'Contact',      NULL,  1 ),
        (  7,           'phone',                 1,           0,           2,      'User and User Admin Only',  0,           0,             1,             'Telemóvel Pessoal',              'Contact',      NULL,  2 ),
        (  7,           'street_address',        1,           0,           3,      'User and User Admin Only',  0,           0,             NULL,          'Primary Address',          'Contact',      NULL,  NULL),
-       (  7,           'city',                  1,           0,           4,      'User and User Admin Only',  0,           0,             NULL,          'Cidade',                     'Contact',      NULL,  NULL),
-       (  7,           'state_province',        1,           0,           5,      'User and User Admin Only',  0,           0,             NULL,          'Estado',                    'Contact',      NULL,  NULL),
+       (  7,           'city',                  1,           0,           4,      'User and User Admin Only',  0,           0,             NULL,          'Localidade',                     'Contact',      NULL,  NULL),
+       (  7,           'state_province',        1,           0,           5,      'User and User Admin Only',  0,           0,             NULL,          'Distrito',                    'Contact',      NULL,  NULL),
        (  7,           'postal_code',           1,           0,           6,      'User and User Admin Only',  0,           0,             NULL,          'Código postal',              'Contact',      NULL,  NULL),
        (  7,           'email',                 1,           0,           7,      'User and User Admin Only',  0,           0,             NULL,          'Email principal',            'Contact',      NULL,  NULL),
        (  7,           'group',                 1,           0,           8,      'User and User Admin Only',  0,           0,             NULL,          'Grupos',                   'Contact',      NULL,  NULL),
@@ -6272,25 +6272,25 @@ INSERT INTO civicrm_uf_field
        (  7,           'gender_id',             1,           0,           10,     'User and User Admin Only',  0,           0,             NULL,          'Género',                   'Individual',   NULL,  NULL),
        (  7,           'birth_date',            1,           0,           11,     'User and User Admin Only',  0,           0,             NULL,          'Data de Nascimento',            'Individual',   NULL,  NULL),
        (  8,           'street_address',        1,           1,           1,      'User and User Admin Only',  0,           0,             1,             'Morada (Casa)',    'Contact',      NULL,  NULL),
-       (  8,           'city',                  1,           1,           2,      'User and User Admin Only',  0,           0,             1,             'Cidade (Casa)',              'Contact',      NULL,  NULL),
+       (  8,           'city',                  1,           1,           2,      'User and User Admin Only',  0,           0,             1,             'Localidade (Casa)',              'Contact',      NULL,  NULL),
        (  8,           'postal_code',           0,           0,           3,      'User and User Admin Only',  0,           0,             1,             'Código Postal (Casa)',       'Contact',      NULL,  NULL),
        (  8,           'country',               0,           0,           4,      'User and User Admin Only',  0,           0,             1,             'País (Casa)',           'Contact',      NULL,  NULL),
-       (  8,           'state_province',        0,           0,           5,      'User and User Admin Only',  0,           0,             1,             'Província (Casa)',             'Contact',      NULL,  NULL),
+       (  8,           'state_province',        0,           0,           5,      'User and User Admin Only',  0,           0,             1,             'Distrito (Casa)',             'Contact',      NULL,  NULL),
        (  9,           'organization_name',     1,           0,           1,      'User and User Admin Only',  0,           0,             NULL,          'Nome da Organização',        'Organization', NULL,  NULL),
        (  9,           'phone',                 1,           0,           2,      'User and User Admin Only',  0,           0,             3,             'Telefone (Principal)',            'Contact',      NULL,   1),
        (  9,           'email',                 1,           0,           3,      'User and User Admin Only',  0,           0,             3,             'Email (Principal)',            'Contact',      NULL,   NULL),
        (  9,           'street_address',        1,           0,           4,      'User and User Admin Only',  0,           0,             3,             'Morada',           'Contact',      NULL,   NULL),
-       (  9,           'city',                  1,           0,           5,      'User and User Admin Only',  0,           0,             3,             'Cidade',                     'Contact',      NULL,   NULL),
+       (  9,           'city',                  1,           0,           5,      'User and User Admin Only',  0,           0,             3,             'Localidade',                     'Contact',      NULL,   NULL),
        (  9,           'postal_code',           1,           0,           6,      'User and User Admin Only',  0,           0,             3,             'Código postal',              'Contact',      NULL,   NULL),
        (  9,           'country',               1,           0,           7,      'User and User Admin Only',  0,           0,             3,             'País',                  'Contact',      NULL,   NULL),
-       (  9,           'state_province',        1,           0,           8,      'User and User Admin Only',  0,           0,             3,             'Estado/Região',         'Contact',      NULL,   NULL),
+       (  9,           'state_province',        1,           0,           8,      'User and User Admin Only',  0,           0,             3,             'Distrito/Região',         'Contact',      NULL,   NULL),
        ( 10,     'financial_type',              0, 1, 1, 'User and User Admin Only', 0, 0, NULL, 'Financial Type', 'Contribution', NULL, NULL ),
        ( 10,     'total_amount',                0, 1, 2, 'User and User Admin Only', 0, 0, NULL, 'Quantia', 'Contribution', NULL, NULL ),
        ( 10,     'contribution_status_id',      1, 1, 3, 'User and User Admin Only', 0, 0, NULL, 'Estado', 'Contribution', NULL, NULL ),
        ( 10,     'receive_date',                1, 1, 4, 'User and User Admin Only', 0, 0, NULL, 'Recebido', 'Contribution', NULL, NULL ),
        ( 10,     'contribution_source',         0, 0, 5, 'User and User Admin Only', 0, 0, NULL, 'Fonte', 'Contribution', NULL, NULL ),
        ( 10,     'payment_instrument',          0, 0, 6, 'User and User Admin Only', 0, 0, NULL, 'Payment Method', 'Contribution', NULL, NULL ),
-       ( 10,     'check_number',                0, 0, 7, 'User and User Admin Only', 0, 0, NULL, 'Check Number', 'Contribution', NULL, NULL ),
+       ( 10,     'contribution_check_number',                0, 0, 7, 'User and User Admin Only', 0, 0, NULL, 'Check Number', 'Contribution', NULL, NULL ),
        ( 10,     'send_receipt',                0, 0, 8, 'User and User Admin Only', 0, 0, NULL, 'Send Receipt', 'Contribution', NULL, NULL ),
        ( 10,     'invoice_id',                  0, 0, 9, 'User and User Admin Only', 0, 0, NULL, 'ID da Fatura', 'Contribution', NULL, NULL ),
        ( 10,     'soft_credit',                 0, 0, 10, 'User and User Admin Only', 0, 0, NULL, 'Soft Credit', 'Contribution', NULL, NULL ),
@@ -6305,7 +6305,7 @@ INSERT INTO civicrm_uf_field
        ( 11,     'total_amount',                0, 1, 8, 'User and User Admin Only', 0, 0, NULL, 'Quantia', 'Membership', NULL, NULL ),
        ( 11,     'receive_date',                1, 1, 9, 'User and User Admin Only', 0, 0, NULL, 'Recebido', 'Membership', NULL, NULL ),
        ( 11,     'payment_instrument',          0, 0, 10, 'User and User Admin Only', 0, 0, NULL, 'Payment Method', 'Membership', NULL, NULL ),
-       ( 11,     'check_number',                0, 0, 11, 'User and User Admin Only', 0, 0, NULL, 'Check Number', 'Membership', NULL, NULL ),
+       ( 11,     'contribution_check_number',                0, 0, 11, 'User and User Admin Only', 0, 0, NULL, 'Check Number', 'Membership', NULL, NULL ),
        ( 11,     'contribution_status_id',      1, 1, 12, 'User and User Admin Only', 0, 0, NULL, 'Payment Status', 'Membership', NULL, NULL ),
        ( 11,     'soft_credit',                 0, 0, 13, 'User and User Admin Only', 0, 0, NULL, 'Soft Credit', 'Membership', NULL, NULL ),
        ( 11,     'soft_credit_type',            0, 0, 14, 'User and User Admin Only', 0, 0, NULL, 'Soft Credit Type', 'Membership', NULL, NULL ),
@@ -6323,7 +6323,7 @@ INSERT INTO civicrm_participant_status_type
   (1,  'Registered',                          'Registado',                          'Positive', 1,           1,         1,          1,      1            ),
   (2,  'Attended',                            'Attended',                            'Positive', 0,           1,         1,          2,      2            ),
   (3,  'No-show',                             'No-show',                             'Negative', 0,           1,         0,          3,      2            ),
-  (4,  'Cancelled',                           'Cancelled',                           'Negative', 1,           1,         0,          4,      2            ),
+  (4,  'Cancelled',                           'Cancelado',                           'Negative', 1,           1,         0,          4,      2            ),
   (5,  'Pending from pay later',              'Pending (pay later)',                 'Pending',  1,           1,         1,          5,      2            ),
   (6,  'Pending from incomplete transaction', 'Pending (incomplete transaction)',    'Pending',  1,           1,         0,          6,      2            ),
   (7,  'On waitlist',                         'Em lista de espera',                         'Waiting',  1,           0,         0,          7,      2            ),
@@ -22945,12 +22945,12 @@ SELECT @option_value_rel_id_as  := value FROM civicrm_option_value WHERE option_
 SELECT @option_value_rel_id_cg  := value FROM civicrm_option_value WHERE option_group_id = @option_group_id_arel AND name = 'Cost of Sales Account is';
 SELECT @option_value_rel_id_dr  := value FROM civicrm_option_value WHERE option_group_id = @option_group_id_arel AND name = 'Deferred Revenue Account is';
 
-SELECT @financial_type_id_dtn          := max(id) FROM civicrm_financial_type WHERE name = 'Donation';
+SELECT @financial_type_id_dtn          := max(id) FROM civicrm_financial_type WHERE name = 'Donativo';
 SELECT @financial_type_id_md         := max(id) FROM civicrm_financial_type WHERE name = 'Member Dues';
 SELECT @financial_type_id_cc         := max(id) FROM civicrm_financial_type WHERE name = 'Campaign Contribution';
 SELECT @financial_type_id_ef         := max(id) FROM civicrm_financial_type WHERE name = 'Event Fee';
 
-SELECT @financial_account_id_dtn       := max(id) FROM civicrm_financial_account WHERE name = 'Donation';
+SELECT @financial_account_id_dtn       := max(id) FROM civicrm_financial_account WHERE name = 'Donativo';
 SELECT @financial_account_id_md         := max(id) FROM civicrm_financial_account WHERE name = 'Member Dues';
 SELECT @financial_account_id_cc         := max(id) FROM civicrm_financial_account WHERE name = 'Campaign Contribution';
 SELECT @financial_account_id_ef         := max(id) FROM civicrm_financial_account WHERE name = 'Event Fee';
@@ -23854,4 +23854,4 @@ INSERT INTO `civicrm_report_instance`
 VALUES
     (  @domainID, 'Survey Details', 'survey/detail', 'Detailed report for canvassing, phone-banking, walk lists or other surveys.', 'access CiviReport', 'a:39:{s:6:"fields";a:2:{s:9:"sort_name";s:1:"1";s:6:"result";s:1:"1";}s:22:"assignee_contact_id_op";s:2:"eq";s:25:"assignee_contact_id_value";s:0:"";s:12:"sort_name_op";s:3:"has";s:15:"sort_name_value";s:0:"";s:17:"street_number_min";s:0:"";s:17:"street_number_max";s:0:"";s:16:"street_number_op";s:3:"lte";s:19:"street_number_value";s:0:"";s:14:"street_name_op";s:3:"has";s:17:"street_name_value";s:0:"";s:15:"postal_code_min";s:0:"";s:15:"postal_code_max";s:0:"";s:14:"postal_code_op";s:3:"lte";s:17:"postal_code_value";s:0:"";s:7:"city_op";s:3:"has";s:10:"city_value";s:0:"";s:20:"state_province_id_op";s:2:"in";s:23:"state_province_id_value";a:0:{}s:13:"country_id_op";s:2:"in";s:16:"country_id_value";a:0:{}s:12:"survey_id_op";s:2:"in";s:15:"survey_id_value";a:0:{}s:12:"status_id_op";s:2:"eq";s:15:"status_id_value";s:1:"1";s:11:"custom_1_op";s:2:"in";s:14:"custom_1_value";a:0:{}s:11:"custom_2_op";s:2:"in";s:14:"custom_2_value";a:0:{}s:17:"custom_3_relative";s:1:"0";s:13:"custom_3_from";s:0:"";s:11:"custom_3_to";s:0:"";s:11:"description";s:75:"Detailed report for canvassing, phone-banking, walk lists or other surveys.";s:13:"email_subject";s:0:"";s:8:"email_to";s:0:"";s:8:"email_cc";s:0:"";s:10:"permission";s:17:"access CiviReport";s:6:"groups";s:0:"";s:9:"domain_id";i:1;}');
 
-UPDATE civicrm_domain SET version = '4.7.16';
+UPDATE civicrm_domain SET version = '4.7.17';

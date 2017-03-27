@@ -4990,8 +4990,8 @@ VALUES
   (@option_group_id_cvOpt, 'Відносини',   2, 'rel', NULL, 0, NULL,  2,  NULL, 0, 0, 1, NULL, NULL, NULL),
   (@option_group_id_cvOpt, 'Групи'       ,   3, 'group', NULL, 0, NULL,  3,  NULL, 0, 0, 1, NULL, NULL, NULL),
   (@option_group_id_cvOpt, 'Примітки'        ,   4, 'note', NULL, 0, NULL,  4,  NULL, 0, 0, 1, NULL, NULL, NULL),
-  (@option_group_id_cvOpt, 'Теги'         ,   5, 'tag', NULL, 0, NULL,  5,  NULL, 0, 0, 1, NULL, NULL, NULL),
-  (@option_group_id_cvOpt, 'Зміна реєстрації'   ,   6, 'log', NULL, 0, NULL,  6,  NULL, 0, 0, 1, NULL, NULL, NULL),
+  (@option_group_id_cvOpt, 'Мітки'         ,   5, 'tag', NULL, 0, NULL,  5,  NULL, 0, 0, 1, NULL, NULL, NULL),
+  (@option_group_id_cvOpt, 'Зміни'   ,   6, 'log', NULL, 0, NULL,  6,  NULL, 0, 0, 1, NULL, NULL, NULL),
   (@option_group_id_cvOpt, 'Внески',   7, 'CiviContribute', NULL, 0, NULL,  7,  NULL, 0, 0, 1, NULL, NULL, NULL),
   (@option_group_id_cvOpt, 'Членство'  ,   8, 'CiviMember', NULL, 0, NULL,  8,  NULL, 0, 0, 1, NULL, NULL, NULL),
   (@option_group_id_cvOpt, 'Події'       ,   9, 'CiviEvent', NULL, 0, NULL,  9,  NULL, 0, 0, 1, NULL, NULL, NULL),
@@ -5007,7 +5007,7 @@ VALUES
 
   (@option_group_id_ceOpt, 'Iндивідуальні дані'              ,   1, 'CustomData', NULL, 0, NULL, 1, NULL, 0, 0, 1, NULL, NULL, NULL),
   (@option_group_id_ceOpt, 'Адреса'                  ,   2, 'Address', NULL, 0, NULL, 2, NULL, 0, 0, 1, NULL, NULL, NULL),
-  (@option_group_id_ceOpt, 'Переваги у Комунікації',   3, 'CommunicationPreferences', NULL, 0, NULL, 3, NULL, 0, 0, 1, NULL, NULL, NULL),
+  (@option_group_id_ceOpt, 'Налаштування комунікації',   3, 'CommunicationPreferences', NULL, 0, NULL, 3, NULL, 0, 0, 1, NULL, NULL, NULL),
   (@option_group_id_ceOpt, 'Примітки'                    ,   4, 'Notes', NULL, 0, NULL, 4, NULL, 0, 0, 1, NULL, NULL, NULL),
   (@option_group_id_ceOpt, 'Демографія'             ,   5, 'Demographics', NULL, 0, NULL, 5, NULL, 0, 0, 1, NULL, NULL, NULL),
   (@option_group_id_ceOpt, 'Мітки і Групи'          ,   6, 'TagsAndGroups', NULL, 0, NULL, 6, NULL, 0, 0, 1, NULL, NULL, NULL),
@@ -5038,7 +5038,7 @@ VALUES
   (@option_group_id_asOpt, 'Платіжні зобов’язання'                 ,  15, 'CiviPledge', NULL, 0, NULL, 17, NULL, 0, 0, 1, NULL, NULL, NULL),
   (@option_group_id_asOpt, 'Тип контакту'            ,  16, 'contactType', NULL, 0, NULL, 18, NULL, 0, 0, 1, NULL, NULL, NULL),
   (@option_group_id_asOpt, 'Групи'                  ,  17, 'groups', NULL, 0, NULL, 19, NULL, 0, 0, 1, NULL, NULL, NULL),
-  (@option_group_id_asOpt, 'Теги'                    ,  18, 'tags', NULL, 0, NULL, 20, NULL, 0, 0, 1, NULL, NULL, NULL),
+  (@option_group_id_asOpt, 'Мітки'                    ,  18, 'tags', NULL, 0, NULL, 20, NULL, 0, 0, 1, NULL, NULL, NULL),
   (@option_group_id_asOpt, 'Поштова розсилка'                 ,  19, 'CiviMail', NULL, 0, NULL, 21, NULL, 0, 0, 1, NULL, NULL, NULL),
 
   (@option_group_id_udOpt, 'Групи'                     , 1, 'Groups', NULL, 0, NULL, 1, NULL, 0, 0, 1, NULL, NULL, NULL),
@@ -6268,7 +6268,7 @@ INSERT INTO civicrm_uf_field
        (  7,           'postal_code',           1,           0,           6,      'User and User Admin Only',  0,           0,             NULL,          'Поштовий код',              'Contact',      NULL,  NULL),
        (  7,           'email',                 1,           0,           7,      'User and User Admin Only',  0,           0,             NULL,          'Основна електронна пошта',            'Contact',      NULL,  NULL),
        (  7,           'group',                 1,           0,           8,      'User and User Admin Only',  0,           0,             NULL,          'Групи',                   'Contact',      NULL,  NULL),
-       (  7,           'tag',                   1,           0,           9,      'User and User Admin Only',  0,           0,             NULL,          'Теги',                     'Contact',      NULL,  NULL),
+       (  7,           'tag',                   1,           0,           9,      'User and User Admin Only',  0,           0,             NULL,          'Мітки',                     'Contact',      NULL,  NULL),
        (  7,           'gender_id',             1,           0,           10,     'User and User Admin Only',  0,           0,             NULL,          'Стать',                   'Individual',   NULL,  NULL),
        (  7,           'birth_date',            1,           0,           11,     'User and User Admin Only',  0,           0,             NULL,          'Дата народження',            'Individual',   NULL,  NULL),
        (  8,           'street_address',        1,           1,           1,      'User and User Admin Only',  0,           0,             1,             'Поштова адреса (домашня)',    'Contact',      NULL,  NULL),
@@ -6290,7 +6290,7 @@ INSERT INTO civicrm_uf_field
        ( 10,     'receive_date',                1, 1, 4, 'User and User Admin Only', 0, 0, NULL, 'Отримано', 'Contribution', NULL, NULL ),
        ( 10,     'contribution_source',         0, 0, 5, 'User and User Admin Only', 0, 0, NULL, 'Джерело', 'Contribution', NULL, NULL ),
        ( 10,     'payment_instrument',          0, 0, 6, 'User and User Admin Only', 0, 0, NULL, 'Payment Method', 'Contribution', NULL, NULL ),
-       ( 10,     'check_number',                0, 0, 7, 'User and User Admin Only', 0, 0, NULL, 'Перевірити номер', 'Contribution', NULL, NULL ),
+       ( 10,     'contribution_check_number',                0, 0, 7, 'User and User Admin Only', 0, 0, NULL, 'Перевірити номер', 'Contribution', NULL, NULL ),
        ( 10,     'send_receipt',                0, 0, 8, 'User and User Admin Only', 0, 0, NULL, 'Надіслати підтвердження', 'Contribution', NULL, NULL ),
        ( 10,     'invoice_id',                  0, 0, 9, 'User and User Admin Only', 0, 0, NULL, 'ID чеку', 'Contribution', NULL, NULL ),
        ( 10,     'soft_credit',                 0, 0, 10, 'User and User Admin Only', 0, 0, NULL, 'Пільговий кредит', 'Contribution', NULL, NULL ),
@@ -6305,7 +6305,7 @@ INSERT INTO civicrm_uf_field
        ( 11,     'total_amount',                0, 1, 8, 'User and User Admin Only', 0, 0, NULL, 'Сума', 'Membership', NULL, NULL ),
        ( 11,     'receive_date',                1, 1, 9, 'User and User Admin Only', 0, 0, NULL, 'Отримано', 'Membership', NULL, NULL ),
        ( 11,     'payment_instrument',          0, 0, 10, 'User and User Admin Only', 0, 0, NULL, 'Payment Method', 'Membership', NULL, NULL ),
-       ( 11,     'check_number',                0, 0, 11, 'User and User Admin Only', 0, 0, NULL, 'Перевірити номер', 'Membership', NULL, NULL ),
+       ( 11,     'contribution_check_number',                0, 0, 11, 'User and User Admin Only', 0, 0, NULL, 'Перевірити номер', 'Membership', NULL, NULL ),
        ( 11,     'contribution_status_id',      1, 1, 12, 'User and User Admin Only', 0, 0, NULL, 'Статус платежу', 'Membership', NULL, NULL ),
        ( 11,     'soft_credit',                 0, 0, 13, 'User and User Admin Only', 0, 0, NULL, 'Пільговий кредит', 'Membership', NULL, NULL ),
        ( 11,     'soft_credit_type',            0, 0, 14, 'User and User Admin Only', 0, 0, NULL, 'Тип пільгового кредиту', 'Membership', NULL, NULL ),
@@ -23854,4 +23854,4 @@ INSERT INTO `civicrm_report_instance`
 VALUES
     (  @domainID, 'Survey Details', 'survey/detail', 'Detailed report for canvassing, phone-banking, walk lists or other surveys.', 'access CiviReport', 'a:39:{s:6:"fields";a:2:{s:9:"sort_name";s:1:"1";s:6:"result";s:1:"1";}s:22:"assignee_contact_id_op";s:2:"eq";s:25:"assignee_contact_id_value";s:0:"";s:12:"sort_name_op";s:3:"has";s:15:"sort_name_value";s:0:"";s:17:"street_number_min";s:0:"";s:17:"street_number_max";s:0:"";s:16:"street_number_op";s:3:"lte";s:19:"street_number_value";s:0:"";s:14:"street_name_op";s:3:"has";s:17:"street_name_value";s:0:"";s:15:"postal_code_min";s:0:"";s:15:"postal_code_max";s:0:"";s:14:"postal_code_op";s:3:"lte";s:17:"postal_code_value";s:0:"";s:7:"city_op";s:3:"has";s:10:"city_value";s:0:"";s:20:"state_province_id_op";s:2:"in";s:23:"state_province_id_value";a:0:{}s:13:"country_id_op";s:2:"in";s:16:"country_id_value";a:0:{}s:12:"survey_id_op";s:2:"in";s:15:"survey_id_value";a:0:{}s:12:"status_id_op";s:2:"eq";s:15:"status_id_value";s:1:"1";s:11:"custom_1_op";s:2:"in";s:14:"custom_1_value";a:0:{}s:11:"custom_2_op";s:2:"in";s:14:"custom_2_value";a:0:{}s:17:"custom_3_relative";s:1:"0";s:13:"custom_3_from";s:0:"";s:11:"custom_3_to";s:0:"";s:11:"description";s:75:"Detailed report for canvassing, phone-banking, walk lists or other surveys.";s:13:"email_subject";s:0:"";s:8:"email_to";s:0:"";s:8:"email_cc";s:0:"";s:10:"permission";s:17:"access CiviReport";s:6:"groups";s:0:"";s:9:"domain_id";i:1;}');
 
-UPDATE civicrm_domain SET version = '4.7.16';
+UPDATE civicrm_domain SET version = '4.7.17';
