@@ -4687,7 +4687,7 @@ INSERT INTO civicrm_tag( name, description, parent_id,used_for )
 INSERT INTO civicrm_mailing_component
     (name,component_type,subject,body_html,body_text,is_default,is_active)
 VALUES
-    ('Mailing Header','Header','Descriptive Title for this Header','Sample Header for HTML formatted content.','Sample Header for TEXT formatted content.',1,1),
+    ('Testata','Header','Descriptive Title for this Header','Sample Header for HTML formatted content.','Sample Header for TEXT formatted content.',1,1),
     ('Mailing Footer','Footer','Descriptive Title for this Footer.','Sample Footer for HTML formatted content<br/><a href=\"{action.optOutUrl}\">Unsubscribe</a>  <br/> {domain.address}','to unsubscribe: {action.optOutUrl}\n{domain.address}',1,1),
     ('Subscribe Message','Subscribe','Richiesta di conferma iscrizione','Hai un\'iscrizione in sospeso alla mailing list {subscribe.group}. Per confermare questa iscrizione, rispondi a questa email o clicca <a href=\"{subscribe.url}\">qui</a>.','Hai un\'iscrizione in sospeso alla mailing list {subscribe.group}. Per confermare questa iscrizione, rispondi a questa email o clicca su questo link: {subscribe.url}',1,1),
     ('Messaggio di benvenuto','Welcome','Your Subscription has been Activated','Benvenuto. La tua iscrizione alle mailing list {welcome.group} è stata attivata.','Benvenuto. La tua iscrizione alle mailing list {welcome.group} è stata attivata.',1,1),
@@ -4752,8 +4752,8 @@ VALUES
    ('priority'                      , 'Priorità'                           , NULL, 1, 1, 0),
    ('redaction_rule'                , 'Redaction Rule'                     , NULL, 1, 1, 0),
    ('report_template'               , 'Report Template'                    , NULL, 1, 1, 0),
-   ('email_greeting'                , 'Email Greeting Type'                , NULL, 1, 1, 0),
-   ('postal_greeting'               , 'Postal Greeting Type'               , NULL, 1, 1, 0),
+   ('email_greeting'                , 'Esordio email'                , NULL, 1, 1, 0),
+   ('postal_greeting'               , 'Tipo esordio postale'               , NULL, 1, 1, 0),
    ('addressee'                     , 'Addressee Type'                     , NULL, 1, 1, 0),
    ('contact_autocomplete_options'  , 'Autocomplete Contact Search'        , NULL, 1, 1, 1),
    ('contact_reference_options'     , 'Contact Reference Autocomplete Options', NULL, 1, 1, 1),
@@ -5009,7 +5009,7 @@ VALUES
   (@option_group_id_pi, 'Check',        4, 'Check',       NULL, 0, 1, 4, NULL, 0, 1, 1, NULL, NULL, NULL),
   (@option_group_id_pi, 'EFT',          5, 'EFT',         NULL, 0, 0, 5, NULL, 0, 0, 1, NULL, NULL, NULL),
 
-  (@option_group_id_cs, 'Completed'  , 1, 'Completed'  , NULL, 0, NULL, 1, NULL, 0, 1, 1, NULL, NULL, NULL),
+  (@option_group_id_cs, 'Completato'  , 1, 'Completed'  , NULL, 0, NULL, 1, NULL, 0, 1, 1, NULL, NULL, NULL),
   (@option_group_id_cs, 'Sospeso'    , 2, 'Pending'    , NULL, 0, NULL, 2, NULL, 0, 1, 1, NULL, NULL, NULL),
   (@option_group_id_cs, 'Cancelled'  , 3, 'Cancelled'  , NULL, 0, NULL, 3, NULL, 0, 1, 1, NULL, NULL, NULL),
   (@option_group_id_cs, 'Failed'     , 4, 'Failed'     , NULL, 0, NULL, 4, NULL, 0, 1, 1, NULL, NULL, NULL),
@@ -5057,16 +5057,16 @@ VALUES
   (@option_group_id_cvOpt, 'Mailing'     ,  14, 'CiviMail', NULL, 0, NULL,  14, NULL, 0, 0, 1, NULL, NULL, NULL),
 
 
-  (@option_group_id_csgOpt, 'Show Smart Groups on Demand',1, 'showondemand', NULL, 0, NULL,  1,  NULL, 0, 0, 1, NULL, NULL, NULL),
-  (@option_group_id_csgOpt, 'Always Show Smart Groups',   2, 'alwaysshow', NULL, 0, NULL,  2,  NULL, 0, 0, 1, NULL, NULL, NULL),
-  (@option_group_id_csgOpt, 'Hide Smart Groups'       ,   3, 'hide', NULL, 0, NULL,  3,  NULL, 0, 0, 1, NULL, NULL, NULL),
+  (@option_group_id_csgOpt, 'Mostra gruppi dinamici a richiesta',1, 'showondemand', NULL, 0, NULL,  1,  NULL, 0, 0, 1, NULL, NULL, NULL),
+  (@option_group_id_csgOpt, 'Mostra sempre gruppi dinamici',   2, 'alwaysshow', NULL, 0, NULL,  2,  NULL, 0, 0, 1, NULL, NULL, NULL),
+  (@option_group_id_csgOpt, 'Nascondi gruppi dinamici'       ,   3, 'hide', NULL, 0, NULL,  3,  NULL, 0, 0, 1, NULL, NULL, NULL),
 
   (@option_group_id_ceOpt, 'Dati personalizzati'              ,   1, 'CustomData', NULL, 0, NULL, 1, NULL, 0, 0, 1, NULL, NULL, NULL),
   (@option_group_id_ceOpt, 'Indirizzo'                  ,   2, 'Address', NULL, 0, NULL, 2, NULL, 0, 0, 1, NULL, NULL, NULL),
   (@option_group_id_ceOpt, 'Preferenze per la comunicazione',   3, 'CommunicationPreferences', NULL, 0, NULL, 3, NULL, 0, 0, 1, NULL, NULL, NULL),
   (@option_group_id_ceOpt, 'Note'                    ,   4, 'Notes', NULL, 0, NULL, 4, NULL, 0, 0, 1, NULL, NULL, NULL),
   (@option_group_id_ceOpt, 'Dati anagrafici'             ,   5, 'Demographics', NULL, 0, NULL, 5, NULL, 0, 0, 1, NULL, NULL, NULL),
-  (@option_group_id_ceOpt, 'Tags and Groups'          ,   6, 'TagsAndGroups', NULL, 0, NULL, 6, NULL, 0, 0, 1, NULL, NULL, NULL),
+  (@option_group_id_ceOpt, 'Tag e gruppi'          ,   6, 'TagsAndGroups', NULL, 0, NULL, 6, NULL, 0, 0, 1, NULL, NULL, NULL),
   (@option_group_id_ceOpt, 'Email'                    ,   7, 'Email', NULL, 1, NULL, 7, NULL, 0, 0, 1, NULL, NULL, NULL),
   (@option_group_id_ceOpt, 'Telefono'                    ,   8, 'Phone', NULL, 1, NULL, 8, NULL, 0, 0, 1, NULL, NULL, NULL),
   (@option_group_id_ceOpt, 'Instant Messenger'        ,   9, 'IM', NULL, 1, NULL, 9, NULL, 0, 0, 1, NULL, NULL, NULL),
@@ -5167,7 +5167,7 @@ VALUES
 
 -- report templates
   (@option_group_id_report , 'Constituent Report (Summary)',            'contact/summary',                'CRM_Report_Form_Contact_Summary',                NULL, 0, NULL, 1,  'Provides a list of address and telephone information for constituent records in your system.', 0, 0, 1, NULL, NULL, NULL),
-  (@option_group_id_report , 'Constituent Report (Detail)',             'contact/detail',                 'CRM_Report_Form_Contact_Detail',                 NULL, 0, NULL, 2,  'Provides contact-related information on contributions, memberships, events and activities.',   0, 0, 1, NULL, NULL, NULL),
+  (@option_group_id_report , 'Report componente (Dettaglio)',             'contact/detail',                 'CRM_Report_Form_Contact_Detail',                 NULL, 0, NULL, 2,  'Provides contact-related information on contributions, memberships, events and activities.',   0, 0, 1, NULL, NULL, NULL),
   (@option_group_id_report , 'Activity Details Report',                 'activity',                       'CRM_Report_Form_Activity',                       NULL, 0, NULL, 3,  'Provides a list of constituent activity including activity statistics for one/all contacts during a given date range(required)', 0, 0, 1, NULL, NULL, NULL),
   (@option_group_id_report , 'Walk / Phone List Report',                'walklist',                       'CRM_Report_Form_Walklist_Walklist',                       NULL, 0, NULL, 4,  'Provides a detailed report for your walk/phonelist for targeted contacts', 0, 0, 0, NULL, NULL, NULL),
   (@option_group_id_report , 'Current Employer Report',                 'contact/currentEmployer',        'CRM_Report_Form_Contact_CurrentEmployer',        NULL, 0, NULL, 5,  'Provides detail list of employer employee relationships along with employment details Ex Join Date', 0, 0, 1, NULL, NULL, NULL),
@@ -5218,8 +5218,8 @@ VALUES
   (@option_group_id_report, 'Recurring Contributions Summary', 'contribute/recursummary', 'CRM_Report_Form_Contribute_RecurSummary',               NULL, 0, NULL, 49, 'Provides simple summary for each payment instrument for which there are recurring contributions (e.g. Credit Card, Standing Order, Direct Debit, etc., NULL), showing within a given date range.', 0, 0, 1, @contributeCompId, NULL, NULL),
   (@option_group_id_report, 'Deferred Revenue Details', 'contribute/deferredrevenue', 'CRM_Report_Form_Contribute_DeferredRevenue', NULL, 0, NULL, 50, 'Deferred Revenue Details Report', 0, 0, 1, @contributeCompId, NULL, NULL), 
 
-  (@option_group_id_acs, 'Scheduled',  1, 'Scheduled',  NULL, 0, 1,    1, NULL, 0, 1, 1, NULL, NULL, NULL),
-  (@option_group_id_acs, 'Completed',  2, 'Completed',  NULL, 0, NULL, 2, NULL, 0, 1, 1, NULL, NULL, NULL),
+  (@option_group_id_acs, 'Programmata',  1, 'Scheduled',  NULL, 0, 1,    1, NULL, 0, 1, 1, NULL, NULL, NULL),
+  (@option_group_id_acs, 'Completato',  2, 'Completed',  NULL, 0, NULL, 2, NULL, 0, 1, 1, NULL, NULL, NULL),
   (@option_group_id_acs, 'Cancelled',  3, 'Cancelled',  NULL, 0, NULL, 3, NULL, 0, 1, 1, NULL, NULL, NULL),
   (@option_group_id_acs, 'Left Message', 4, 'Left Message', NULL, 0, NULL, 4, NULL, 0, 0, 1, NULL, NULL, NULL),
   (@option_group_id_acs, 'Unreachable', 5, 'Unreachable', NULL, 0, NULL, 5, NULL, 0, 0, 1, NULL, NULL, NULL),
@@ -5363,7 +5363,7 @@ VALUES
 -- Campaign Status
   (@option_group_id_campaignStatus, 'Planned', 1, 'Planned',  NULL, 0, NULL, 1, NULL, 0, 0, 1, NULL, NULL, NULL),
   (@option_group_id_campaignStatus, 'In Progress', 2, 'In Progress',  NULL, 0, NULL, 1, NULL, 0, 0, 1, NULL, NULL, NULL),
-  (@option_group_id_campaignStatus, 'Completed', 3, 'Completed',  NULL, 0, NULL, 1, NULL, 0, 0, 1, NULL, NULL, NULL),
+  (@option_group_id_campaignStatus, 'Completato', 3, 'Completed',  NULL, 0, NULL, 1, NULL, 0, 0, 1, NULL, NULL, NULL),
   (@option_group_id_campaignStatus, 'Cancelled', 4, 'Cancelled',  NULL, 0, NULL, 1, NULL, 0, 0, 1, NULL, NULL, NULL),
 
 -- Engagement Level
@@ -6442,7 +6442,7 @@ INSERT INTO `civicrm_contact_type`
 
 INSERT INTO civicrm_option_group
   (name,                         title,            description,      is_reserved, is_active) VALUES
-    ('msg_tpl_workflow_case', 'Message Template Workflow for Cases',               'Message Template Workflow for Cases',                     1,           1) ,    ('msg_tpl_workflow_contribution', 'Message Template Workflow for Contributions',               'Message Template Workflow for Contributions',                     1,           1) ,    ('msg_tpl_workflow_event', 'Message Template Workflow for Events',               'Message Template Workflow for Events',                     1,           1) ,    ('msg_tpl_workflow_friend', 'Message Template Workflow for Tell-a-Friend',               'Message Template Workflow for Tell-a-Friend',                     1,           1) ,    ('msg_tpl_workflow_membership', 'Message Template Workflow for Memberships',               'Message Template Workflow for Memberships',                     1,           1) ,    ('msg_tpl_workflow_meta', 'Message Template Workflow for Meta Templates',               'Message Template Workflow for Meta Templates',                     1,           1) ,    ('msg_tpl_workflow_pledge', 'Message Template Workflow for Pledges',               'Message Template Workflow for Pledges',                     1,           1) ,    ('msg_tpl_workflow_uf', 'Message Template Workflow for Profiles',               'Message Template Workflow for Profiles',                     1,           1) ,    ('msg_tpl_workflow_petition', 'Message Template Workflow for Petition',               'Message Template Workflow for Petition',                     1,           1) ;
+    ('msg_tpl_workflow_case', 'Flusso di lavoro modello di messaggio per casi',               'Flusso di lavoro modello di messaggio per casi',                     1,           1) ,    ('msg_tpl_workflow_contribution', ' Flusso di lavoro modello di messaggio per contributi',               ' Flusso di lavoro modello di messaggio per contributi',                     1,           1) ,    ('msg_tpl_workflow_event', 'Flusso di lavoro modello di messaggio per eventi',               'Flusso di lavoro modello di messaggio per eventi',                     1,           1) ,    ('msg_tpl_workflow_friend', 'Flusso di lavoro modello di messaggio per dillo a un amico',               'Flusso di lavoro modello di messaggio per dillo a un amico',                     1,           1) ,    ('msg_tpl_workflow_membership', 'Flusso di lavoro modello di messaggio per iscrizioni',               'Flusso di lavoro modello di messaggio per iscrizioni',                     1,           1) ,    ('msg_tpl_workflow_meta', 'Flusso di lavoro modello di messaggio per meta modelli',               'Flusso di lavoro modello di messaggio per meta modelli',                     1,           1) ,    ('msg_tpl_workflow_pledge', 'Flusso di lavoro modello di messaggio per impegni',               'Flusso di lavoro modello di messaggio per impegni',                     1,           1) ,    ('msg_tpl_workflow_uf', 'Flusso di lavoro modello di messaggio per profili',               'Flusso di lavoro modello di messaggio per profili',                     1,           1) ,    ('msg_tpl_workflow_petition', 'Flusso di lavoro modello di messaggio per petizione',               'Flusso di lavoro modello di messaggio per petizione',                     1,           1) ;
   SELECT @tpl_ogid_case := MAX(id) FROM civicrm_option_group WHERE name = 'msg_tpl_workflow_case';
   SELECT @tpl_ogid_contribution := MAX(id) FROM civicrm_option_group WHERE name = 'msg_tpl_workflow_contribution';
   SELECT @tpl_ogid_event := MAX(id) FROM civicrm_option_group WHERE name = 'msg_tpl_workflow_event';
